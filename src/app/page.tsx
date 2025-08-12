@@ -1,103 +1,223 @@
 import Image from "next/image";
+import {
+  FaBriefcase,
+  FaHome,
+  FaEnvelope,
+  FaPhone,
+  FaCalendarAlt,
+  FaSuitcase,
+} from "react-icons/fa";
 
-export default function Home() {
+const programs = [
+  "Adobe Photoshop",
+  "Illustrator",
+  "In Design",
+  "Figma",
+  "Html & CSS",
+  "Tailwind CSS",
+  "Bootstrap",
+  "JavaScript",
+  "TypeScript",
+  "Prisma",
+  "PostgreSQL",
+  "SQL",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Git/GitHub",
+  "GitHub Copilot",
+];
+
+const languages = ["Svenska", "Engelska"];
+
+const certifications = ["Truckkort", "B-kort - pågående"];
+
+const cvPage = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="container max-w-7xl mx-auto mt-16 p-4 flex gap-8 flex-wrap lg:flex-nowrap">
+      {/* ASIDE */}
+      <aside className="left-column flex-none w-full lg:w-1/3 bg-[#ffffff] rounded-md shadow-md overflow-hidden">
+        <div className="relative">
+          <div className="w-full mt-12">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/Image/josefineErikssonProfilBild.jpg"
+              alt="Avatar"
+              width={500}
+              height={400}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <h2 className="absolute bottom-2.5 left-2.5 font-bold animate-bounce text-[#eeeeee] bg-gradient-to-r from-[#3a0ca3] to-[#f72585] px-4 py-2 rounded-md">
+            Hej hej!
+          </h2>
         </div>
+        {/* Info */}
+        <div className="p-4">
+          <p className="my-2 text-[#f72585]">
+            <FaBriefcase className="mr-2 inline-block" /> Designer
+          </p>
+          <p className="my-2 text-[#f72585]">
+            <FaHome className="mr-2 inline-block" /> Mjölby, Sverige
+          </p>
+          <p className="my-2 text-[#f72585]">
+            <FaEnvelope className="mr-2 inline-block" />{" "}
+            josefineeriksson@live.se
+          </p>
+          <p className="my-2 text-[#f72585]">
+            <FaPhone className="mr-2 inline-block" /> 0762484234
+          </p>
+
+          {/* Färdigheter */}
+          <h3 className="mt-4 mb-2 text-xl text-[#3a0ca3]">Program</h3>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {programs.map((program, index) => (
+              <span
+                key={index}
+                className="bg-[#7209b7] text-white text-xs font-semibold px-2.5 py-0.5 rounded-full"
+              >
+                {program}
+              </span>
+            ))}
+          </div>
+
+          {/* Språk */}
+          <h3 className="mt-4 mb-2 text-xl text-[#3a0ca3]">Språk</h3>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {languages.map((language, index) => (
+              <span
+                key={index}
+                className="bg-[#7209b7] text-white text-xs font-semibold px-2.5 py-0.5 rounded-full"
+              >
+                {language}
+              </span>
+            ))}
+          </div>
+
+          <h3 className="mt-4 text-xl mb-2 text-[#3a0ca3]">Körkort</h3>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {certifications.map((certification, index) => (
+              <span
+                key={index}
+                className="bg-[#7209b7] text-white text-xs font-semibold px-2.5 py-0.5 rounded-full"
+              >
+                {certification}
+              </span>
+            ))}
+          </div>
+        </div>
+      </aside>
+      {/* Main */}
+      <main className="right-column flex-1 w-full lg:w-2/3">
+        {/* Arbetslivserfarenhet */}
+        <section className="card bg-[#ffffff] mb-8 p-8 rounded-md shadow-md">
+          <h2 className="text-[#f72585] border-b-2 border-[#f72585] pb-2 mb-4 text-2xl">
+            <FaSuitcase className="mr-2 inline-block" />
+            Arbetslivserfarenhet
+          </h2>
+
+          <div className="job-entry mb-6">
+            <h5 className="font-bold text-[#7209b7] text-lg mb-1">
+              Webbdesigner (sido project)
+            </h5>
+            <p className="my-1 text-[#333333]">
+              <FaCalendarAlt className="mr-2 inline-block" />
+              Pågående - tills vidare
+            </p>
+            <p className="my-1 text-[#333333]">
+              kodochdesign.se - <em>Responsiva webbplatser</em>
+            </p>
+          </div>
+          <div className="job-entry mb-6">
+            <h5 className="font-bold text-[#7209b7] text-lg mb-1">
+              Grafisk Design / Webbdesign
+            </h5>
+            <p className="my-1 text-[#333333]">
+              <FaCalendarAlt className="mr-2 inline-block" /> 2022 - 2025
+            </p>
+            <p className="my-1 text-[#333333]">
+              posterstillhemmet.se -{" "}
+              <em> Webdesign, Social Media, Grafisk Design </em>
+            </p>
+          </div>
+          <div className="job-entry mb-6">
+            <h5 className="font-bold text-[#7209b7] text-lg mb-1">
+              Butiksbiträde
+            </h5>
+            <p className="my-1 text-[#333333]">
+              <FaCalendarAlt className="mr-2 inline-block" /> 2023 - 2025
+            </p>
+            <p className="my-1 text-[#333333]">
+              Flügger färg -{" "}
+              <em>
+                Försäljning av färg, verktyg och måleritillbehör. Färgrådgivare.
+              </em>
+            </p>
+          </div>
+          <div className="job-entry mb-6">
+            <h5 className="font-bold text-[#7209b7] text-lg mb-1">Säljare</h5>
+            <p className="my-1 text-[#333333]">
+              <FaCalendarAlt className="mr-2 inline-block" /> 2022 - 2023
+            </p>
+            <p className="my-1 text-[#333333]">
+              Bygghemma - <em>Försäljning av badrum, fönster och dörrar.</em>
+            </p>
+          </div>
+          <div className="job-entry mb-6">
+            <h5 className="font-bold text-[#7209b7] text-lg mb-1">
+              Grafisk Designer
+            </h5>
+            <p className="my-1 text-[#333333]">
+              <FaCalendarAlt className="mr-2 inline-block" /> 2016 - 2022
+            </p>
+            <p className="my-1 text-[#333333]">
+              Esmilia Design -{" "}
+              <em>
+                Grafisk Design, webdesign, logistik, försäljning, social media
+              </em>
+            </p>
+          </div>
+        </section>
+        {/* Utbildning */}
+        <section className="card bg-[#ffffff] mb-8 p-8 rounded-md shadow-md">
+          <h2 className="text-[#f72585] border-b-2 border-[#f72585] pb-2 mb-4 text-2xl">
+            <FaSuitcase className="mr-2 inline-block" />
+            Utbildning
+          </h2>
+
+          <div className="education-entry mb-6">
+            <h5 className="font-bold text-[#7209b7] text-lg mb-1">
+              Fullstack - Pågående utbildning
+            </h5>
+            <p className="my-1 text-[#333333]">
+              <FaCalendarAlt className="mr-2 inline-block" /> 2025 - 2026
+            </p>
+            <p className="my-1 text-[#333333]">
+              Lexicon Linköping <br />
+              <em>
+                React, Next.js, HTML, CSS, JavaScript/TypeScript, Prisma, SQL,
+                Tailwind CSS, Bootstrap, PostgreSQL, Git/GitHub, AI, Node.js
+              </em>
+            </p>
+          </div>
+          <div className="education-entry mb-6">
+            <h5 className="font-bold text-[#7209b7] text-lg mb-1">IT Profil</h5>
+            <p className="my-1 text-[#333333]">
+              <FaCalendarAlt className="mr-2 inline-block" /> 2006 - 2007
+            </p>
+            <p className="my-1 text-[#333333]">Kristinehamns Folkhögskola</p>
+          </div>
+          <div className="education-entry mb-6">
+            <h5 className="font-bold text-[#7209b7] text-lg mb-1">
+              Bygg- och hantverksprogrammet, måleri
+            </h5>
+            <p className="my-1 text-[#333333]">
+              <FaCalendarAlt className="mr-2 inline-block" /> 2002 - 2005
+            </p>
+            <p className="my-1 text-[#333333]">Tullängsskolan Örebro</p>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
-}
+};
+
+export default cvPage;
