@@ -101,10 +101,10 @@ const PortfolioPage = () => {
               </h3>
               <p className="text-gray-700 text-sm mb-4">
                 Mammas Väderapp är en väderwebb som ger personliga och konkreta
-                råd från "mamma" om vad barnen ska ha på sig beroende på vädret.
+                råd från mamma om vad barnen ska ha på sig beroende på vädret.
                 Det är som att alltid ha en omtänksam förälder i fickan som
-                säger "Ta på dig mössa!" när det snöar eller "Glöm inte vatten!"
-                när solen gassar.
+                säger Ta på dig mössa! när det snöar eller Glöm inte vatten! när
+                solen gassar.
               </p>
               <p className="text-gray-600 font-semibold text-xs mb-4">
                 **Teknik:** HTML, Tailwind CSS, JavaScript
@@ -152,7 +152,7 @@ const PortfolioPage = () => {
                 gör den lätt att använda på alla enheter.
               </p>
               <p className="text-gray-600 font-semibold text-xs mb-4">
-                **Teknik:** HTML, Tailwind CSS, JavaScript
+                **Teknik:** React Next.js TypeScript Tailwind CSS
               </p>
               <div className="flex flex-col md:flex-row gap-4">
                 <Link
