@@ -7,13 +7,15 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Hanterar scroll-effekten
   useEffect(() => {
+    setIsMounted(true);
+
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setIsScrolled(true);
@@ -39,7 +41,9 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
-          className="self-center text-3xl font-bold whitespace-nowrap text-[#eeeeee]"
+          className={`self-center text-3xl font-bold whitespace-nowrap text-[#eeeeee] transition-transform duration-700 ease-in-out hidden sm:block ${
+            isMounted ? "translate-x-0" : "-translate-x-full"
+          }`}
         >
           Josefine Eriksson
         </Link>
@@ -70,41 +74,32 @@ const Navbar = () => {
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent bg-[#7209b7]">
-            <li>
+            <li className="group rounded-full border-2 border-transparent transition-colors duration-300 md:hover:border-[#4cc9f0]">
               <Link
                 href="/"
-                className="group relative block py-2 px-3 text-xl text-[#eeeeee] transition-all duration-300 md:p-0"
+                className="block py-2 px-6 text-xl text-[#eeeeee] transition-all duration-300 md:p-2"
                 aria-current="page"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-[#3a0ca3] group-active:text-[#3a0ca3]">
-                  CV
-                </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-[#4cc9f0] to-[#4361ee] opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300"></span>
+                CV
               </Link>
             </li>
-            <li>
+            <li className="group rounded-full border-2 border-transparent transition-colors duration-300 md:hover:border-[#4cc9f0]">
               <Link
                 href="/ommig"
-                className="group relative block py-2 px-3 text-xl text-[#eeeeee] transition-all duration-300 md:p-0"
+                className="block py-2 px-6 text-xl text-[#eeeeee] transition-all duration-300 md:p-2"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-[#3a0ca3] group-active:text-[#3a0ca3]">
-                  Om mig
-                </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-[#4cc9f0] to-[#4361ee] opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300"></span>
+                Om mig
               </Link>
             </li>
-            <li>
+            <li className="group rounded-full border-2 border-transparent transition-colors duration-300 md:hover:border-[#4cc9f0]">
               <Link
                 href="/portfolio"
-                className="group relative block py-2 px-3 text-xl text-[#eeeeee] transition-all duration-300 md:p-0"
+                className="block py-2 px-6 text-xl text-[#eeeeee] transition-all duration-300 md:p-2"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-[#3a0ca3] group-active:text-[#3a0ca3]">
-                  Portfolio
-                </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-[#4cc9f0] to-[#4361ee] opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300"></span>
+                Portfolio
               </Link>
             </li>
           </ul>

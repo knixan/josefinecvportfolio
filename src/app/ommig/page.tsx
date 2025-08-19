@@ -2,14 +2,14 @@ import Link from "next/link";
 
 const AboutPage = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 mt-20">
+    <div className="max-w-4xl mx-auto px-4 mt-20 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       <main className="About-column">
         {/* Om mig */}
-        <section className="bg-[#ffffff] mb-8 p-8 rounded-md shadow-md text-light-beige">
-          <h2 className="text-[#f72585] border-b-2 border-[#f72585] pb-2 mb-4 text-2xl">
+        <section className="bg-white dark:bg-gray-800 mb-8 p-8 rounded-md shadow-md">
+          <h2 className="text-pink-500 dark:text-pink-400 border-b-2 border-pink-500 dark:border-pink-400 pb-2 mb-4 text-2xl">
             Om mig
           </h2>
-          <p className="mb-4 text-[#333333]">
+          <p className="mb-4 text-gray-700 dark:text-gray-300">
             Hej! Jag heter Josefine och är 40 år gammal. Jag har två
             tonårsdöttrar som är 15 och 16 år. Ursprungligen kommer jag från
             Örebro, men har bott i Hallsberg i 14 år. Den 1 augusti flyttar vi
@@ -30,15 +30,16 @@ const AboutPage = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
+              className="w-full aspect-video"
             ></iframe>
           </div>
         </section>
         {/* Söker */}
-        <section className="bg-[#f5edfa] mb-8 p-8 rounded-md shadow-md text-light-beige">
-          <h2 className="text-[#f72585] border-b-2 border-[#cd95ae] pb-2 mb-4 text-2xl">
+        <section className="bg-gray-50 dark:bg-gray-700 mb-8 p-8 rounded-md shadow-md">
+          <h2 className="text-pink-500 dark:text-pink-400 border-b-2 border-pink-500 dark:border-pink-400 pb-2 mb-4 text-2xl">
             Söker
           </h2>
-          <p className="mb-4 text-[#333333]">
+          <p className="mb-4 text-gray-700 dark:text-gray-300">
             Just nu söker jag främst praktik då jag studerar till
             fullstackutvecklare på Lexicon i Linköping. Vi kommer i slutet av
             året att ha 12 veckors praktik som en del av utbildningen.

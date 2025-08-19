@@ -1,39 +1,64 @@
-import Link from "next/link";
-
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#f72585] to-[#7209b7] w-full border-b border-[#4cc9f0]">
-      <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span className="text-l text-[#eeeeee] sm:text-center">
-          © 2025{" "}
-          <Link href="http://kodochdesign.com/" className="hover:underline">
-            Josefine Eriksson
-          </Link>
-          . All Rights Reserved.
-        </span>
-        <ul className="flex flex-wrap items-center mt-3 text-l font-medium text-[#eeeeee] sm:mt-0">
-          <li>
-            <Link
-              href="https://kodochdesign.se"
-              className="hover:underline me-4 md:me-6"
-            >
-              Kod och Design
-            </Link>
-          </li>
-          <li className="me-4 md:me-6">
-            <a href="tel:+46762484234" className="hover:underline">
-              0762484234
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:josefineeriksson@live.se"
-              className="hover:underline"
-            >
-              josefineeriksson@live.se
-            </a>
-          </li>
-        </ul>
+    <footer className="bg-gray-800 dark:bg-gray-900 text-gray-300 dark:text-gray-400 py-6">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        {/* Vänster kolumn: Kontaktinformation */}
+        <div className="mb-4 md:mb-0">
+          <h4 className="font-semibold text-white dark:text-gray-100 mb-2">
+            Kontakt
+          </h4>
+          <p>Josefine Eriksson</p>
+          <p>Telefon: 0762484234</p>
+          <p>E-post: josefineeriksson@live.se</p>
+          <p>Adress: Norra Strandvägen 1, Mjölby</p>
+        </div>
+
+        {/* Höger kolumn: Länkar */}
+        <div>
+          <h4 className="font-semibold text-white dark:text-gray-100 mb-2">
+            Länkar
+          </h4>
+          <ul className="flex flex-col items-end">
+            <li>
+              <a
+                href="#"
+                className="hover:text-pink-500 dark:hover:text-pink-400"
+              >
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="hover:text-pink-500 dark:hover:text-pink-400"
+              >
+                Instagram
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                className="hover:text-pink-500 dark:hover:text-pink-400"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="hover:text-pink-500 dark:hover:text-pink-400"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="text-center mt-4">
+        <p>© Josefine Eriksson Kod & Design 2025</p>
       </div>
     </footer>
   );
