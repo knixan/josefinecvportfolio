@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
-          className={`self-center text-3xl font-bold whitespace-nowrap text-[#eeeeee] transition-transform duration-700 ease-in-out hidden sm:block ${
+          className={`self-center text-3xl font-bold whitespace-nowrap text-white transition-transform duration-700 ease-in-out hidden sm:block ${
             isMounted ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -100,6 +100,16 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Portfolio
+              </Link>
+            </li>
+
+            <li className="group rounded-full border-2 border-transparent transition-colors duration-300 md:hover:border-[#4cc9f0]">
+              <Link
+                href="https://kodochdesign.se"
+                className="block py-2 px-6 text-xl text-[#eeeeee] transition-all duration-300 md:p-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Kod & Design
               </Link>
             </li>
           </ul>

@@ -11,7 +11,7 @@ const PortfolioPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Projekt 1: Ledningsteknik */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="relative h-60 overflow-hidden">
               <Image
                 src="/Image/mockup-ledningsteknik.jpg"
@@ -22,10 +22,10 @@ const PortfolioPage = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-purple-700 dark:text-purple-400 mb-2">
+              <h3 className="text-2xl font-semibold text-purple-400 mb-2">
                 Ledningsteknik AB
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+              <p className="text-gray-300 text-sm mb-4">
                 Detta är en modern, responsiv och mobilanpassad hemsida
                 utvecklad för Ledningsteknik AB, ett företag verksamt inom
                 relining och rörinspektion i Norr- och Västerbotten, Sverige.
@@ -34,7 +34,7 @@ const PortfolioPage = () => {
                 informerar besökare om företagets tjänster, personal och
                 kontaktvägar.
               </p>
-              <p className="text-gray-600 dark:text-gray-400 font-semibold text-xs mb-4">
+              <p className="text-gray-400 font-semibold text-xs mb-4">
                 **Teknik:** HTML, Tailwind CSS, JavaScript
               </p>
               <Link
@@ -49,7 +49,7 @@ const PortfolioPage = () => {
           </div>
 
           {/* Projekt 2: Memory */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="relative h-60 overflow-hidden">
               <Image
                 src="/Image/memory2spelare.jpg"
@@ -60,15 +60,15 @@ const PortfolioPage = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-purple-700 dark:text-purple-400 mb-2">
+              <h3 className="text-2xl font-semibold text-purple-400 mb-2">
                 🧠 MMemory 2-Spelare
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+              <p className="text-gray-300 text-sm mb-4">
                 Ett klassiskt memory-spel för två spelare där du har 1 minut på
                 dig att hitta alla par. Den spelare som samlar flest poäng
                 vinner. Spelet är utvecklat i HTML, CSS och JavaScript.
               </p>
-              <p className="text-gray-600 dark:text-gray-400 font-semibold text-xs mb-4">
+              <p className="text-gray-400 font-semibold text-xs mb-4">
                 **Teknik:** Javascript, HTML, CSS
               </p>
               <div className="flex flex-col md:flex-row gap-4">
@@ -85,7 +85,7 @@ const PortfolioPage = () => {
           </div>
 
           {/* Projekt 3: Mammas Väder */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="relative h-60 overflow-hidden">
               <Image
                 src="/Image/mockup-mammas.jpg"
@@ -96,17 +96,17 @@ const PortfolioPage = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-purple-700 dark:text-purple-400 mb-2">
+              <h3 className="text-2xl font-semibold text-purple-400 mb-2">
                 Mammas Väder
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+              <p className="text-gray-300 text-sm mb-4">
                 Mammas Väderapp är en väderwebb som ger personliga och konkreta
                 råd från mamma om vad barnen ska ha på sig beroende på vädret.
                 Det är som att alltid ha en omtänksam förälder i fickan som
                 säger Ta på dig mössa! när det snöar eller Glöm inte vatten! när
                 solen gassar.
               </p>
-              <p className="text-gray-600 dark:text-gray-400 font-semibold text-xs mb-4">
+              <p className="text-gray-400 font-semibold text-xs mb-4">
                 **Teknik:** HTML, Tailwind CSS, JavaScript
               </p>
               <div className="flex flex-col md:flex-row gap-4">
@@ -131,7 +131,7 @@ const PortfolioPage = () => {
           </div>
 
           {/* Projekt 4: Skeninge VVS AB */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="relative h-60 overflow-hidden">
               <Image
                 src="/Image/mockup-skeningevvsab.jpg"
@@ -142,16 +142,16 @@ const PortfolioPage = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-purple-700 dark:text-purple-400 mb-2">
+              <h3 className="text-2xl font-semibold text-purple-400 mb-2">
                 Skeninge VVS AB
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+              <p className="text-gray-300 text-sm mb-4">
                 Hemsida för Skeninge VVS AB i Skänninge. Gullig och personlig
                 hemsida för ett litet familjeföretag som jobbar med
                 VVS-tjänster. Hemsidan är responsiv och mobilanpassad, vilket
                 gör den lätt att använda på alla enheter.
               </p>
-              <p className="text-gray-600 dark:text-gray-400 font-semibold text-xs mb-4">
+              <p className="text-gray-400 font-semibold text-xs mb-4">
                 **Teknik:** React Next.js TypeScript Tailwind CSS
               </p>
               <div className="flex flex-col md:flex-row gap-4">
