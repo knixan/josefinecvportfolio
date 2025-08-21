@@ -15,7 +15,7 @@ const PortfolioPage = () => {
             <div className="relative h-60 overflow-hidden">
               <Image
                 src="/Image/mockup-ledningsteknik.jpg"
-                alt="Ledningsteknik"
+                alt="Ledningsteknik AB"
                 fill
                 style={{ objectFit: "cover" }}
                 className="transition-transform duration-300 hover:scale-110"
@@ -35,16 +35,26 @@ const PortfolioPage = () => {
                 kontaktvägar.
               </p>
               <p className="text-gray-400 font-semibold text-xs mb-4">
-                **Teknik:** HTML, Tailwind CSS, JavaScript
+                **Teknik:** React, Next.js, TypeScript, Tailwind CSS
               </p>
-              <Link
-                href="https://ledningsteknik.pages.dev/"
-                className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-blue-500 hover:to-cyan-500 transition-all duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visa projekt
-              </Link>
+              <div className="flex flex-col md:flex-row gap-4">
+                <Link
+                  href="https://ledningsteknik.vercel.app/"
+                  className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 mb-2 md:mb-0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visa projekt
+                </Link>
+                <Link
+                  href="https://github.com/knixan/ledningsteknik"
+                  className="inline-block bg-gradient-to-r from-pink-500 to-purple-700 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-purple-700 hover:to-pink-500 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visa kod (GitHub)
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -107,11 +117,12 @@ const PortfolioPage = () => {
                 solen gassar.
               </p>
               <p className="text-gray-400 font-semibold text-xs mb-4">
-                **Teknik:** HTML, Tailwind CSS, JavaScript
+                **Teknik:** React, Next.js, TypeScript, Tailwind CSS,
+                OpenWeatherMap API
               </p>
               <div className="flex flex-col md:flex-row gap-4">
                 <Link
-                  href="https://mammasvader.pages.dev/"
+                  href="https://mammasvader.vercel.app/"
                   className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 mb-2 md:mb-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -119,7 +130,7 @@ const PortfolioPage = () => {
                   Visa projekt
                 </Link>
                 <Link
-                  href="https://github.com/knixan/mammas-vader"
+                  href="https://github.com/knixan/mammasvader"
                   className="inline-block bg-gradient-to-r from-pink-500 to-purple-700 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-purple-700 hover:to-pink-500 transition-all duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
