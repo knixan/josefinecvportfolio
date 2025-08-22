@@ -140,6 +140,45 @@ const PortfolioPage = () => {
               </div>
             </div>
           </div>
+          <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <div className="relative h-60 overflow-hidden">
+              <Image
+                src="/Image/mockup-blogpropp.jpg"
+                alt="BlogPropP"
+                fill
+                style={{ objectFit: "cover" }}
+                className="transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-2xl font-semibold text-purple-400 mb-2">
+                BlogPropP
+              </h3>
+              <p className="text-gray-300 text-sm mb-4">
+                Detta är ett bloggprojekt byggt med Next.js App Router, Prisma
+                ORM, PostgreSQL och Better Auth. Projektet skapades under en
+                lektion på Lexicon tillsammans med vår lärare Sebastian, där vi
+                gick igenom: - Prisma & PostgreSQL - Hur autentisering fungerar
+                med Better Auth - API-rutter i Next.js Efter lektionerna har
+                projektet stylats med Tailwind CSS för en modern och responsiv
+                design.
+              </p>
+              <p className="text-gray-400 font-semibold text-xs mb-4">
+                **Teknik:** React Next.js TypeScript Tailwind CSS, Shadcn,
+                Prisma, PostgreSQL, Better Auth
+              </p>
+              <div className="flex flex-col md:flex-row gap-4">
+                <Link
+                  href="https://github.com/knixan/blogpropp"
+                  className="inline-block bg-gradient-to-r from-pink-500 to-purple-700 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-purple-700 hover:to-pink-500 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visa kod (GitHub)
+                </Link>
+              </div>
+            </div>
+          </div>
 
           {/* Projekt 4: Skeninge VVS AB */}
           <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
@@ -185,7 +224,7 @@ const PortfolioPage = () => {
               </div>
             </div>
           </div>
-          {/* Projekt 3: Mammas Väder */}
+          {/* Projekt 3: Todo */}
           <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="relative h-60 overflow-hidden">
               <Image
