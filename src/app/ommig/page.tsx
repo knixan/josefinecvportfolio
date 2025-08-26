@@ -44,33 +44,38 @@ const AboutPage = () => {
             året. Jag brinner för att skapa webbplatser som är både funktionella
             och visuellt tilltalande.
             <br /> <br />
-            Med bakgrund inom webbdesign och grafisk design har jag nu valt att
-            fördjupa mig inom fullstackutveckling för att behärska hela
-            processen – från idé till färdig lösning. <br /> <br /> Mitt mål är
-            att arbeta med utveckling av responsiva och användarvänliga
-            webbplatser där design och teknik samspelar för att ge en optimal
-            användarupplevelse. Jag har även erfarenhet av eget företagande, där
-            jag drev en webbutik och sålde produkter jag själv designat.
           </p>
         </section>
 
         <section className="bg-gray-700 mb-8 p-8 rounded-md shadow-md">
           <h2 className="text-pink-400 border-b-2 border-pink-400 pb-2 mb-4 text-2xl">
-            Kod och Design
+            Bakgrund
           </h2>
           <p className="mb-4 text-gray-300">
-            Kod och Design är ett projekt som föddes ur min passion för att
-            skapa vackra och funktionella webblösningar. Som fullstackutvecklare
-            kombinerar jag modern design med ren och effektiv kod för att hjälpa
-            företag och privatpersoner att förverkliga sina digitala idéer. Jag
-            tror på ett nära samarbete med mina kunder för att säkerställa att
-            varje projekt blir en framgång, oavsett om det handlar om en enklare
-            landningssida eller en mer komplex webbapplikation. I framtiden vill
-            jag erbjuda prisvärda lösningar som gör professionella webbplatser
-            tillgängliga för alla budgetar. Men till en början kommer jag att
-            fokusera på att bygga upp en stark portfolio och skapa project åt
-            mig, vänner och företag tills jag känner mig redo att ta emot
-            kunder.
+            Jag är en passionerad fullstackutvecklare som älskar att skapa
+            digitala upplevelser från grunden. Min resa inom IT började redan
+            2007 när jag gick IT-programmet på Kristinehamns folkhögskola.
+            Samtidigt designade jag banners och bloggar åt vänner och bekanta –
+            ofta fick jag frågor om hur man lade in koden. Även om jag inte
+            kunde det då, tog jag snabbt reda på hur det fungerade, och snart
+            hade jag designat hundratals bloggar på plattformar som Blogg.se och
+            Blogspot. När bloggandet senare minskade i popularitet fortsatte jag
+            att utforska digitalt skapande genom att designa kläder i spel och
+            skriva enklare script – fortfarande på hobbynivå. År 2016 startade
+            jag en egen webbutik där jag sålde egendesignade posters,
+            nyckelringar och andra produkter, både via min egen plattform och
+            genom återförsäljare som Fyndiq. Efter några år kände jag dock att
+            entreprenörskapet tog mer fokus från min kreativitet, och jag valde
+            att ta en paus från IT-världen. Idag är jag tillbaka där jag trivs
+            bäst – i IT. Jag har utbildat mig till fullstackutvecklare för att
+            kunna förena min erfarenhet inom grafisk design och webbdesign med
+            systemutveckling, och på så sätt bygga helhetslösningar från backend
+            till frontend. Det jag uppskattar mest är att få följa en idé hela
+            vägen – från en enkel skiss till en färdig, interaktiv webbplats.
+            För mig är kod och design en kreativ process där varje beslut bidrar
+            till en bättre användarupplevelse. Jag drivs av utmaningen att skapa
+            lösningar som är både estetiska och funktionella, och jag ser fram
+            emot att bidra till att förverkliga digitala visioner.
             <Image
               src="/Image/kodochdesign.png"
               alt="Kod och Design"

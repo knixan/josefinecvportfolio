@@ -106,6 +106,8 @@ const Navbar = () => {
             <li className="group rounded-full border-2 border-transparent transition-colors duration-300 md:hover:border-[#4cc9f0]">
               <Link
                 href="https://kodochdesign.se"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block py-2 px-6 text-xl text-[#eeeeee] transition-all duration-300 md:p-2"
                 onClick={() => setIsOpen(false)}
               >
