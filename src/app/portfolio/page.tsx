@@ -10,6 +10,51 @@ const PortfolioPage = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Projekt 4: GammelByggnadsmåleri */}
+          <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <div className="relative h-60 overflow-hidden">
+              <Image
+                src="/Image/mockup-gammelbyggnadsmaleri.jpg"
+                alt="Gammelbyggnads måleri"
+                fill
+                style={{ objectFit: "cover" }}
+                className="transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-2xl font-semibold text-purple-400 mb-2">
+                Gammel Byggnadsmåleri
+              </h3>
+              <p className="text-gray-300 text-sm mb-4">
+                Exempel på hur jag skapar digitala lösningar som fångar essensen
+                av mina kunders verksamhet. För Gammel Byggnadsmåleri har jag
+                strävat efter att balansera det traditionella och tidlösa med
+                ett modernt och funktionellt uttryck. Webbplatsen är byggd med
+                Next.js för att erbjuda en robust och skalbar plattform.
+              </p>
+              <p className="text-gray-400 font-semibold text-xs mb-4">
+                **Teknik:** React Next.js TypeScript Tailwind CSS
+              </p>
+              <div className="flex flex-col md:flex-row gap-4">
+                <Link
+                  href="https://gammelbyggnadsmaleri.vercel.app/"
+                  className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 mb-2 md:mb-0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visa projekt
+                </Link>
+                <Link
+                  href="https://github.com/knixan/gammelbyggnadsmaleri"
+                  className="inline-block bg-gradient-to-r from-pink-500 to-purple-700 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-purple-700 hover:to-pink-500 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visa kod (GitHub)
+                </Link>
+              </div>
+            </div>
+          </div>
           {/* Projekt 1: Ledningsteknik */}
           <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="relative h-60 overflow-hidden">
@@ -224,51 +269,7 @@ const PortfolioPage = () => {
               </div>
             </div>
           </div>
-          {/* Projekt 4: GammelByggnadsmåleri */}
-          <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-            <div className="relative h-60 overflow-hidden">
-              <Image
-                src="/Image/mockup-gammelbyggnadsmaleri.jpg"
-                alt="Gammelbyggnads måleri"
-                fill
-                style={{ objectFit: "cover" }}
-                className="transition-transform duration-300 hover:scale-110"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold text-purple-400 mb-2">
-                Gammel Byggnadsmåleri
-              </h3>
-              <p className="text-gray-300 text-sm mb-4">
-                Exempel på hur jag skapar digitala lösningar som fångar essensen
-                av mina kunders verksamhet. För Gammel Byggnadsmåleri har jag
-                strävat efter att balansera det traditionella och tidlösa med
-                ett modernt och funktionellt uttryck. Webbplatsen är byggd med
-                Next.js för att erbjuda en robust och skalbar plattform.
-              </p>
-              <p className="text-gray-400 font-semibold text-xs mb-4">
-                **Teknik:** React Next.js TypeScript Tailwind CSS
-              </p>
-              <div className="flex flex-col md:flex-row gap-4">
-                <Link
-                  href="https://gammelbyggnadsmaleri.vercel.app/"
-                  className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 mb-2 md:mb-0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Visa projekt
-                </Link>
-                <Link
-                  href="https://github.com/knixan/gammelbyggnadsmaleri"
-                  className="inline-block bg-gradient-to-r from-pink-500 to-purple-700 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-purple-700 hover:to-pink-500 transition-all duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Visa kod (GitHub)
-                </Link>
-              </div>
-            </div>
-          </div>
+
           {/* Projekt 3: Todo */}
           <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="relative h-60 overflow-hidden">
