@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
-          className={`self-center text-3xl font-bold whitespace-nowrap text-white transition-transform duration-700 ease-in-out hidden sm:block ${
+          className={`self-center text-3xl font-bold whitespace-nowrap text-white transition-transform duration-700  ${
             isMounted ? "translate-x-0" : "-translate-x-full"
           }`}
         >
