@@ -55,6 +55,57 @@ const PortfolioPage = () => {
               </div>
             </div>
           </div>
+
+          {/* B-Movies */}
+          <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <div className="relative h-60 overflow-hidden">
+              <Image
+                src="/Image/mockup-bmovies.jpg"
+                alt="B-movies"
+                fill
+                style={{ objectFit: "cover" }}
+                className="transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-2xl font-semibold text-purple-400 mb-2">
+                B-Movies
+              </h3>
+              <p className="text-gray-300 text-sm mb-4">
+                Pågående skolprojekt: E-handel för B-movies. Projektidén kom
+                från vårt gruppnamn ’Beta’, vilket utvecklades till temat
+                B-movies. Jag har ansvarat för större delen av frontend med
+                Tailwind och Shadcn samt implementerat centrala funktioner:
+                cookies för varukorg och kassa, databashantering av kunder och
+                ordrar, filmkort och carousel via API, adminsidor, checkout- och
+                tack-sida med orderspecifikation, kundtjänstsida med formulär
+                samt inloggnings- och registreringspopups.
+              </p>
+              <p className="text-gray-400 font-semibold text-xs mb-4">
+                **Teknik:** React, Next.js, TypeScript, Tailwind CSS, Shadcn,
+                PostgreSQL, Prisma, Zod, BetterAuth
+              </p>
+              <div className="flex flex-col md:flex-row gap-4">
+                {/* <Link
+                  href="https://ledningsteknik.vercel.app/"
+                  className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 mb-2 md:mb-0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visa projekt
+                </Link>
+                <Link
+                  href="https://github.com/knixan/ledningsteknik"
+                  className="inline-block bg-gradient-to-r from-pink-500 to-purple-700 text-white font-bold py-2 px-6 rounded-full text-sm hover:from-purple-700 hover:to-pink-500 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visa kod (GitHub)
+                </Link> */}
+              </div>
+            </div>
+          </div>
+
           {/* Projekt 1: Ledningsteknik */}
           <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="relative h-60 overflow-hidden">
