@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Gammel Byggnadsmåleri",
+    "description": "Exempel på hur jag skapar digitala lösningar som fångar essensen av mina kunders verksamhet. För Gammel Byggnadsmåleri har jag strävat efter att balansera det traditionella och tidlösa med ett modernt och funktionellt uttryck. Webbplatsen är byggd med Next.js för att erbjuda en robust och skalbar plattform.",
+    "image": "/Image/mockup-gammelbyggnadsmaleri.jpg",
+    "alt": "Gammelbyggnads måleri",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS",
+    "projectLink": "https://gammelbyggnadsmaleri.vercel.app/",
+    "codeLink": "https://github.com/knixan/gammelbyggnadsmaleri"
+  },
+  {
+    "title": "B-Movies",
+    "description": "Pågående skolprojekt: E-handel för B-movies. Projektidén kom från vårt gruppnamn ’Beta’, vilket utvecklades till temat B-movies. Jag har ansvarat för större delen av frontend med Tailwind och Shadcn samt implementerat centrala funktioner: cookies för varukorg och kassa, databashantering av kunder och ordrar, filmkort och carousel via API, adminsidor, checkout- och tack-sida med orderspecifikation, kundtjänstsida med formulär samt inloggnings- och registreringspopups.",
+    "image": "/Image/mockup-bmovies.jpg",
+    "alt": "B-movies",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth"
+  },
+  {
+    "title": "Ledningsteknik AB",
+    "description": "Detta är en modern, responsiv och mobilanpassad hemsida utvecklad för Ledningsteknik AB, ett företag verksamt inom relining och rörinspektion i Norr- och Västerbotten, Sverige. Syftet med projektet var att uppdatera deras gamla hemsida och skapa en modern, tydlig, lättnavigerad och visuell webbplats som informerar besökare om företagets tjänster, personal och kontaktvägar.",
+    "image": "/Image/mockup-ledningsteknik.jpg",
+    "alt": "Ledningsteknik AB",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS",
+    "projectLink": "https://ledningsteknik.vercel.app/",
+    "codeLink": "https://github.com/knixan/ledningsteknik"
+  },
+  {
+    "title": "Memory 2-Spelare",
+    "description": "Ett klassiskt memory-spel för två spelare där du har 1 minut på dig att hitta alla par. Den spelare som samlar flest poäng vinner. Spelet är utvecklat i HTML, CSS och JavaScript.",
+    "image": "/Image/memory2spelare.jpg",
+    "alt": "Memory 2-Spelare",
+    "tech": "JavaScript, HTML, CSS",
+    "codeLink": "https://github.com/knixan/memory2spelare"
+  },
+  {
+    "title": "Mammas Väder",
+    "description": "Mammas Väderapp är en väderwebb som ger personliga och konkreta råd från mamma om vad barnen ska ha på sig beroende på vädret. Det är som att alltid ha en omtänksam förälder i fickan som säger 'Ta på dig mössa!' när det snöar eller 'Glöm inte vatten!' när solen gassar.",
+    "image": "/Image/mockup-mammas.jpg",
+    "alt": "Mammas Väder",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS, OpenWeatherMap API",
+    "projectLink": "https://mammasvader.vercel.app/",
+    "codeLink": "https://github.com/knixan/mammasvader"
+  },
+  {
+    "title": "BlogPropP",
+    "description": "Detta är ett bloggprojekt byggt med Next.js App Router, Prisma ORM, PostgreSQL och Better Auth. Projektet skapades under en lektion på Lexicon tillsammans med vår lärare Sebastian, där vi gick igenom Prisma & PostgreSQL, autentisering med Better Auth samt API-rutter i Next.js. Efter lektionerna har projektet stylats med Tailwind CSS för en modern och responsiv design.",
+    "image": "/Image/mockup-blogpropp.jpg",
+    "alt": "BlogPropP",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, Prisma, PostgreSQL, Better Auth",
+    "codeLink": "https://github.com/knixan/blogpropp"
+  },
+  {
+    "title": "Skeninge VVS AB",
+    "description": "Hemsida för Skeninge VVS AB i Skänninge. Gullig och personlig hemsida för ett litet familjeföretag som jobbar med VVS-tjänster. Hemsidan är responsiv och mobilanpassad, vilket gör den lätt att använda på alla enheter.",
+    "image": "/Image/mockup-skeningevvsab.jpg",
+    "alt": "Skeninge VVS AB",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS",
+    "projectLink": "https://skeningevvs.se/",
+    "codeLink": "https://github.com/knixan/skeningevvsab"
+  },
+  {
+    "title": "Todo Webapplikation",
+    "description": "En modern Todo app. Skapa, läs, uppdatera och ta bort. Ljust/mörkt läge.",
+    "image": "/Image/mockup-todoprisma.jpg",
+    "alt": "Todo-prisma",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, Prisma, PostgreSQL",
+    "codeLink": "https://github.com/knixan/todoprisma"
+  }
+]
