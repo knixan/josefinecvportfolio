@@ -203,7 +203,8 @@ const cvPage = () => {
                     title: "Webbdesigner (sido project)",
                     period: "Pågående - tills vidare",
                     company: "kodochdesign.se",
-                    description: "Responsiva webbplatser",
+                    description:
+                      "Kombinerar teknik och design för att skapa helhetslösningar – från modern kod och användarvänliga UX/UI-gränssnitt till visuella identiteter med logotyper, banners och trycksaker. Fokus på professionella och engagerande lösningar som stärker varumärken och tjänster.",
                     gradient: "from-purple-500 to-pink-500",
                   },
                   {
