@@ -156,7 +156,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   width={1200}
                   height={800}
                   className="rounded-2xl shadow-2xl max-w-full max-h-[70vh] w-auto h-auto object-contain"
-                  quality={95}
+                  quality={800}
                 />
               </div>
             </div>
