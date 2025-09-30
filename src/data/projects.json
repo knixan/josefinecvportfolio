@@ -1,7 +1,16 @@
 [
+    {
+    "title": "Kod och Design",
+    "description": "Frilans project",
+    "image": "/Image/mockup-kodochdesign-tai.png",
+    "alt": "Kod och Design",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS",
+    "projectLink": "https://kodochdesign.se"
+    
+  },
   {
     "title": "Gammel Byggnadsmåleri",
-    "description": "Exempel på hur jag skapar digitala lösningar som fångar essensen av mina kunders verksamhet. För Gammel Byggnadsmåleri har jag strävat efter att balansera det traditionella och tidlösa med ett modernt och funktionellt uttryck. Webbplatsen är byggd med Next.js för att erbjuda en robust och skalbar plattform.",
+    "description": "För Gammel Byggnadsmåleri har jag strävat efter att balansera det traditionella och tidlösa med ett modernt och funktionellt uttryck. Webbplatsen är byggd med Next.js för att erbjuda en robust och skalbar plattform.",
     "image": "/Image/mockup-gammelbyggnadsmaleri.jpg",
     "alt": "Gammelbyggnads måleri",
     "tech": "React, Next.js, TypeScript, Tailwind CSS",
@@ -10,10 +19,11 @@
   },
   {
     "title": "B-Movies",
-    "description": "Pågående skolprojekt: E-handel för B-movies. Projektidén kom från vårt gruppnamn ’Beta’, vilket utvecklades till temat B-movies. Jag har ansvarat för större delen av frontend med Tailwind och Shadcn samt implementerat centrala funktioner: cookies för varukorg och kassa, databashantering av kunder och ordrar, filmkort och carousel via API, adminsidor, checkout- och tack-sida med orderspecifikation, kundtjänstsida med formulär samt inloggnings- och registreringspopups.",
+    "description": "Pågående skolprojekt: E-handel för B-movies. Projektidén kom från vårt gruppnamn ’Beta’, vilket utvecklades till temat B-movies. Målet är att skapa en e-handelsplattform där användare kan bläddra bland och köpa B-filmer. Projektet använder Next.js App Router, Prisma ORM, PostgreSQL och Better Auth för autentisering. Designen är responsiv och mobilanpassad med hjälp av Tailwind CSS och Shadcn UI-komponenter.",
     "image": "/Image/mockup-bmovies.jpg",
     "alt": "B-movies",
-    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth"
+    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
+    "codeLink": "https://github.com/knixan/b-movies"
   },
   {
     "title": "Ledningsteknik AB",
@@ -25,12 +35,13 @@
     "codeLink": "https://github.com/knixan/ledningsteknik"
   },
   {
-    "title": "Memory 2-Spelare",
-    "description": "Ett klassiskt memory-spel för två spelare där du har 1 minut på dig att hitta alla par. Den spelare som samlar flest poäng vinner. Spelet är utvecklat i HTML, CSS och JavaScript.",
-    "image": "/Image/memory2spelare.jpg",
-    "alt": "Memory 2-Spelare",
-    "tech": "JavaScript, HTML, CSS",
-    "codeLink": "https://github.com/knixan/memory2spelare"
+    "title": "Memory for Studdy",
+    "description": "Detta spel är utvecklat med pedagogisk medvetenhet för att hjälpa barn och ungdomar med särskilda behov att: - Memorera historiska fakta på ett visuellt och engagerande sätt - Förbereda sig inför prov",
+    "image": "/Image/memoryforstuddies.png",
+    "alt": "Memory for Studdy",
+    "tech": "React Next js, Typescript, Tailwind",
+     "projectLink": "https://memoryforstuddy.vercel.app/",
+    "codeLink": "https://github.com/knixan/memory-for-studdy"
   },
   {
     "title": "Mammas Väder",
