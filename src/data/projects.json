@@ -8,7 +8,46 @@
     "projectLink": "https://kodochdesign.se"
     
   },
+
   {
+    "title": "B-Movies",
+    "description": "Skolproject - Projektidén kom från vårt gruppnamn ’Beta’, vilket utvecklades till temat B-movies. Målet är att skapa en e-handelsplattform där användare kan bläddra bland och köpa B-filmer. Projektet använder Next.js App Router, Prisma ORM, PostgreSQL och Better Auth för autentisering. Designen är responsiv och mobilanpassad med hjälp av Tailwind CSS och Shadcn UI-komponenter.",
+    "image": "/Image/mockup-bmovies.jpg",
+    "alt": "B-movies",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
+    "codeLink": "https://github.com/knixan/b-movies"
+  },
+ {
+    "title": "Väderskuggan",
+    "description": "Väderskuggan är en ren och intuitiv väderapplikation som tillhandahåller väderdata i realtid och för den kommande tiden för svenska platser. Applikationen visar olika kommentarer beroende på vad det är för väder",
+    "image": "/Image/mockup-vaderskuggan.png",
+    "alt": "Ledningsteknik AB",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS, API",
+    "projectLink": "https://vaderskuggan.vercel.app/",
+    "codeLink": "https://github.com/knixan/vaderskuggan"
+  },
+
+   {
+    "title": "Studenthubben",
+    "description": "Denna mockup är byggd med Next.js, React och Material UI, och illustrerar hur ett studentcommunity kan se ut – med fokus på nätverkande, samarbete och tillgänglighet för studenter, kårer och arbetsgivare.",
+    "image": "/Image/mockup-studenthubben.png",
+    "alt": "Studenthubben",
+    "tech": "React, Next.js, TypeScript, Material UI",
+    "projectLink": "https://studenthubben-six.vercel.app/",
+    "codeLink": "https://github.com/knixan/studenthubben"
+  },
+
+ {
+    "title": "Sweettime-UF",
+    "description": "Sweet Time UF är en Next.js-applikation byggd för att visa och sälja premiumgodis i bulk. Projektet använder Next.js App Router, Tailwind CSS och TypeScript, och är strukturerat för enkel vidareutveckling och distribution. Apllikationen visar olika kommentarer beroende på vad det är för väder",
+    "image": "/Image/mockup-sweettime-uf.png",
+    "alt": "Sweettime-UF",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS",
+    "projectLink": "https://sweettime-uf.se/",
+    "codeLink": "https://github.com/Ludde2525/sweettime/tree/main"
+  },
+   
+ {
     "title": "Gammel Byggnadsmåleri",
     "description": "För Gammel Byggnadsmåleri har jag strävat efter att balansera det traditionella och tidlösa med ett modernt och funktionellt uttryck. Webbplatsen är byggd med Next.js för att erbjuda en robust och skalbar plattform.",
     "image": "/Image/mockup-gammelbyggnadsmaleri.jpg",
@@ -16,14 +55,6 @@
     "tech": "React, Next.js, TypeScript, Tailwind CSS",
     "projectLink": "https://gammelbyggnadsmaleri.vercel.app/",
     "codeLink": "https://github.com/knixan/gammelbyggnadsmaleri"
-  },
-  {
-    "title": "B-Movies",
-    "description": "Pågående skolprojekt: E-handel för B-movies. Projektidén kom från vårt gruppnamn ’Beta’, vilket utvecklades till temat B-movies. Målet är att skapa en e-handelsplattform där användare kan bläddra bland och köpa B-filmer. Projektet använder Next.js App Router, Prisma ORM, PostgreSQL och Better Auth för autentisering. Designen är responsiv och mobilanpassad med hjälp av Tailwind CSS och Shadcn UI-komponenter.",
-    "image": "/Image/mockup-bmovies.jpg",
-    "alt": "B-movies",
-    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
-    "codeLink": "https://github.com/knixan/b-movies"
   },
   {
     "title": "Ledningsteknik AB",
@@ -34,13 +65,31 @@
     "projectLink": "https://ledningsteknik.vercel.app/",
     "codeLink": "https://github.com/knixan/ledningsteknik"
   },
+   {
+    "title": "BlogPropP",
+    "description": "Detta är ett bloggprojekt byggt med Next.js App Router, Prisma ORM, PostgreSQL och Better Auth. ",
+    "image": "/Image/mockup-blogpropp.jpg",
+    "alt": "BlogPropP",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, Prisma, PostgreSQL, Better Auth",
+    "codeLink": "https://github.com/knixan/blogpropp"
+  }, 
+   
+    {
+    "title": "Skeninge VVS AB",
+    "description": "Hemsida för Skeninge VVS AB i Skänninge. Gullig och personlig hemsida för ett litet familjeföretag som jobbar med VVS-tjänster. Hemsidan är responsiv och mobilanpassad, vilket gör den lätt att använda på alla enheter.",
+    "image": "/Image/mockup-skeningevvsab.jpg",
+    "alt": "Skeninge VVS AB",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS",
+    "projectLink": "https://skeningevvs.se/",
+    "codeLink": "https://github.com/knixan/skeningevvsab"
+  },
   {
-    "title": "Memory for Studdy",
+    "title": "Memory för plugg",
     "description": "Detta spel är utvecklat med pedagogisk medvetenhet för att hjälpa barn och ungdomar med särskilda behov att: - Memorera historiska fakta på ett visuellt och engagerande sätt - Förbereda sig inför prov",
     "image": "/Image/memoryforstuddies.png",
     "alt": "Memory for Studdy",
     "tech": "React Next js, Typescript, Tailwind",
-     "projectLink": "https://memoryforstuddy.vercel.app/",
+     "projectLink": "https://memoryforplugg.vercel.app/",
     "codeLink": "https://github.com/knixan/memory-for-studdy"
   },
   {
@@ -52,23 +101,9 @@
     "projectLink": "https://mammasvader.vercel.app/",
     "codeLink": "https://github.com/knixan/mammasvader"
   },
-  {
-    "title": "BlogPropP",
-    "description": "Detta är ett bloggprojekt byggt med Next.js App Router, Prisma ORM, PostgreSQL och Better Auth. Projektet skapades under en lektion på Lexicon tillsammans med vår lärare Sebastian, där vi gick igenom Prisma & PostgreSQL, autentisering med Better Auth samt API-rutter i Next.js. Efter lektionerna har projektet stylats med Tailwind CSS för en modern och responsiv design.",
-    "image": "/Image/mockup-blogpropp.jpg",
-    "alt": "BlogPropP",
-    "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, Prisma, PostgreSQL, Better Auth",
-    "codeLink": "https://github.com/knixan/blogpropp"
-  },
-  {
-    "title": "Skeninge VVS AB",
-    "description": "Hemsida för Skeninge VVS AB i Skänninge. Gullig och personlig hemsida för ett litet familjeföretag som jobbar med VVS-tjänster. Hemsidan är responsiv och mobilanpassad, vilket gör den lätt att använda på alla enheter.",
-    "image": "/Image/mockup-skeningevvsab.jpg",
-    "alt": "Skeninge VVS AB",
-    "tech": "React, Next.js, TypeScript, Tailwind CSS",
-    "projectLink": "https://skeningevvs.se/",
-    "codeLink": "https://github.com/knixan/skeningevvsab"
-  },
+ 
+  
+
   {
     "title": "Todo Webapplikation",
     "description": "En modern Todo app. Skapa, läs, uppdatera och ta bort. Ljust/mörkt läge.",

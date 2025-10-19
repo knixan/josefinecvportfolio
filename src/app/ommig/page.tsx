@@ -22,15 +22,9 @@ const AboutPage = () => {
               </h2>
 
               <p className="text-slate-300 text-lg mb-8 leading-relaxed font-light">
-                Hej! Jag heter Josefine och är 40 år, och jag bor numera i
-                Mjölby. Jag är ursprungligen från Örebro och har två
-                tonårsdöttrar. Jag är en driven och målmedveten person som ser
-                positivt på nya utmaningar och utveckling.
-                <br />
-                <br />
-                Min fritid ägnar jag åt att umgås med familj och vänner, vara
-                ute i naturen, spela piano och datorspel samt utöva olika typer
-                av hantverk.
+              Jag heter Josefine, är 40 år och bor i Mjölby med mina två tonårsdöttrar. Jag ser mig själv som driven och gillar att ta mig an nya utmaningar – utveckling är något jag värdesätter högt.
+
+<br/><br/> När jag inte kodar gillar jag att vara ute i naturen, spela piano och umgås med nära och kära. Att pyssla med hantverk eller spela datorspel är också ett bra sätt att koppla av.
               </p>
 
               {/* Video Section */}
@@ -69,10 +63,7 @@ const AboutPage = () => {
               </h2>
 
               <p className="text-slate-300 text-lg leading-relaxed font-light">
-                Jag studerar för närvarande till fullstackutvecklare på Lexicon
-                i Linköping och söker en 12-veckors praktikplats med start i
-                slutet av året. Jag brinner för att skapa webbplatser som är
-                både funktionella och visuellt tilltalande.
+                Jag studerar just nu till fullstackutvecklare på Lexicon i Linköping. Jag brinner för att bygga webbplatser som är både snygga och funktionella.
               </p>
             </div>
           </section>
@@ -88,44 +79,14 @@ const AboutPage = () => {
 
               <div className="space-y-6">
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Jag är en passionerad fullstackutvecklare som älskar att skapa
-                  digitala upplevelser från grunden. Min resa inom IT började
-                  redan 2007 när jag gick IT-programmet på Kristinehamns
-                  folkhögskola. Samtidigt designade jag banners och bloggar åt
-                  vänner och bekanta – ofta fick jag frågor om hur man lade in
-                  koden. Även om jag inte kunde det då, tog jag snabbt reda på
-                  hur det fungerade, och snart hade jag designat hundratals
-                  bloggar på plattformar som Blogg.se och Blogspot.
+                  Mitt intresse för IT började redan 2007. Jag har alltid älskat att skapa digitalt – allt från att designa bloggar och banners till att skriva enklare script och starta en egen webbutik för designade produkter.
                 </p>
 
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  När bloggandet senare minskade i popularitet fortsatte jag att
-                  utforska digitalt skapande genom att designa kläder i spel och
-                  skriva enklare script – fortfarande på hobbynivå. År 2016
-                  startade jag en egen webbutik där jag sålde egendesignade
-                  posters, nyckelringar och andra produkter, både via min egen
-                  plattform och genom återförsäljare som Fyndiq. Efter några år
-                  kände jag dock att entreprenörskapet tog mer fokus från min
-                  kreativitet, och jag valde att ta en paus från IT-världen.
+                 Efter en paus är jag nu tillbaka där jag trivs bäst: i IT-världen. Som fullstackutvecklare får jag använda både min erfarenhet av design och systemutveckling. Det bästa är att få se en idé växa, från en enkel skiss till en komplett och interaktiv webbplats. För mig är kod och design en kreativ process, där målet alltid är att skapa den bästa användarupplevelsen. Jag ser fram emot att bidra med mina kunskaper och förverkliga nya digitala visioner.
                 </p>
 
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Idag är jag tillbaka där jag trivs bäst – i IT. Jag har
-                  utbildat mig till fullstackutvecklare för att kunna förena min
-                  erfarenhet inom grafisk design och webbdesign med
-                  systemutveckling, och på så sätt bygga helhetslösningar från
-                  backend till frontend. Det jag uppskattar mest är att få följa
-                  en idé hela vägen – från en enkel skiss till en färdig,
-                  interaktiv webbplats.
-                </p>
-
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  För mig är kod och design en kreativ process där varje beslut
-                  bidrar till en bättre användarupplevelse. Jag drivs av
-                  utmaningen att skapa lösningar som är både estetiska och
-                  funktionella, och jag ser fram emot att bidra till att
-                  förverkliga digitala visioner.
-                </p>
+               
 
                 {/* Image with styling */}
                 <div className="flex justify-center mt-8">
