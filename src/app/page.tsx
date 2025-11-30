@@ -21,6 +21,10 @@ const programs = [
   "JavaScript",
   "TypeScript",
   "Prisma",
+  "Sanity CMS",
+  "Material UI",
+  "Zod",
+  "Azure",
   "PostgreSQL",
   "SQL",
   "React",
@@ -32,7 +36,7 @@ const programs = [
 
 const languages = ["Svenska", "Engelska"];
 
-const certifications = ["Truckkort", "B-kort - pågående"];
+
 
 const cvPage = () => {
   return (
@@ -164,7 +168,6 @@ const cvPage = () => {
                     </div>
                   </div>
 
-                  {/* Certifications */}
                 
                 </div>
               </div>
