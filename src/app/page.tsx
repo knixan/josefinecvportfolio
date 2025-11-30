@@ -165,21 +165,7 @@ const cvPage = () => {
                   </div>
 
                   {/* Certifications */}
-                  <div>
-                    <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-rose-400 to-cyan-400 bg-clip-text text-transparent">
-                      Körkort
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {certifications.map((certification, index) => (
-                        <span
-                          key={index}
-                          className="backdrop-blur-xl bg-cyan-500/20 border border-cyan-300/30 text-cyan-200 text-xs font-semibold px-3 py-2 rounded-full hover:bg-cyan-500/30 transition-colors duration-300"
-                        >
-                          {certification}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                
                 </div>
               </div>
             </div>
@@ -201,10 +187,10 @@ const cvPage = () => {
                 {[
                     {
                     title: "Frontend utvecklare React Next.js Material UI",
-                    period: "Pågående - tills Maj 2026",
+                    period: "Pågående - Maj 2026",
                     company: "hitract.se",
                     description:
-                    "hitract.se är en plattform för Studeter och studentkårer. En lia tjänst för jag jobbar med Frontend utveckling med React, Next,js och Matierial UI efter Figma design från UX/UI designer.",
+                    "LIA - Praktik hitract.se är en plattform för Studeter och studentkårer. Arbetar med Frontend utveckling i React, Next,js med Matierial UI efter Figma design från UX/UI designer.",
                     gradient: "from-purple-500 to-pink-500",
                   },
 
