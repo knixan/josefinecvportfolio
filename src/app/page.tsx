@@ -199,8 +199,17 @@ const cvPage = () => {
 
               <div className="space-y-8">
                 {[
+                    {
+                    title: "Frontend utvecklare React Next.js Material UI",
+                    period: "Pågående - tills Maj 2026",
+                    company: "hitract.se",
+                    description:
+                    "hitract.se är en plattform för Studeter och studentkårer. En lia tjänst för jag jobbar med Frontend utveckling med React, Next,js och Matierial UI efter Figma design från UX/UI designer.",
+                    gradient: "from-purple-500 to-pink-500",
+                  },
+
                   {
-                    title: "Webbdesigner (sido project)",
+                    title: "Fullstack utvecklare / Webbdesigner (sido project)",
                     period: "Pågående - tills vidare",
                     company: "kodochdesign.se",
                     description:
