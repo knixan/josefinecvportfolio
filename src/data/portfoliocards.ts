@@ -82,6 +82,16 @@ export const projects: Project[] = [
     "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, Prisma, PostgreSQL, Better Auth",
     "codeLink": "https://github.com/knixan/blogpropp"
   }, 
+
+      {
+    "title": "Jonny Eriksson - Kosnstnär",
+    "description": "Hemsida för konstnären Jonny Eriksson. En enkel och stilren portfoliohemsida för att visa upp hans konstverk och kontaktinformation.",
+    "image": "/Image/mockup-jonnyeriksson.png",
+    "alt": "Jonny Eriksson - Kosnstnär",
+    "tech": "React, Next.js, TypeScript, Tailwind CSS",
+    "projectLink": "https://jonnyeriksson.vercel.app/",
+    "codeLink": "https://github.com/knixan/jonnyeriksson-ART"
+  },
    
     {
     "title": "Skeninge VVS AB",
