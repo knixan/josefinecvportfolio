@@ -1,15 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import projects from "@/data/projects.json";
-
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-  alt: string;
-  tech: string;
-  projectLink?: string;
-  codeLink?: string;
-}
+import { projects } from "@/data/portfoliocards";
 
 export default function Portfolio() {
   return (
@@ -19,7 +9,7 @@ export default function Portfolio() {
           Min Portfolio
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {(projects as Project[]).map((project: Project, index: number) => (
+          {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>

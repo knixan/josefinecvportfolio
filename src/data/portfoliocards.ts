@@ -1,12 +1,21 @@
-[
-    {
-    "title": "Kod och Design",
-    "description": "Frilans project",
-    "image": "/Image/mockup-kodochdesign-tai.png",
-    "alt": "Kod och Design",
-    "tech": "React, Next.js, TypeScript, Tailwind CSS",
-    "projectLink": "https://kodochdesign.se"
-    
+export interface Project {
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+  tech: string;
+  projectLink?: string;
+  codeLink?: string;
+}
+
+export const projects: Project[] = [
+  {
+    title: "Kod och Design",
+    description: "Frilans project",
+    image: "/Image/mockup-kodochdesign-tai.png",
+    alt: "Kod och Design",
+    tech: "React, Next.js, TypeScript, Tailwind CSS",
+    projectLink: "https://kodochdesign.se"
   },
 
   {
