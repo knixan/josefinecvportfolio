@@ -21,9 +21,14 @@ export default function AboutMe() {
               </h2>
 
               <p className="text-slate-300 text-lg mb-8 leading-relaxed font-light">
-              Jag heter Josefine, är 40 år och bor i Mjölby med mina två tonårsdöttrar. Jag ser mig själv som driven och gillar att ta mig an nya utmaningar – utveckling är något jag värdesätter högt.
-
-<br/><br/> När jag inte kodar gillar jag att vara ute i naturen, spela piano och umgås med nära och kära. Att pyssla med hantverk eller spela datorspel är också ett bra sätt att koppla av.
+                Jag heter Josefine, är 40 år och bor i Mjölby med mina två
+                tonårsdöttrar. Jag ser mig själv som driven och gillar att ta
+                mig an nya utmaningar – utveckling är något jag värdesätter
+                högt.
+                <br />
+                <br /> När jag inte kodar gillar jag att vara ute i naturen,
+                spela piano och umgås med nära och kära. Att pyssla med hantverk
+                eller spela datorspel är också ett bra sätt att koppla av.
               </p>
 
               {/* Video Section */}
@@ -62,7 +67,11 @@ export default function AboutMe() {
               </h2>
 
               <p className="text-slate-300 text-lg leading-relaxed font-light">
-                Jag studerar just nu till fullstackutvecklare på Lexicon i Linköping. Jag brinner för att bygga webbplatser som är både snygga och funktionella.
+                Söker nya utmaningar inom Fullstack-/Frontend-utveckling Med en
+                pågående LIA-praktik hos hitract.se i ryggen har jag fått en
+                gedigen praktisk grund inom modern webbutveckling. Jag letar nu
+                efter en tjänst med start till våren där jag kan fortsätta
+                utvecklas och bidra till innovativa projekt.{" "}
               </p>
             </div>
           </section>
@@ -78,14 +87,22 @@ export default function AboutMe() {
 
               <div className="space-y-6">
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Mitt intresse för IT började redan 2007. Jag har alltid älskat att skapa digitalt – allt från att designa bloggar och banners till att skriva enklare script och starta en egen webbutik för designade produkter.
+                  Mitt intresse för IT började redan 2007. Jag har alltid älskat
+                  att skapa digitalt – allt från att designa bloggar och banners
+                  till att skriva enklare script och starta en egen webbutik för
+                  designade produkter.
                 </p>
 
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                 Efter en paus är jag nu tillbaka där jag trivs bäst: i IT-världen. Som fullstackutvecklare får jag använda både min erfarenhet av design och systemutveckling. Det bästa är att få se en idé växa, från en enkel skiss till en komplett och interaktiv webbplats. För mig är kod och design en kreativ process, där målet alltid är att skapa den bästa användarupplevelsen. Jag ser fram emot att bidra med mina kunskaper och förverkliga nya digitala visioner.
+                  Efter en paus är jag nu tillbaka där jag trivs bäst: i
+                  IT-världen. Som fullstackutvecklare får jag använda både min
+                  erfarenhet av design och systemutveckling. Det bästa är att få
+                  se en idé växa, från en enkel skiss till en komplett och
+                  interaktiv webbplats. För mig är kod och design en kreativ
+                  process, där målet alltid är att skapa den bästa
+                  användarupplevelsen. Jag ser fram emot att bidra med mina
+                  kunskaper och förverkliga nya digitala visioner.
                 </p>
-
-               
 
                 {/* Image with styling */}
                 <div className="flex justify-center mt-8">
