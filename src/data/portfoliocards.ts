@@ -15,6 +15,7 @@ export const projects: Project[] = [
     image: "/Image/mockupbilder/fakeynails.jpg",
     alt: "Kod och Design",
     tech: "React, Next.js, Sanity CMS, TypeScript, TailwindCSS, Shadcn, Nodmailer",
+     "codeLink": "https://github.com/knixan/fakey-nails",
     projectLink: "https://fakey-nails.vercel.app/"
   },
 
@@ -46,7 +47,7 @@ export const projects: Project[] = [
   },
   {
     "title": "Kläder efter väder",
-    "description": "En väderapplikation som ger kommentarer och visar bilder klädförslag beroende på vädret. ",
+    "description": "En väderapplikation som ger kommentarer och visar klädförslag beroende på vädret. ",
     "image": "/Image/mockupbilder/vaderefterklader.jpg",
     "alt": "Väder efter kläder",
     "tech": "React, Next.js, TypeScript, Tailwind CSS, OpenWeatherMap API",
