@@ -44,7 +44,7 @@ export default function Aside() {
           <div className="relative">
             <div className="w-full">
               <Image
-                src="/Image/josefineErikssonProfilBild.jpg"
+                src="/Image/josefineeriksson.png"
                 alt="Avatar"
                 width={500}
                 height={400}
