@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaTimes, FaExpandAlt } from "react-icons/fa";
+import { getTechIcons } from "@/data/techIcons";
 
 interface ProjectCardProps {
   title: string;
@@ -70,9 +71,17 @@ export default function ProjectCard({
               )}
             </div>
             <div className="mt-6 pt-4 border-t border-white/10">
-              <p className="text-slate-400 text-sm">
-                <span className="font-semibold bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">Teknik:</span> {tech}
-              </p>
+              <p className="font-semibold text-sm mb-3 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">Teknik:</p>
+              <div className="flex flex-wrap gap-3">
+                {getTechIcons(tech).map((t, i) => (
+                  <div key={i} className="flex flex-col items-center gap-1 group/icon">
+                    <div className="w-10 h-10 rounded-xl backdrop-blur-xl bg-purple-500/20 border border-purple-300/30 flex items-center justify-center hover:bg-purple-500/30 transition-all duration-300 group-hover/icon:scale-110">
+                      <t.icon className="text-lg" style={{ color: t.color }} />
+                    </div>
+                    <span className="text-purple-200 text-[9px] font-medium text-center leading-tight">{t.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

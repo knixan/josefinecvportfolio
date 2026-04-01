@@ -6,31 +6,11 @@ import {
   FaPhone,
   FaDownload,
 } from "react-icons/fa";
+import { getTechIcons } from "@/data/techIcons";
 
-const programs = [
-  "Adobe Photoshop",
-  "Illustrator",
-  "In Design",
-  "Figma",
-  "Html & CSS",
-  "Tailwind CSS",
-  "Bootstrap",
-  "JavaScript",
-  "TypeScript",
-  "Prisma",
-  "Sanity CMS",
-  "Material UI",
-  "Zod",
-  "Yup",
-  "Azure",
-  "PostgreSQL",
-  "SQL",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git/GitHub",
-  "GitHub Copilot",
-];
+const programs = getTechIcons(
+  "React, Next.js, Node.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure"
+);
 
 const languages = ["Svenska", "Engelska"];
 
@@ -122,14 +102,22 @@ export default function Aside() {
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Program
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-3">
                   {programs.map((program, index) => (
-                    <span
+                    <div
                       key={index}
-                      className="backdrop-blur-xl bg-purple-500/20 border border-purple-300/30 text-purple-200 text-xs font-semibold px-3 py-2 rounded-full hover:bg-purple-500/30 transition-colors duration-300"
+                      className="flex flex-col items-center gap-1 w-16 group/icon"
                     >
-                      {program}
-                    </span>
+                      <div className="w-12 h-12 rounded-xl backdrop-blur-xl bg-purple-500/20 border border-purple-300/30 flex items-center justify-center hover:bg-purple-500/30 transition-all duration-300 group-hover/icon:scale-110">
+                        <program.icon
+                          className="text-2xl"
+                          style={{ color: program.color }}
+                        />
+                      </div>
+                      <span className="text-purple-200 text-[10px] font-medium text-center leading-tight">
+                        {program.name}
+                      </span>
+                    </div>
                   ))}
                 </div>
               </div>

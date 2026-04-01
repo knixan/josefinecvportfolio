@@ -3,6 +3,7 @@ import {
   FaSuitcase,
   FaGraduationCap,
 } from "react-icons/fa";
+import { getTechIcons } from "@/data/techIcons";
 
 export default function CV() {
   return (
@@ -106,7 +107,7 @@ export default function CV() {
               <div className="space-y-8">
                 {[
                   {
-                    title: "Fullstack - Pågående utbildning",
+                    title: "Fullstack - React, Next.js, TypeScript",
                     period: "2025 - 2026",
                     school: "Lexicon Linköping",
                     description:
@@ -149,9 +150,16 @@ export default function CV() {
                         {education.school}
                       </p>
                       {education.description && (
-                        <p className="text-slate-300 italic">
-                          {education.description}
-                        </p>
+                        <div className="flex flex-wrap gap-3 mt-2">
+                          {getTechIcons(education.description).map((t, i) => (
+                            <div key={i} className="flex flex-col items-center gap-1 group/icon">
+                              <div className="w-10 h-10 rounded-xl backdrop-blur-xl bg-cyan-500/20 border border-cyan-300/30 flex items-center justify-center hover:bg-cyan-500/30 transition-all duration-300 group-hover/icon:scale-110">
+                                <t.icon className="text-lg" style={{ color: t.color }} />
+                              </div>
+                              <span className="text-cyan-200 text-[9px] font-medium text-center leading-tight">{t.name}</span>
+                            </div>
+                          ))}
+                        </div>
                       )}
                     </div>
                   </div>
