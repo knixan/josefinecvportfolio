@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { FaUser, FaSearch, FaHistory, FaPlay } from "react-icons/fa";
+import { FaUser, FaPlay } from "react-icons/fa";
 
 export default function AboutMe() {
   return (
@@ -20,19 +19,53 @@ export default function AboutMe() {
                 Om mig
               </h2>
 
-              <p className="text-slate-300 text-lg mb-8 leading-relaxed font-light">
-                Jag heter Josefine, är 40 år och bor i Mjölby med mina två
-                tonårsdöttrar. Jag ser mig själv som driven och gillar att ta
-                mig an nya utmaningar – utveckling är något jag värdesätter
-                högt.
-                <br />
-                <br /> När jag inte kodar gillar jag att vara ute i naturen,
-                spela piano och umgås med nära och kära. Att pyssla med hantverk
-                eller spela datorspel är också ett bra sätt att koppla av.
-              </p>
+              <div className="space-y-6">
+                <p className="text-slate-300 text-lg leading-relaxed font-light">
+                  Jag heter Josefine, är 40 år och bor i Mjölby med mina två
+                  tonårsdöttrar.
+                </p>
+
+                <p className="text-slate-300 text-lg leading-relaxed font-light">
+                  Jag är en driven person som trivs med att ta mig an nya
+                  utmaningar. Att lära mig nya saker och bli bättre på det jag
+                  redan kan är något jag verkligen värdesätter – både i
+                  arbetslivet och privat.
+                </p>
+
+                <p className="text-slate-300 text-lg leading-relaxed font-light">
+                  Mitt intresse för IT sträcker sig tillbaka till 2007. Redan då
+                  fastnade jag för det digitala skapandet – från att designa
+                  bloggar och banners till att skriva enklare script och driva en
+                  egen webbutik och fyndiq.se med egna designade produkter. Den
+                  nyfikenheten har aldrig försvunnit.
+                </p>
+
+                <p className="text-slate-300 text-lg leading-relaxed font-light">
+                  Jag har sedan dess byggt upp en gedigen grund inom HTML, CSS
+                  och JavaScript, och har nyligen utbildat mig till
+                  fullstackutvecklare. Genom min pågående LIA-praktik hos
+                  hitract.se har jag fått värdefull praktisk erfarenhet inom
+                  modern webbutveckling.
+                </p>
+
+                <p className="text-slate-300 text-lg leading-relaxed font-light">
+                  Jag driver sidan kodochdesign.se där jag tar mindre uppdrag,
+                  men mitt huvudmål är att hitta en anställning inom fullstack-
+                  eller frontendutveckling där jag får växa i min yrkesroll och
+                  bidra till innovativa projekt. Jag siktar på en start till
+                  våren.
+                </p>
+
+                <p className="text-slate-300 text-lg leading-relaxed font-light">
+                  När jag inte kodar laddar jag gärna ur i naturen, spelar piano,
+                  pysslar med hantverk eller kopplar av med att spela dator eller
+                  piano. Jag värdesätter balansen mellan att prestera och att
+                  återhämta sig.
+                </p>
+              </div>
 
               {/* Video Section */}
-              <div className="relative group/video">
+              <div className="relative group/video mt-8">
                 <div className="absolute -inset-1 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-2xl blur-sm group-hover/video:blur-md transition-all duration-300"></div>
                 <div className="relative backdrop-blur-xl bg-slate-800/50 border border-white/20 rounded-2xl p-4 overflow-hidden">
                   <div className="flex items-center mb-4">
@@ -51,72 +84,6 @@ export default function AboutMe() {
                       allowFullScreen
                       className="w-full aspect-video rounded-xl"
                     ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Söker Section */}
-          <section className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-3xl blur-lg opacity-20 group-hover:opacity-40 transition duration-500"></div>
-            <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl p-10 shadow-2xl">
-              <h2 className="flex items-center text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-                <FaSearch className="mr-4 text-pink-400" />
-                Söker
-              </h2>
-
-              <p className="text-slate-300 text-lg leading-relaxed font-light">
-                Söker nya utmaningar inom Fullstack-/Frontend-utveckling Med en
-                pågående LIA-praktik hos hitract.se i ryggen har jag fått en
-                gedigen praktisk grund inom modern webbutveckling. Jag letar nu
-                efter en tjänst med start till våren där jag kan fortsätta
-                utvecklas och bidra till innovativa projekt.{" "}
-              </p>
-            </div>
-          </section>
-
-          {/* Bakgrund Section */}
-          <section className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl blur-lg opacity-20 group-hover:opacity-40 transition duration-500"></div>
-            <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl p-10 shadow-2xl">
-              <h2 className="flex items-center text-3xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                <FaHistory className="mr-4 text-cyan-400" />
-                Bakgrund
-              </h2>
-
-              <div className="space-y-6">
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Mitt intresse för IT började redan 2007. Jag har alltid älskat
-                  att skapa digitalt – allt från att designa bloggar och banners
-                  till att skriva enklare script och starta en egen webbutik för
-                  designade produkter.
-                </p>
-
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Efter en paus är jag nu tillbaka där jag trivs bäst: i
-                  IT-världen. Som fullstackutvecklare får jag använda både min
-                  erfarenhet av design och systemutveckling. Det bästa är att få
-                  se en idé växa, från en enkel skiss till en komplett och
-                  interaktiv webbplats. För mig är kod och design en kreativ
-                  process, där målet alltid är att skapa den bästa
-                  användarupplevelsen. Jag ser fram emot att bidra med mina
-                  kunskaper och förverkliga nya digitala visioner.
-                </p>
-
-                {/* Image with styling */}
-                <div className="flex justify-center mt-8">
-                  <div className="relative group/image">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-violet-500/30 to-cyan-500/30 rounded-2xl blur-lg group-hover/image:blur-xl transition-all duration-300"></div>
-                    <div className="relative backdrop-blur-xl bg-slate-800/40 border border-white/20 rounded-2xl p-4">
-                      <Image
-                        src="/Image/kodochdesign.png"
-                        alt="Kod och Design"
-                        width={300}
-                        height={300}
-                        className="rounded-xl shadow-2xl transition-transform duration-500 group-hover/image:scale-105"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
