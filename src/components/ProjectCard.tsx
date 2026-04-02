@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaTimes, FaExpandAlt } from "react-icons/fa";
+import { FaTimes, FaExpandAlt, FaGlobe, FaGithub } from "react-icons/fa";
 import { getTechIcons } from "@/data/techIcons";
 
 interface ProjectCardProps {
@@ -55,16 +55,20 @@ export default function ProjectCard({
             <div className="flex flex-col sm:flex-row gap-3">
               {projectLink && (
                 <Link href={projectLink} target="_blank" rel="noopener noreferrer" className="group/btn relative flex-1">
-                  <button className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25">
-                    <span className="relative z-10">Visa projekt</span>
+                  <button aria-label="Visa projekt" title="Visa projekt" className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25 flex items-center justify-center">
+                    <span className="relative z-10" aria-hidden="true">
+                      <FaGlobe className="text-xl" />
+                    </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                   </button>
                 </Link>
               )}
               {codeLink && (
                 <Link href={codeLink} target="_blank" rel="noopener noreferrer" className="group/btn relative flex-1">
-                  <button className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 transform hover:scale-105 shadow-lg hover:shadow-pink-500/25">
-                    <span className="relative z-10">Visa kod</span>
+                  <button aria-label="Visa kod" title="Visa kod" className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 transform hover:scale-105 shadow-lg hover:shadow-pink-500/25 flex items-center justify-center">
+                    <span className="relative z-10" aria-hidden="true">
+                      <FaGithub className="text-xl" />
+                    </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                   </button>
                 </Link>

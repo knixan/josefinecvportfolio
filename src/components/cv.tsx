@@ -19,23 +19,24 @@ export default function CV() {
 
               <div className="space-y-8">
                 {[
-                    {
-                    title: "Frontend utvecklare React Next.js Material UI",
-                    period: "Pågående - Maj 2026",
-                    company: "hitract.se",
-                    description:
-                    "LIA - Praktik hitract.se är en plattform för Studeter och studentkårer. Arbetar med Frontend utveckling i React, Next,js med Matierial UI efter Figma design från UX/UI designer.",
-                    gradient: "from-purple-500 to-pink-500",
-                  },
-
-                  {
-                    title: "Fullstack utvecklare / Webbdesigner (sido project)",
+                   {
+                    title: "Fullstack utvecklare & Grafisk Designer",
                     period: "Pågående - tills vidare",
                     company: "kodochdesign.se",
                     description:
                       "Kombinerar teknik och design för att skapa helhetslösningar – från modern kod och användarvänliga UX/UI-gränssnitt till visuella identiteter med logotyper, banners och trycksaker. Fokus på professionella och engagerande lösningar som stärker varumärken och tjänster.",
                     gradient: "from-purple-500 to-pink-500",
                   },
+                    {
+                    title: "Frontend utvecklare React Next.js Material UI",
+                    period: "Nov 2025 - Maj 2026",
+                    company: "hitract.se",
+                    description:
+                    "LIA - Praktik hitract.se är en plattform för Studeter och studentkårer. Arbetar med Frontend utveckling i React, Next,js med Matierial UI efter Figma design från UX/UI designer.",
+                    gradient: "from-purple-500 to-pink-500",
+                  },
+
+                 
                   {
                     title: "Grafisk Design / Webbdesign",
                     period: "2022 - 2025",
