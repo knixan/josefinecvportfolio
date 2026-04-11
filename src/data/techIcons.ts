@@ -17,6 +17,7 @@ import {
   SiAdobeillustrator,
   SiBootstrap,
   SiDotnet,
+  SiVite,
 } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { VscAzure } from "react-icons/vsc";
@@ -30,6 +31,7 @@ export interface TechIcon {
 
 const techIconMap: Record<string, TechIcon> = {
   "react": { icon: SiReact, name: "React", color: "#f472b6" },
+  "react vite": { icon: SiVite, name: "React Vite", color: "#f472b6" },
   "next.js": { icon: RiNextjsLine, name: "Next.js", color: "#f472b6" },
   "node.js": { icon: SiNodedotjs, name: "Node.js", color: "#f472b6" },
   "typescript": { icon: SiTypescript, name: "TypeScript", color: "#f472b6" },

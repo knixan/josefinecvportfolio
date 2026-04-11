@@ -9,7 +9,7 @@ import {
 import { getTechIcons } from "@/data/techIcons";
 
 const programs = getTechIcons(
-  "React, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure"
+  "React, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure"
 );
 
 const languages = ["Svenska", "Engelska"];
