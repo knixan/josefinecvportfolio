@@ -16,9 +16,11 @@ import {
   SiAdobelightroom,
   SiAdobeillustrator,
   SiBootstrap,
+  SiDotnet,
 } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { VscAzure } from "react-icons/vsc";
+import { FaCode } from "react-icons/fa";
 
 export interface TechIcon {
   icon: IconType;
@@ -50,6 +52,9 @@ const techIconMap: Record<string, TechIcon> = {
   "azure": { icon: VscAzure, name: "Azure", color: "#f472b6" },
   "bootstrap": { icon: SiBootstrap, name: "Bootstrap", color: "#f472b6" },
   "sql": { icon: SiPostgresql, name: "SQL", color: "#f472b6" },
+  "asp.net core": { icon: SiDotnet, name: "ASP.NET Core", color: "#f472b6" },
+  "c#": { icon: FaCode, name: "C#", color: "#f472b6" },
+  "csharp": { icon: FaCode, name: "C#", color: "#f472b6" },
 };
 
 export function getTechIcons(techString: string): TechIcon[] {
