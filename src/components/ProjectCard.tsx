@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaTimes, FaExpandAlt, FaGlobe, FaGithub } from "react-icons/fa";
 import { getTechIcons } from "@/data/techIcons";
+import { useTranslate } from "@/locales/use-locales";
 
 interface ProjectCardProps {
   title: string;
@@ -26,6 +27,7 @@ export default function ProjectCard({
   codeLink,
 }: ProjectCardProps) {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const { t } = useTranslate();
 
   const toggleModal = () => {
     setIsImageModalOpen(!isImageModalOpen);
@@ -55,7 +57,7 @@ export default function ProjectCard({
             <div className="flex flex-col sm:flex-row gap-3">
               {projectLink && (
                 <Link href={projectLink} target="_blank" rel="noopener noreferrer" className="group/btn relative flex-1">
-                  <button aria-label="Visa projekt" title="Visa projekt" className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25 flex items-center justify-center">
+                  <button aria-label={t("portfolio.viewProject")} title={t("portfolio.viewProject")} className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25 flex items-center justify-center">
                     <span className="relative z-10" aria-hidden="true">
                       <FaGlobe className="text-xl" />
                     </span>
@@ -65,7 +67,7 @@ export default function ProjectCard({
               )}
               {codeLink && (
                 <Link href={codeLink} target="_blank" rel="noopener noreferrer" className="group/btn relative flex-1">
-                  <button aria-label="Visa kod" title="Visa kod" className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 transform hover:scale-105 shadow-lg hover:shadow-pink-500/25 flex items-center justify-center">
+                  <button aria-label={t("portfolio.viewCode")} title={t("portfolio.viewCode")} className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 transform hover:scale-105 shadow-lg hover:shadow-pink-500/25 flex items-center justify-center">
                     <span className="relative z-10" aria-hidden="true">
                       <FaGithub className="text-xl" />
                     </span>
@@ -75,14 +77,14 @@ export default function ProjectCard({
               )}
             </div>
             <div className="mt-6 pt-4 border-t border-white/10">
-              <p className="font-semibold text-sm mb-3 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">Teknik:</p>
+              <p className="font-semibold text-sm mb-3 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">{t("portfolio.tech")}</p>
               <div className="flex flex-wrap gap-3">
-                {getTechIcons(tech).map((t, i) => (
+                {getTechIcons(tech).map((techItem, i) => (
                   <div key={i} className="flex flex-col items-center gap-1 group/icon">
                     <div className="w-10 h-10 rounded-xl backdrop-blur-xl bg-purple-500/20 border border-purple-300/30 flex items-center justify-center hover:bg-purple-500/30 transition-all duration-300 group-hover/icon:scale-110">
-                      <t.icon className="text-lg" style={{ color: t.color }} />
+                      <techItem.icon className="text-lg" style={{ color: techItem.color }} />
                     </div>
-                    <span className="text-purple-200 text-[9px] font-medium text-center leading-tight">{t.name}</span>
+                    <span className="text-purple-200 text-[9px] font-medium text-center leading-tight">{techItem.name}</span>
                   </div>
                 ))}
               </div>

@@ -1,0 +1,163 @@
+{
+  "nav": {
+    "cv": "CV",
+    "aboutMe": "Om mig",
+    "portfolio": "Portfolio",
+    "kodDesign": "Kod & Design",
+    "openMenu": "Öppna huvudmeny"
+  },
+  "aside": {
+    "greeting": "Hej hej!",
+    "jobTitle": "Josefine Eriksson, Fullstackutvecklare & Grafisk/Webbdesigner",
+    "location": "Mjölby, Sverige",
+    "downloadCv": "Ladda ner CV",
+    "programs": "Program",
+    "languages": "Språk",
+    "swedish": "Svenska",
+    "english": "Engelska"
+  },
+  "cv": {
+    "workExperience": "Arbetslivserfarenhet",
+    "education": "Utbildning",
+    "jobs": {
+      "fullstack": {
+        "title": "Fullstack utvecklare & Grafisk Designer",
+        "period": "Pågående - tills vidare",
+        "company": "kodochdesign.se",
+        "description": "Kombinerar teknik och design för att skapa helhetslösningar – från modern kod och användarvänliga UX/UI-gränssnitt till visuella identiteter med logotyper, banners och trycksaker. Fokus på professionella och engagerande lösningar som stärker varumärken och tjänster."
+      },
+      "frontend": {
+        "title": "Frontend utvecklare React Next.js Material UI",
+        "period": "Nov 2025 - Maj 2026",
+        "company": "hitract.se",
+        "description": "LIA - Praktik hitract.se är en plattform för Studeter och studentkårer. Arbetar med Frontend utveckling i React, Next,js med Matierial UI efter Figma design från UX/UI designer."
+      },
+      "graphicDesign": {
+        "title": "Grafisk Design / Webbdesign",
+        "period": "2022 - 2025",
+        "company": "posterstillhemmet.se",
+        "description": "Webdesign, Social Media, Grafisk Design"
+      },
+      "shopAssistant": {
+        "title": "Butiksbiträde",
+        "period": "2023 - 2025",
+        "company": "Flügger färg",
+        "description": "Försäljning av färg, verktyg och måleritillbehör. Färgrådgivare."
+      },
+      "sales": {
+        "title": "Säljare",
+        "period": "2022 - 2023",
+        "company": "Bygghemma",
+        "description": "Försäljning av badrum, fönster och dörrar."
+      },
+      "graphicDesigner": {
+        "title": "Grafisk Designer",
+        "period": "2016 - 2022",
+        "company": "Esmilia Design",
+        "description": "Grafisk Design, webdesign, logistik, försäljning, social media"
+      }
+    },
+    "educations": {
+      "fullstack": {
+        "title": "Fullstack - React, Next.js, TypeScript",
+        "period": "2025 - 2026",
+        "school": "Lexicon Linköping",
+        "description": "React, Next.js, HTML, CSS, JavaScript/TypeScript, Prisma, SQL, Tailwind CSS, Bootstrap, PostgreSQL, Git/GitHub, AI, Node.js"
+      },
+      "itProfile": {
+        "title": "IT Profil",
+        "period": "2006 - 2007",
+        "school": "Kristinehamns Folkhögskola"
+      },
+      "construction": {
+        "title": "Bygg- och hantverksprogrammet, måleri",
+        "period": "2002 - 2005",
+        "school": "Tullängsskolan Örebro"
+      }
+    }
+  },
+  "aboutMe": {
+    "title": "Om mig",
+    "p1": "Jag heter Josefine, är 40 år och bor i Mjölby med mina två tonårsdöttrar.",
+    "p2": "Jag är en driven person som trivs med att ta mig an nya utmaningar. Att lära mig nya saker och bli bättre på det jag redan kan är något jag verkligen värdesätter – både i arbetslivet och privat.",
+    "p3": "Mitt intresse för IT sträcker sig tillbaka till 2007. Redan då fastnade jag för det digitala skapandet – från att designa bloggar och banners till att skriva enklare script och driva en egen webbutik och fyndiq.se med egna designade produkter. Den nyfikenheten har aldrig försvunnit.",
+    "p4": "Jag har sedan dess byggt upp en gedigen grund inom HTML, CSS och JavaScript, och har nyligen utbildat mig till fullstackutvecklare. Genom min pågående LIA-praktik hos hitract.se har jag fått värdefull praktisk erfarenhet inom modern webbutveckling.",
+    "p5": "Jag driver sidan kodochdesign.se där jag tar mindre uppdrag, men mitt huvudmål är att hitta en anställning inom fullstack- eller frontendutveckling där jag får växa i min yrkesroll och bidra till innovativa projekt. Jag siktar på en start till våren.",
+    "p6": "När jag inte kodar laddar jag gärna ur i naturen, spelar piano, pysslar med hantverk eller kopplar av med att spela dator eller piano. Jag värdesätter balansen mellan att prestera och att återhämta sig.",
+    "videoLabel": "Piano trudelutt"
+  },
+  "portfolio": {
+    "title": "Min Portfolio",
+    "viewProject": "Visa projekt",
+    "viewCode": "Visa kod",
+    "tech": "Teknik:",
+    "projects": {
+      "fakeyNails": {
+        "title": "Fakey Nails",
+        "description": "Hemsida och bokning för en nagelsalong.",
+        "alt": "Kod och Design"
+      },
+      "bMovies": {
+        "title": "B-Movies",
+        "description": "Webbutik för B-movies",
+        "alt": "B-movies"
+      },
+      "dagensDons": {
+        "title": "Dagens Dons",
+        "description": "Nyhetssida",
+        "alt": "Dagens Dos"
+      },
+      "motionzone": {
+        "title": "Motionzone i Växjö",
+        "description": "En hemsida för en dansstudio i Växjö.",
+        "alt": "Motionzone i Växjö"
+      },
+      "kladerEfterVader": {
+        "title": "Kläder efter väder",
+        "description": "En väderapplikation som ger kommentarer och visar klädförslag beroende på vädret.",
+        "alt": "Väder efter kläder"
+      },
+      "skeningeVvs": {
+        "title": "Skeninge VVS AB",
+        "description": "Hemsida för Skeninge VVS AB i Skänninge.",
+        "alt": "Skeninge VVS AB"
+      },
+      "vaderskuggan": {
+        "title": "Väderskuggan",
+        "description": "Väderapplikation som ger lite sakastiska kommentarer beroende på vädret.",
+        "alt": "Väderskuggan"
+      },
+      "studenthubben": {
+        "title": "Studenthubben",
+        "description": "Frontend-sida för att demonstrera ett studentnätverk",
+        "alt": "Studenthubben"
+      },
+      "sweettimeUf": {
+        "title": "Sweettime-UF",
+        "description": "Hemsida för offerter åt UF-företaget Sweettime-UF",
+        "alt": "Sweettime-UF"
+      },
+      "gammelBygg": {
+        "title": "Gammel Byggnadsmåleri",
+        "description": "Hemsida för ett företag som jobbar med traditionellt måleri och byggnadsvård",
+        "alt": "Gammelbyggnads måleri"
+      },
+      "ledningsteknik": {
+        "title": "Ledningsteknik AB",
+        "description": "En uppdaterad hemsida åt Ledningsteknik AB",
+        "alt": "Ledningsteknik AB"
+      },
+      "jonnyEriksson": {
+        "title": "Jonny Eriksson - Konstnär",
+        "description": "Konstnärsportfolio",
+        "alt": "Jonny Eriksson - Konstnär"
+      }
+    }
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "followMe": "Följ mig",
+    "fullstackDesigner": "Fullstack Developer & Designer",
+    "allRightsReserved": "Alla rättigheter förbehållna"
+  }
+}

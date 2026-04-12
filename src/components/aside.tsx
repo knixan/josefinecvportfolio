@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   FaBriefcase,
@@ -7,14 +9,17 @@ import {
   FaDownload,
 } from "react-icons/fa";
 import { getTechIcons } from "@/data/techIcons";
+import { useTranslate } from "@/locales/use-locales";
 
 const programs = getTechIcons(
   "React, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure"
 );
 
-const languages = ["Svenska", "Engelska"];
-
 export default function Aside() {
+  const { t } = useTranslate();
+
+  const languages = [t("aside.swedish"), t("aside.english")];
+
   return (
     <aside className="left-column flex-none w-full lg:w-1/3">
       <div className="relative group">
@@ -34,7 +39,7 @@ export default function Aside() {
             </div>
             <div className="absolute bottom-4 left-4">
               <div className="backdrop-blur-xl animate-bounce bg-white/20 border border-white/30 px-6 py-3 rounded-2xl">
-                <h2 className="font-bold text-white text-lg">Hej hej!</h2>
+                <h2 className="font-bold text-white text-lg">{t("aside.greeting")}</h2>
               </div>
             </div>
           </div>
@@ -45,12 +50,12 @@ export default function Aside() {
               {[
                 {
                   icon: FaBriefcase,
-                  text: "Josefine Eriksson, Fullstackutvecklare & Grafisk/Webbdesigner",
+                  text: t("aside.jobTitle"),
                   color: "from-purple-400 to-pink-400",
                 },
                 {
                   icon: FaHome,
-                  text: "Mjölby, Sverige",
+                  text: t("aside.location"),
                   color: "from-pink-400 to-rose-400",
                 },
                 {
@@ -88,7 +93,7 @@ export default function Aside() {
                     <div className="w-8 h-8 rounded-xl bg-white/20 flex items-center justify-center">
                       <FaDownload className="text-white text-sm" />
                     </div>
-                    <span className="relative z-10 text-lg">Ladda ner CV</span>
+                    <span className="relative z-10 text-lg">{t("aside.downloadCv")}</span>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                 </button>
@@ -100,7 +105,7 @@ export default function Aside() {
               {/* Programs */}
               <div>
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Program
+                  {t("aside.programs")}
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {programs.map((program, index) => (
@@ -125,7 +130,7 @@ export default function Aside() {
               {/* Languages */}
               <div>
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
-                  Språk
+                  {t("aside.languages")}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {languages.map((language, index) => (

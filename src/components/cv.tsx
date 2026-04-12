@@ -1,11 +1,31 @@
+"use client";
+
 import {
   FaCalendarAlt,
   FaSuitcase,
   FaGraduationCap,
 } from "react-icons/fa";
 import { getTechIcons } from "@/data/techIcons";
+import { useTranslate } from "@/locales/use-locales";
 
 export default function CV() {
+  const { t } = useTranslate();
+
+  const jobs = [
+    { key: "fullstack", gradient: "from-purple-500 to-pink-500" },
+    { key: "frontend", gradient: "from-purple-500 to-pink-500" },
+    { key: "graphicDesign", gradient: "from-pink-500 to-rose-500" },
+    { key: "shopAssistant", gradient: "from-rose-500 to-orange-500" },
+    { key: "sales", gradient: "from-orange-500 to-amber-500" },
+    { key: "graphicDesigner", gradient: "from-amber-500 to-cyan-500" },
+  ];
+
+  const educations = [
+    { key: "fullstack", gradient: "from-cyan-500 to-blue-500", hasDescription: true },
+    { key: "itProfile", gradient: "from-blue-500 to-indigo-500", hasDescription: false },
+    { key: "construction", gradient: "from-indigo-500 to-purple-500", hasDescription: false },
+  ];
+
   return (
     <main className="right-column flex-1 w-full lg:w-2/3 space-y-8">
           {/* Work Experience */}
@@ -14,60 +34,11 @@ export default function CV() {
             <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl p-10 shadow-2xl">
               <h2 className="flex items-center text-3xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 <FaSuitcase className="mr-4 text-purple-400" />
-                Arbetslivserfarenhet
+                {t("cv.workExperience")}
               </h2>
 
               <div className="space-y-8">
-                {[
-                   {
-                    title: "Fullstack utvecklare & Grafisk Designer",
-                    period: "Pågående - tills vidare",
-                    company: "kodochdesign.se",
-                    description:
-                      "Kombinerar teknik och design för att skapa helhetslösningar – från modern kod och användarvänliga UX/UI-gränssnitt till visuella identiteter med logotyper, banners och trycksaker. Fokus på professionella och engagerande lösningar som stärker varumärken och tjänster.",
-                    gradient: "from-purple-500 to-pink-500",
-                  },
-                    {
-                    title: "Frontend utvecklare React Next.js Material UI",
-                    period: "Nov 2025 - Maj 2026",
-                    company: "hitract.se",
-                    description:
-                    "LIA - Praktik hitract.se är en plattform för Studeter och studentkårer. Arbetar med Frontend utveckling i React, Next,js med Matierial UI efter Figma design från UX/UI designer.",
-                    gradient: "from-purple-500 to-pink-500",
-                  },
-
-                 
-                  {
-                    title: "Grafisk Design / Webbdesign",
-                    period: "2022 - 2025",
-                    company: "posterstillhemmet.se",
-                    description: "Webdesign, Social Media, Grafisk Design",
-                    gradient: "from-pink-500 to-rose-500",
-                  },
-                  {
-                    title: "Butiksbiträde",
-                    period: "2023 - 2025",
-                    company: "Flügger färg",
-                    description:
-                      "Försäljning av färg, verktyg och måleritillbehör. Färgrådgivare.",
-                    gradient: "from-rose-500 to-orange-500",
-                  },
-                  {
-                    title: "Säljare",
-                    period: "2022 - 2023",
-                    company: "Bygghemma",
-                    description: "Försäljning av badrum, fönster och dörrar.",
-                    gradient: "from-orange-500 to-amber-500",
-                  },
-                  {
-                    title: "Grafisk Designer",
-                    period: "2016 - 2022",
-                    company: "Esmilia Design",
-                    description:
-                      "Grafisk Design, webdesign, logistik, försäljning, social media",
-                    gradient: "from-amber-500 to-cyan-500",
-                  },
-                ].map((job, index) => (
+                {jobs.map((job, index) => (
                   <div
                     key={index}
                     className="relative pl-8 border-l-2 border-gradient group/item"
@@ -79,16 +50,16 @@ export default function CV() {
                       <h5
                         className={`font-bold text-xl mb-2 bg-gradient-to-r ${job.gradient} bg-clip-text text-transparent`}
                       >
-                        {job.title}
+                        {t(`cv.jobs.${job.key}.title`)}
                       </h5>
                       <p className="flex items-center text-slate-300 mb-2">
                         <FaCalendarAlt className="mr-2" />
-                        {job.period}
+                        {t(`cv.jobs.${job.key}.period`)}
                       </p>
                       <p className="text-slate-200 font-semibold mb-2">
-                        {job.company}
+                        {t(`cv.jobs.${job.key}.company`)}
                       </p>
-                      <p className="text-slate-300 italic">{job.description}</p>
+                      <p className="text-slate-300 italic">{t(`cv.jobs.${job.key}.description`)}</p>
                     </div>
                   </div>
                 ))}
@@ -102,69 +73,49 @@ export default function CV() {
             <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl p-10 shadow-2xl">
               <h2 className="flex items-center text-3xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 <FaGraduationCap className="mr-4 text-cyan-400" />
-                Utbildning
+                {t("cv.education")}
               </h2>
 
               <div className="space-y-8">
-                {[
-                  {
-                    title: "Fullstack - React, Next.js, TypeScript",
-                    period: "2025 - 2026",
-                    school: "Lexicon Linköping",
-                    description:
-                      "React, Next.js, HTML, CSS, JavaScript/TypeScript, Prisma, SQL, Tailwind CSS, Bootstrap, PostgreSQL, Git/GitHub, AI, Node.js",
-                    gradient: "from-cyan-500 to-blue-500",
-                  },
-                  {
-                    title: "IT Profil",
-                    period: "2006 - 2007",
-                    school: "Kristinehamns Folkhögskola",
-                    description: "",
-                    gradient: "from-blue-500 to-indigo-500",
-                  },
-                  {
-                    title: "Bygg- och hantverksprogrammet, måleri",
-                    period: "2002 - 2005",
-                    school: "Tullängsskolan Örebro",
-                    description: "",
-                    gradient: "from-indigo-500 to-purple-500",
-                  },
-                ].map((education, index) => (
-                  <div
-                    key={index}
-                    className="relative pl-8 border-l-2 border-gradient group/item"
-                  >
+                {educations.map((education, index) => {
+                  const description = t(`cv.educations.${education.key}.description`, { defaultValue: "" });
+                  return (
                     <div
-                      className={`absolute -left-3 top-0 w-6 h-6 bg-gradient-to-r ${education.gradient} rounded-full border-2 border-slate-900`}
-                    ></div>
-                    <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 group-hover/item:bg-white/10 transition-colors duration-300">
-                      <h5
-                        className={`font-bold text-xl mb-2 bg-gradient-to-r ${education.gradient} bg-clip-text text-transparent`}
-                      >
-                        {education.title}
-                      </h5>
-                      <p className="flex items-center text-slate-300 mb-2">
-                        <FaCalendarAlt className="mr-2" />
-                        {education.period}
-                      </p>
-                      <p className="text-slate-200 font-semibold mb-2">
-                        {education.school}
-                      </p>
-                      {education.description && (
-                        <div className="flex flex-wrap gap-3 mt-2">
-                          {getTechIcons(education.description).map((t, i) => (
-                            <div key={i} className="flex flex-col items-center gap-1 group/icon">
-                              <div className="w-10 h-10 rounded-xl backdrop-blur-xl bg-cyan-500/20 border border-cyan-300/30 flex items-center justify-center hover:bg-cyan-500/30 transition-all duration-300 group-hover/icon:scale-110">
-                                <t.icon className="text-lg" style={{ color: t.color }} />
+                      key={index}
+                      className="relative pl-8 border-l-2 border-gradient group/item"
+                    >
+                      <div
+                        className={`absolute -left-3 top-0 w-6 h-6 bg-gradient-to-r ${education.gradient} rounded-full border-2 border-slate-900`}
+                      ></div>
+                      <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 group-hover/item:bg-white/10 transition-colors duration-300">
+                        <h5
+                          className={`font-bold text-xl mb-2 bg-gradient-to-r ${education.gradient} bg-clip-text text-transparent`}
+                        >
+                          {t(`cv.educations.${education.key}.title`)}
+                        </h5>
+                        <p className="flex items-center text-slate-300 mb-2">
+                          <FaCalendarAlt className="mr-2" />
+                          {t(`cv.educations.${education.key}.period`)}
+                        </p>
+                        <p className="text-slate-200 font-semibold mb-2">
+                          {t(`cv.educations.${education.key}.school`)}
+                        </p>
+                        {education.hasDescription && description && (
+                          <div className="flex flex-wrap gap-3 mt-2">
+                            {getTechIcons(description).map((tech, i) => (
+                              <div key={i} className="flex flex-col items-center gap-1 group/icon">
+                                <div className="w-10 h-10 rounded-xl backdrop-blur-xl bg-cyan-500/20 border border-cyan-300/30 flex items-center justify-center hover:bg-cyan-500/30 transition-all duration-300 group-hover/icon:scale-110">
+                                  <tech.icon className="text-lg" style={{ color: tech.color }} />
+                                </div>
+                                <span className="text-cyan-200 text-[9px] font-medium text-center leading-tight">{tech.name}</span>
                               </div>
-                              <span className="text-cyan-200 text-[9px] font-medium text-center leading-tight">{t.name}</span>
-                            </div>
-                          ))}
-                        </div>
-                      )}
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </section>

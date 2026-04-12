@@ -2,18 +2,23 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaBars, FaTimes, FaCode, FaUser, FaFolderOpen, FaFileAlt } from "react-icons/fa";
-
-const NAV_ITEMS = [
-  { href: "/", label: "CV", icon: FaFileAlt, gradient: "from-purple-400 to-pink-400" },
-  { href: "/ommig", label: "Om mig", icon: FaUser, gradient: "from-pink-400 to-rose-400" },
-  { href: "/portfolio", label: "Portfolio", icon: FaFolderOpen, gradient: "from-rose-400 to-orange-400" },
-  { href: "https://kodochdesign.se", label: "Kod & Design", icon: FaCode, gradient: "from-orange-400 to-cyan-400", external: true },
-];
+import { FaBars, FaTimes, FaCode, FaUser, FaFolderOpen, FaFileAlt, FaGlobe } from "react-icons/fa";
+import { useTranslate } from "@/locales/use-locales";
+import { useLocales } from "@/locales/use-locales";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const { t, onChangeLang } = useTranslate();
+  const { allLangs, currentLang } = useLocales();
+
+  const NAV_ITEMS = [
+    { href: "/", label: t("nav.cv"), icon: FaFileAlt, gradient: "from-purple-400 to-pink-400" },
+    { href: "/ommig", label: t("nav.aboutMe"), icon: FaUser, gradient: "from-pink-400 to-rose-400" },
+    { href: "/portfolio", label: t("nav.portfolio"), icon: FaFolderOpen, gradient: "from-rose-400 to-orange-400" },
+    { href: "https://kodochdesign.se", label: t("nav.kodDesign"), icon: FaCode, gradient: "from-orange-400 to-cyan-400", external: true },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -25,8 +30,8 @@ export default function Navbar() {
     <nav className="fixed w-full z-50 top-0">
       {/* Backgrounds */}
       <div className={`absolute inset-0 transition-all duration-700 ${
-        isScrolled 
-          ? "backdrop-blur-xl bg-slate-950/80 border-b border-white/10" 
+        isScrolled
+          ? "backdrop-blur-xl bg-slate-950/80 border-b border-white/10"
           : "backdrop-blur-md bg-slate-950/60"
       }`} />
       <div className={`absolute inset-0 transition-all duration-700 ${
@@ -48,7 +53,7 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden p-3 w-12 h-12 rounded-xl backdrop-blur-xl bg-slate-800/40 border border-white/20 hover:bg-slate-700/60 transition-all duration-300 group"
         >
-          <span className="sr-only">Öppna huvudmeny</span>
+          <span className="sr-only">{t("nav.openMenu")}</span>
           {isOpen ? <FaTimes className="text-xl text-white" /> : <FaBars className="text-xl text-white" />}
           <div className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
         </button>
@@ -67,7 +72,7 @@ export default function Navbar() {
                   {/* Hover effects */}
                   <div className="absolute inset-0 backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl opacity-0 group-hover/link:opacity-100 transition-all duration-300" />
                   <div className={`absolute inset-0 bg-gradient-to-r ${item.gradient} opacity-0 group-hover/link:opacity-20 rounded-xl transition-all duration-300`} />
-                  
+
                   {/* Content */}
                   <div className="relative flex items-center space-x-3">
                     <div className={`w-6 h-6 rounded-lg bg-gradient-to-r ${item.gradient} flex items-center justify-center group-hover/link:scale-110 transition-transform duration-300`}>
@@ -86,6 +91,45 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
+
+            {/* Language Switcher */}
+            <li className="relative">
+              <button
+                onClick={() => setLangMenuOpen(!langMenuOpen)}
+                className="relative block py-3 px-6 rounded-xl group/link overflow-hidden w-full text-left"
+              >
+                <div className="absolute inset-0 backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl opacity-0 group-hover/link:opacity-100 transition-all duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-400 opacity-0 group-hover/link:opacity-20 rounded-xl transition-all duration-300" />
+                <div className="relative flex items-center space-x-3">
+                  <div className="w-6 h-6 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-400 flex items-center justify-center group-hover/link:scale-110 transition-transform duration-300">
+                    <FaGlobe className="text-white text-xs" />
+                  </div>
+                  <span className="text-white font-medium">{currentLang.icon} {currentLang.label}</span>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-full group-hover/link:translate-x-full transition-transform duration-700" />
+              </button>
+
+              {langMenuOpen && (
+                <div className="absolute right-0 mt-2 backdrop-blur-xl bg-slate-900/90 border border-white/10 rounded-xl shadow-2xl overflow-hidden min-w-[160px] z-50">
+                  {allLangs.map((lang) => (
+                    <button
+                      key={lang.value}
+                      onClick={() => {
+                        onChangeLang(lang.value);
+                        setLangMenuOpen(false);
+                        setIsOpen(false);
+                      }}
+                      className={`w-full text-left px-5 py-3 flex items-center space-x-3 hover:bg-white/10 transition-colors duration-200 ${
+                        currentLang.value === lang.value ? "bg-white/5" : ""
+                      }`}
+                    >
+                      <span className="text-lg">{lang.icon}</span>
+                      <span className="text-white font-medium text-sm">{lang.label}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </li>
           </ul>
         </div>
       </div>

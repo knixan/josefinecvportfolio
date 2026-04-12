@@ -1,6 +1,11 @@
+"use client";
+
 import { FaUser, FaPlay } from "react-icons/fa";
+import { useTranslate } from "@/locales/use-locales";
 
 export default function AboutMe() {
+  const { t } = useTranslate();
+
   return (
     <div className="min-h-screen bg-slate-950 text-white relative overflow-hidden">
       {/* Background elements */}
@@ -16,51 +21,32 @@ export default function AboutMe() {
             <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl p-10 shadow-2xl">
               <h2 className="flex items-center text-3xl font-bold mb-8 bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
                 <FaUser className="mr-4 text-violet-400" />
-                Om mig
+                {t("aboutMe.title")}
               </h2>
 
               <div className="space-y-6">
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Jag heter Josefine, är 40 år och bor i Mjölby med mina två
-                  tonårsdöttrar.
+                  {t("aboutMe.p1")}
                 </p>
 
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Jag är en driven person som trivs med att ta mig an nya
-                  utmaningar. Att lära mig nya saker och bli bättre på det jag
-                  redan kan är något jag verkligen värdesätter – både i
-                  arbetslivet och privat.
+                  {t("aboutMe.p2")}
                 </p>
 
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Mitt intresse för IT sträcker sig tillbaka till 2007. Redan då
-                  fastnade jag för det digitala skapandet – från att designa
-                  bloggar och banners till att skriva enklare script och driva en
-                  egen webbutik och fyndiq.se med egna designade produkter. Den
-                  nyfikenheten har aldrig försvunnit.
+                  {t("aboutMe.p3")}
                 </p>
 
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Jag har sedan dess byggt upp en gedigen grund inom HTML, CSS
-                  och JavaScript, och har nyligen utbildat mig till
-                  fullstackutvecklare. Genom min pågående LIA-praktik hos
-                  hitract.se har jag fått värdefull praktisk erfarenhet inom
-                  modern webbutveckling.
+                  {t("aboutMe.p4")}
                 </p>
 
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  Jag driver sidan kodochdesign.se där jag tar mindre uppdrag,
-                  men mitt huvudmål är att hitta en anställning inom fullstack-
-                  eller frontendutveckling där jag får växa i min yrkesroll och
-                  bidra till innovativa projekt. Jag siktar på en start till
-                  våren.
+                  {t("aboutMe.p5")}
                 </p>
 
                 <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  När jag inte kodar laddar jag gärna ur i naturen, spelar piano,
-                  pysslar med hantverk eller kopplar av med att spela dator eller
-                  piano. Jag värdesätter balansen mellan att prestera och att
-                  återhämta sig.
+                  {t("aboutMe.p6")}
                 </p>
               </div>
 
@@ -71,7 +57,7 @@ export default function AboutMe() {
                   <div className="flex items-center mb-4">
                     <FaPlay className="text-pink-400 mr-3" />
                     <span className="text-slate-200 font-semibold">
-                      Piano trudelutt
+                      {t("aboutMe.videoLabel")}
                     </span>
                   </div>
                   <div className="relative rounded-xl overflow-hidden">

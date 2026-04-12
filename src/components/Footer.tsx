@@ -1,11 +1,7 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+"use client";
 
-const CONTACT_INFO = [
-  { icon: FaPhone, gradient: "from-purple-500 to-pink-500", title: "Josefine Eriksson", subtitle: "Fullstack Developer & Designer" },
-  { icon: FaPhone, gradient: "from-pink-500 to-rose-500", text: "0762484234" },
-  { icon: FaEnvelope, gradient: "from-rose-500 to-orange-500", text: "josefineeriksson@live.se", href: "mailto:josefineeriksson@live.se" },
-  { icon: FaMapMarkerAlt, gradient: "from-orange-500 to-cyan-500", text: "Norra Strandvägen 1, Mjölby" },
-];
+import { FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { useTranslate } from "@/locales/use-locales";
 
 const SOCIALS = [
   { icon: FaFacebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61579831973399", color: "blue", gradient: "from-blue-600 to-blue-500" },
@@ -15,6 +11,15 @@ const SOCIALS = [
 ];
 
 export default function Footer() {
+  const { t } = useTranslate();
+
+  const CONTACT_INFO = [
+    { icon: FaPhone, gradient: "from-purple-500 to-pink-500", title: "Josefine Eriksson", subtitle: t("footer.fullstackDesigner") },
+    { icon: FaPhone, gradient: "from-pink-500 to-rose-500", text: "0762484234" },
+    { icon: FaEnvelope, gradient: "from-rose-500 to-orange-500", text: "josefineeriksson@live.se", href: "mailto:josefineeriksson@live.se" },
+    { icon: FaMapMarkerAlt, gradient: "from-orange-500 to-cyan-500", text: "Norra Strandvägen 1, Mjölby" },
+  ];
+
   return (
     <footer className="relative bg-slate-950 text-white overflow-hidden">
       {/* Backgrounds */}
@@ -29,7 +34,7 @@ export default function Footer() {
             <div className="absolute -inset-2 bg-gradient-to-r from-violet-600/20 to-pink-600/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition duration-500" />
             <div className="relative backdrop-blur-xl bg-slate-900/30 border border-white/10 rounded-2xl p-8">
               <h4 className="text-2xl font-bold mb-6 bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
-                Kontakt
+                {t("footer.contact")}
               </h4>
               <div className="space-y-4">
                 {CONTACT_INFO.map((item, i) => (
@@ -62,7 +67,7 @@ export default function Footer() {
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition duration-500" />
             <div className="relative backdrop-blur-xl bg-slate-900/30 border border-white/10 rounded-2xl p-8">
               <h4 className="text-2xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                Följ mig
+                {t("footer.followMe")}
               </h4>
               <div className="grid grid-cols-2 gap-4">
                 {SOCIALS.map((social, i) => (
@@ -95,7 +100,7 @@ export default function Footer() {
               <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent font-semibold">
                 Josefine Eriksson Kod & Design
               </span>{" "}
-              • Alla rättigheter förbehållna
+              • {t("footer.allRightsReserved")}
             </p>
           </div>
         </div>
