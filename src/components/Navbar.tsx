@@ -110,7 +110,7 @@ export default function Navbar() {
               </button>
 
               {langMenuOpen && (
-                <div className="absolute right-0 mt-2 backdrop-blur-xl bg-slate-900/90 border border-white/10 rounded-xl shadow-2xl overflow-hidden min-w-[160px] z-50">
+                <div className="absolute right-0 mt-2 backdrop-blur-xl text-slate-100 bg-slate-900/90 border border-white/10 rounded-xl shadow-2xl overflow-hidden min-w-[160px] z-50">
                   {allLangs.map((lang) => (
                     <button
                       key={lang.value}
