@@ -79,12 +79,12 @@ export default function Aside() {
                 </div>
               ))}
             </div>
-
+{/* CV ENGELSKA */}
             {/* Download CV Button */}
             <div className="mb-8">
               <a
-                href="/Pdf/josefineerikssoncv.pdf"
-                download="Josefine_Eriksson_CV.pdf"
+                href="/Pdf/CV-JosefineEriksson-English.pdf"
+                download="CV-JosefineEriksson-English.pdf"
                 className="group/btn relative block w-full"
               >
                 <div className="absolute -inset-1 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 rounded-2xl blur-lg opacity-30 group-hover/btn:opacity-60 transition duration-500"></div>
@@ -98,6 +98,8 @@ export default function Aside() {
                   <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                 </button>
               </a>
+
+
             </div>
 
             {/* Skills Sections */}
