@@ -56,9 +56,7 @@ För ändringar och förbättringar:
 1. Skapa en feature-branch.
 2. Skicka en pull request med tydlig beskrivning av ändringen.
 
-## Licens
 
-Detta repository är öppet för privat bruk och vidareutveckling. Lägg till en licensfil (t.ex. MIT) om du vill tillåta extern användning.
 
 ## Kontakt
 
