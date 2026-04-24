@@ -18,7 +18,7 @@ Se en skärmbild i repositoryt: `screenshot.png`. Kör projektet lokalt för ful
 - TypeScript
 - Tailwind CSS
 - React
-- (Eventuellt) Prisma, PostgreSQL och autentisering för backendfunktionalitet
+
 
 ## Komma igång (lokalt)
 
