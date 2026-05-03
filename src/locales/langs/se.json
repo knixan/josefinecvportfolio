@@ -79,11 +79,11 @@
   "aboutMe": {
     "title": "Om mig",
     "p1": "Jag heter Josefine, är 40 år och bor i Mjölby med mina två tonårsdöttrar.",
-    "p2": "Jag är en driven person som trivs med att ta mig an nya utmaningar. Att lära mig nya saker och bli bättre på det jag redan kan är något jag verkligen värdesätter – både i arbetslivet och privat.",
-    "p3": "Mitt intresse för IT sträcker sig tillbaka till 2007. Redan då fastnade jag för det digitala skapandet – från att designa bloggar och banners till att skriva enklare script och driva en egen webbutik och fyndiq.se med egna designade produkter. Den nyfikenheten har aldrig försvunnit.",
-    "p4": "Jag har sedan dess byggt upp en gedigen grund inom HTML, CSS och JavaScript, och har nyligen utbildat mig till fullstackutvecklare. Genom min pågående LIA-praktik hos hitract.se har jag fått värdefull praktisk erfarenhet inom modern webbutveckling.",
-    "p5": "Jag driver sidan kodochdesign.se där jag tar mindre uppdrag, men mitt huvudmål är att hitta en anställning inom fullstack- eller frontendutveckling där jag får växa i min yrkesroll och bidra till innovativa projekt. Jag siktar på en start till våren.",
-    "p6": "När jag inte kodar laddar jag gärna ur i naturen, spelar piano, pysslar med hantverk eller kopplar av med att spela dator eller piano. Jag värdesätter balansen mellan att prestera och att återhämta sig.",
+    "p2": "Fullstackutvecklare med rötterna i frontend. Med flera års erfarenhet av HTML, CSS, grafisk design och bildhantering som grund har jag nu breddat mig till modern fullstackutveckling i React, Next.js och Node.js. Jag skapar tillgängliga, responsiva gränssnitt med ett tränat öga för detalj och en stark känsla för visuell identitet.",
+    "p3": "Mitt intresse för IT sträcker sig tillbaka till 2007 – redan då fastnade jag för det digitala skapandet, från att designa bloggar och banners till att skriva enklare script och driva en egen webbutik och fyndiq.se med egna designade produkter. Den nyfikenheten har aldrig försvunnit.",
+    "p4": "Genom min pågående LIA-praktik hos hitract.se har jag fått värdefull praktisk erfarenhet inom modern webbutveckling, och jag driver även kodochdesign.se där jag tar mindre uppdrag. Mitt huvudmål är att hitta en anställning inom fullstack- eller frontendutveckling där jag får växa i min yrkesroll och bidra till innovativa projekt – med sikte på en start till våren.",
+    "p5": "Jag är en driven person som trivs med att ta mig an nya utmaningar och verkligen värdesätter att lära mig nya saker, både i arbetslivet och privat. ",
+    "p6": "När jag inte kodar laddar jag gärna batterierna i naturen, spelar piano, pysslar eller kopplar av med datorspel eller piano. Jag värdesätter balansen mellan att prestera och att återhämta mig.",
     "videoLabel": "Piano trudelutt"
   },
   "portfolio": {

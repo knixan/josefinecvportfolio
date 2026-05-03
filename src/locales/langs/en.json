@@ -78,11 +78,11 @@
   },
   "aboutMe": {
     "title": "About me",
-    "p1": "My name is Josefine, I'm 40 years old and live in Mjölby with my two teenage daughters.",
-    "p2": "I'm a driven person who thrives on taking on new challenges. Learning new things and improving what I already know is something I truly value – both professionally and personally.",
-    "p3": "My interest in IT goes back to 2007. Already then I was drawn to digital creation – from designing blogs and banners to writing simple scripts and running my own web store and fyndiq.se with self-designed products. That curiosity has never disappeared.",
-    "p4": "Since then, I've built a solid foundation in HTML, CSS, and JavaScript, and have recently trained as a fullstack developer. Through my ongoing internship (LIA) at hitract.se, I've gained valuable practical experience in modern web development.",
-    "p5": "I run the website kodochdesign.se where I take on smaller projects, but my main goal is to find employment in fullstack or frontend development where I can grow in my professional role and contribute to innovative projects. I'm aiming for a start in the spring.",
+    "p1": "My name is Josefine, I'm 40 years old and I live in Mjölby with my two teenage daughters.",
+    "p2": "Full-stack developer with roots in frontend. With several years of experience in HTML, CSS, graphic design and image editing as my foundation, I have expanded into modern full-stack development with React, Next.js and Node.js. I build accessible, responsive interfaces with a trained eye for detail and a strong sense of visual identity.",
+    "p3": "My interest in IT goes back to 2007 – even then I was drawn to digital creation, from designing blogs and banners to writing simple scripts and running my own online store and fyndiq.se with self-designed products. That curiosity has never left me.",
+    "p4": "Through my ongoing internship at hitract.se I have gained valuable hands-on experience in modern web development, and I also run kodochdesign.se where I take on smaller projects. My main goal is to find a position in full-stack or frontend development where I can grow professionally and contribute to innovative projects – aiming for a start in spring.",
+    "p5": "I am a driven person who enjoys taking on new challenges and genuinely values continuous learning, both professionally and personally. When I'm not coding I recharge in nature, play piano, do crafts or unwind with gaming. I believe in the balance between performing and recovering.",
     "p6": "When I'm not coding, I enjoy recharging in nature, playing piano, crafting, or relaxing with computer games or piano. I value the balance between performing and recovering.",
     "videoLabel": "Piano tune"
   },
