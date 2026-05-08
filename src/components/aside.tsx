@@ -83,7 +83,7 @@ export default function Aside() {
             {/* Download CV Button */}
             <div className="mb-8">
               <a
-                href="/Pdf/CV-JosefineEriksson-English.pdf"
+                href="/Pdf/CVJosefineErikssonENGB.pdf"
                 download="CV-JosefineEriksson-English.pdf"
                 className="group/btn relative block w-full"
               >
