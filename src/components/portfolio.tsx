@@ -18,6 +18,13 @@ const PROJECT_DATA: Record<string, { image: string; tech: string; projectLink?: 
     projectLink: "https://b-movies-ag6m.vercel.app/",
   },
 
+    sweettimeUf: {
+    image: "/Image/mockup-sweettime-uf.png",
+    tech: "React, Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Zod, BetterAuth, Shadcn",
+    projectLink: "https://sweettimeuf.vercel.app/",
+    codeLink: "https://github.com/knixan/sweettimeuf",
+  },
+
   fakeyNails: {
     image: "/Image/mockupbilder/fakeynails.jpg",
     tech: "React, Next.js, Sanity CMS, TypeScript, TailwindCSS, Shadcn, Nodmailer",
@@ -60,12 +67,7 @@ const PROJECT_DATA: Record<string, { image: string; tech: string; projectLink?: 
     projectLink: "https://studenthubben-six.vercel.app/",
     codeLink: "https://github.com/knixan/studenthubben",
   },
-  sweettimeUf: {
-    image: "/Image/mockup-sweettime-uf.png",
-    tech: "React, Next.js, TypeScript, Tailwind CSS",
-    projectLink: "https://sweettime-uf.se/",
-    codeLink: "https://github.com/Ludde2525/sweettime/tree/main",
-  },
+
   gammelBygg: {
     image: "/Image/mockupbilder/gammelbygg-mockup.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS",
