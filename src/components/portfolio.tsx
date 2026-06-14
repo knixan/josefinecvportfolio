@@ -10,17 +10,21 @@ const PROJECT_KEYS = [
 ];
 
 const PROJECT_DATA: Record<string, { image: string; tech: string; projectLink?: string; codeLink?: string }> = {
+
+  bMovies: {
+    image: "/Image/mockup-bmovies.jpg",
+    tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth, API",
+    codeLink: "https://github.com/knixan/b-movies",
+    projectLink: "https://b-movies-ag6m.vercel.app/",
+  },
+
   fakeyNails: {
     image: "/Image/mockupbilder/fakeynails.jpg",
     tech: "React, Next.js, Sanity CMS, TypeScript, TailwindCSS, Shadcn, Nodmailer",
     codeLink: "https://github.com/knixan/fakey-nails",
     projectLink: "https://fakey-nails.vercel.app/",
   },
-  bMovies: {
-    image: "/Image/mockup-bmovies.jpg",
-    tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth, API",
-    codeLink: "https://github.com/knixan/b-movies",
-  },
+
   dagensDons: {
     image: "/Image/mockupbilder/dagensdos.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
