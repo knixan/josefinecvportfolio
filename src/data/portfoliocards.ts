@@ -25,7 +25,9 @@ export const projects: Project[] = [
     "image": "/Image/mockup-bmovies.jpg",
     "alt": "B-movies",
     "tech": "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth, API",
+    "projectLink": "https://b-movies-ag6m.vercel.app/",
     "codeLink": "https://github.com/knixan/b-movies"
+     
   },
 
     {
