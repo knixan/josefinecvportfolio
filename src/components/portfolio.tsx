@@ -4,16 +4,16 @@ import ProjectCard from "./ProjectCard";
 import { useTranslate } from "@/locales/use-locales";
 
 const PROJECT_KEYS = [
-  "fakeyNails",
   "bMovies",
   "dagensDons",
   "motionzone",
+  "sweettimeUf",
   "kladerEfterVader",
   "skeningeVvs",
   "vaderskuggan",
   "studenthubben",
-  "sweettimeUf",
   "gammelBygg",
+  "fakeyNails",
   "ledningsteknik",
   "jonnyEriksson",
 ];
@@ -34,6 +34,14 @@ const PROJECT_DATA: Record<
     projectLink: "https://sweettimeuf.vercel.app/",
     codeLink: "https://github.com/knixan/sweettimeuf",
   },
+
+    motionzone: {
+    image: "/Image/mockupbilder/motionzone.jpg",
+    tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma",
+    projectLink: "https://dev.motionzoneworld.com/",
+    codeLink: "https://github.com/motionzoneproject/motionzoneproject",
+  },
+
   fakeyNails: {
     image: "/Image/mockupbilder/fakeynails.jpg",
     tech: "React, Next.js, Sanity CMS, TypeScript, TailwindCSS, Shadcn, Nodmailer",
@@ -45,12 +53,7 @@ const PROJECT_DATA: Record<
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
     codeLink: "https://github.com/knixan/dagens-dos",
   },
-  motionzone: {
-    image: "/Image/mockupbilder/motionzone.jpg",
-    tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma",
-    projectLink: "https://dev.motionzoneworld.com/",
-    codeLink: "https://github.com/motionzoneproject/motionzoneproject",
-  },
+
   kladerEfterVader: {
     image: "/Image/mockupbilder/vaderefterklader.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS, OpenWeatherMap API",
