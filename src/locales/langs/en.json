@@ -14,7 +14,9 @@
     "programs": "Programs",
     "languages": "Languages",
     "swedish": "Swedish",
-    "english": "English"
+    "english": "English",
+    "references": "References",
+    "referencesText": "References are provided upon request."
   },
   "cv": {
     "workExperience": "Work Experience",
@@ -74,16 +76,17 @@
         "period": "2002 - 2005",
         "school": "Tullängsskolan Örebro"
       }
+
+      
     }
   },
   "aboutMe": {
     "title": "About me",
-    "p1": "My name is Josefine, I'm 40 years old and I live in Mjölby with my two teenage daughters.",
-    "p2": "Full-stack developer with roots in frontend. With several years of experience in HTML, CSS, graphic design and image editing as my foundation, I have expanded into modern full-stack development with React, Next.js and Node.js. I build accessible, responsive interfaces with a trained eye for detail and a strong sense of visual identity.",
-    "p3": "My interest in IT goes back to 2007 – even then I was drawn to digital creation, from designing blogs and banners to writing simple scripts and running my own online store and fyndiq.se with self-designed products. That curiosity has never left me.",
-    "p4": "Through my ongoing internship at hitract.se I have gained valuable hands-on experience in modern web development, and I also run kodochdesign.se where I take on smaller projects. My main goal is to find a position in full-stack or frontend development where I can grow professionally and contribute to innovative projects – aiming for a start in spring.",
-    "p5": "I am a driven person who enjoys taking on new challenges and genuinely values continuous learning, both professionally and personally. When I'm not coding I recharge in nature, play piano, do crafts or unwind with gaming. I believe in the balance between performing and recovering.",
-    "p6": "When I'm not coding, I enjoy recharging in nature, playing piano, crafting, or relaxing with computer games or piano. I value the balance between performing and recovering.",
+    "p1": "Hi! My name is Josefine and I live in Mjölby with my two teenage daughters.",
+    "p2": "My journey into digital creation actually began back in 2007. What started as curiosity about designing blogs, building my own web shop, and selling my own products on Fyndiq has evolved over the years into a deep interest in web development. With a solid foundation in graphic design, HTML, CSS, and image editing, I took the step to broaden my skills into modern fullstack development. Today, I primarily code in React, Next.js, and Node.js.",
+    "p3": "I like to describe myself as a fullstack developer with roots in frontend. I love building the logic behind the scenes, but my eye for detail and visual identities means I put extra heart into creating accessible and responsive interfaces. After recently completing a six-month and educational internship (LIA), I am currently focusing on building my own web application tailored for small businesses in the construction industry. It is a project where I independently get to plan, structure, and build the entire system from scratch.",
+    "p4": "As a person, I am driven and have a strong desire to constantly learn new things. I am motivated by driving projects forward and turning ideas into finished code. I am now looking for a permanent workplace where I can continue to grow, contribute to the team, and build smart solutions.",
+    "p5": "When the screens go off, you'll usually find me out in nature to recharge, at the piano, or relaxing with some computer games and crafts.",
     "videoLabel": "Piano tune"
   },
   "portfolio": {

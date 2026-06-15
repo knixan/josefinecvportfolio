@@ -15,6 +15,7 @@ interface ProjectCardProps {
   tech: string;
   projectLink?: string;
   codeLink?: string;
+  index: number;
 }
 
 export default function ProjectCard({
@@ -25,6 +26,7 @@ export default function ProjectCard({
   tech,
   projectLink,
   codeLink,
+  index,
 }: ProjectCardProps) {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const { t } = useTranslate();
@@ -34,87 +36,106 @@ export default function ProjectCard({
     document.body.style.overflow = isImageModalOpen ? "unset" : "hidden";
   };
 
+  const isReversed = index % 2 === 1;
+
   return (
     <>
-      <div className="group relative">
-        <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 via-pink-600 to-cyan-600 rounded-3xl blur-lg opacity-20 group-hover:opacity-50 transition duration-500"></div>
-        <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-500 group-hover:scale-105 group-hover:-translate-y-2">
-          <div
-            className="relative h-64 overflow-hidden cursor-pointer group/image"
-            onClick={toggleModal}
-          >
-            <Image src={image} alt={alt} fill style={{ objectFit: "cover" }} className="transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <div className="backdrop-blur-xl bg-white/20 border border-white/30 p-4 rounded-full transform scale-75 group-hover/image:scale-100 transition-transform duration-300">
-                <FaExpandAlt className="text-white text-xl" />
-              </div>
+      <div className={`flex flex-col md:flex-row gap-8 lg:gap-12 items-center bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 lg:p-8 shadow-xl backdrop-blur-md transition-all duration-300 hover:border-slate-700/60 ${
+        isReversed ? "md:flex-row-reverse" : ""
+      }`}>
+        
+        {/* Bildbehållare - Optimerad för breda panoramabilder */}
+        <div 
+          className="w-full md:w-[60%] aspect-[16/9] relative rounded-xl overflow-hidden group/image cursor-pointer flex-none" 
+          onClick={toggleModal}
+        >
+          <Image 
+            src={image} 
+            alt={alt} 
+            fill 
+            sizes="(max-width: 768px) 100vw, 60vw"
+            style={{ objectFit: "contain" }} // Garanterar att HELA bilden alltid syns
+            className="transition-transform duration-700 group-hover/image:scale-102" 
+          />
+          
+          {/* Subtilt hover-overlay anpassat för contain-format */}
+          <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-xl">
+            <div className="backdrop-blur-md bg-slate-900/80 border border-slate-700/50 p-3 rounded-lg transform scale-90 group-hover/image:scale-100 transition-all duration-300">
+              <FaExpandAlt className="text-white text-sm" />
             </div>
           </div>
-          <div className="p-8">
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">{title}</h3>
-            <p className="text-slate-300 text-base mb-6 leading-relaxed font-light">{description}</p>
-            <div className="flex flex-col sm:flex-row gap-3">
+        </div>
+
+        {/* Textinnehåll */}
+        <div className="w-full md:w-[40%] flex flex-col justify-between h-full space-y-6">
+          <div>
+            <h3 className="text-xl font-bold mb-3 text-white tracking-tight">
+              {title}
+            </h3>
+            <p className="text-slate-300 text-sm leading-relaxed font-light">
+              {description}
+            </p>
+          </div>
+
+          {/* Knappar och teknik */}
+          <div className="space-y-5 pt-4 border-t border-slate-800/60">
+            {/* Länkar */}
+            <div className="flex gap-3">
               {projectLink && (
-                <Link href={projectLink} target="_blank" rel="noopener noreferrer" className="group/btn relative flex-1">
-                  <button aria-label={t("portfolio.viewProject")} title={t("portfolio.viewProject")} className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25 flex items-center justify-center">
-                    <span className="relative z-10" aria-hidden="true">
-                      <FaGlobe className="text-xl" />
-                    </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                <Link href={projectLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <button aria-label={t("portfolio.viewProject")} title={t("portfolio.viewProject")} className="w-full py-2.5 px-4 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 hover:bg-slate-750 transition-all duration-200 flex items-center justify-center space-x-2 shadow-sm">
+                    <FaGlobe className="text-sm text-slate-400" />
+                    <span>{t("portfolio.viewProject") || "Visa projekt"}</span>
                   </button>
                 </Link>
               )}
               {codeLink && (
-                <Link href={codeLink} target="_blank" rel="noopener noreferrer" className="group/btn relative flex-1">
-                  <button aria-label={t("portfolio.viewCode")} title={t("portfolio.viewCode")} className="relative w-full px-6 py-3 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 transform hover:scale-105 shadow-lg hover:shadow-pink-500/25 flex items-center justify-center">
-                    <span className="relative z-10" aria-hidden="true">
-                      <FaGithub className="text-xl" />
-                    </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                <Link href={codeLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <button aria-label={t("portfolio.viewCode")} title={t("portfolio.viewCode")} className="w-full py-2.5 px-4 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 hover:bg-slate-750 transition-all duration-200 flex items-center justify-center space-x-2 shadow-sm">
+                    <FaGithub className="text-sm text-slate-400" />
+                    <span>{t("portfolio.viewCode") || "Källkod"}</span>
                   </button>
                 </Link>
               )}
             </div>
-            <div className="mt-6 pt-4 border-t border-white/10">
-              <p className="font-semibold text-sm mb-3 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">{t("portfolio.tech")}</p>
-              <div className="flex flex-wrap gap-3">
+
+            {/* Teknologier */}
+            <div>
+              <div className="flex flex-wrap gap-2">
                 {getTechIcons(tech).map((techItem, i) => (
-                  <div key={i} className="flex flex-col items-center gap-1 group/icon">
-                    <div className="w-10 h-10 rounded-xl backdrop-blur-xl bg-purple-500/20 border border-purple-300/30 flex items-center justify-center hover:bg-purple-500/30 transition-all duration-300 group-hover/icon:scale-110">
-                      <techItem.icon className="text-lg" style={{ color: techItem.color }} />
-                    </div>
-                    <span className="text-purple-200 text-[9px] font-medium text-center leading-tight">{techItem.name}</span>
+                  <div 
+                    key={i} 
+                    className="flex items-center space-x-1.5 bg-slate-800/40 border border-slate-800/80 px-2.5 py-1 rounded-md"
+                    title={techItem.name}
+                  >
+                    <techItem.icon className="text-xs" style={{ color: techItem.color }} />
+                    <span className="text-slate-300 text-[11px] font-medium">{techItem.name}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
         </div>
+
       </div>
 
+      {/* Bild-modal (Fullskärm) */}
       {isImageModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div className="absolute inset-0 bg-black/80 backdrop-blur-md" onClick={toggleModal}></div>
-          <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex flex-col items-center justify-center">
-            <button onClick={toggleModal} className="absolute top-4 right-4 z-10 group/close">
-              <div className="absolute -inset-2 bg-gradient-to-r from-red-600/20 to-pink-600/20 rounded-xl blur-lg opacity-0 group-hover/close:opacity-100 transition duration-300"></div>
-              <div className="relative backdrop-blur-xl bg-slate-900/60 border border-white/20 p-3 rounded-xl hover:bg-slate-800/80 transition-colors duration-300">
-                <FaTimes className="text-white text-xl" />
-              </div>
+          <div className="absolute inset-0 bg-black/90 backdrop-blur-md" onClick={toggleModal}></div>
+          <div className="relative max-w-6xl max-h-[85vh] w-full h-full flex flex-col items-center justify-center z-10">
+            <button onClick={toggleModal} className="absolute -top-12 right-0 text-slate-400 hover:text-white transition-colors p-2">
+              <FaTimes className="text-xl" />
             </button>
-            <div className="relative group/modal flex flex-col items-center max-w-full max-h-full">
-              <div className="absolute -inset-4 bg-gradient-to-r from-violet-600/20 via-pink-600/20 to-cyan-600/20 rounded-3xl blur-2xl opacity-60"></div>
-              <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl p-4 shadow-2xl mb-6">
-                <Image
-                  src={image}
-                  alt={alt}
-                  width={1200}
-                  height={800}
-                  className="rounded-2xl shadow-2xl max-w-full max-h-[70vh] w-auto h-auto object-contain"
-                  quality={800}
-                />
-              </div>
+            <div className="relative border border-slate-800/50 rounded-xl p-2 shadow-2xl max-w-full max-h-full">
+              <Image
+                src={image}
+                alt={alt}
+                width={1600}
+                height={900}
+                className="rounded-lg max-w-full max-h-[75vh] w-auto h-auto object-contain"
+                quality={95}
+              />
             </div>
           </div>
         </div>

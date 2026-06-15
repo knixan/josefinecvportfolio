@@ -14,7 +14,9 @@
     "programs": "Program",
     "languages": "Språk",
     "swedish": "Svenska",
-    "english": "Engelska"
+    "english": "Engelska",
+    "references": "Referenser",
+    "referencesText": "Referenser lämnas vid förfrågan"
   },
   "cv": {
     "workExperience": "Arbetslivserfarenhet",
@@ -78,12 +80,11 @@
   },
   "aboutMe": {
     "title": "Om mig",
-    "p1": "Jag heter Josefine, är 40 år och bor i Mjölby med mina två tonårsdöttrar.",
-    "p2": "Fullstackutvecklare med rötterna i frontend. Med flera års erfarenhet av HTML, CSS, grafisk design och bildhantering som grund har jag nu breddat mig till modern fullstackutveckling i React, Next.js och Node.js. Jag skapar tillgängliga, responsiva gränssnitt med ett tränat öga för detalj och en stark känsla för visuell identitet.",
-    "p3": "Mitt intresse för IT sträcker sig tillbaka till 2007 – redan då fastnade jag för det digitala skapandet, från att designa bloggar och banners till att skriva enklare script och driva en egen webbutik och fyndiq.se med egna designade produkter. Den nyfikenheten har aldrig försvunnit.",
-    "p4": "Genom min pågående LIA-praktik hos hitract.se har jag fått värdefull praktisk erfarenhet inom modern webbutveckling, och jag driver även kodochdesign.se där jag tar mindre uppdrag. Mitt huvudmål är att hitta en anställning inom fullstack- eller frontendutveckling där jag får växa i min yrkesroll och bidra till innovativa projekt – med sikte på en start till våren.",
-    "p5": "Jag är en driven person som trivs med att ta mig an nya utmaningar och verkligen värdesätter att lära mig nya saker, både i arbetslivet och privat. ",
-    "p6": "När jag inte kodar laddar jag gärna batterierna i naturen, spelar piano, pysslar eller kopplar av med datorspel eller piano. Jag värdesätter balansen mellan att prestera och att återhämta mig.",
+    "p1": "Hej! Jag heter Josefine och bor i Mjölby tillsammans med mina två tonårsdöttrar.",
+    "p2": "Min resa inom det digitala skapandet började faktiskt redan 2007. Det som startade som en nyfikenhet kring att designa bloggar, bygga en egen webbutik och sälja egna produkter på Fyndiq, har genom åren utvecklats till ett djupt intresse för webbutveckling. Med en stabil grund inom grafisk design, HTML, CSS och bildredigering tog jag steget att bredda mig till modern fullstackutveckling. Idag kodar jag framförallt i React, Next.js och Node.js.",
+    "p3": "Jag beskriver mig gärna som en fullstackutvecklare med rötterna i frontend. Jag älskar att bygga logiken bakom kulisserna, men mitt öga för detaljer och visuella identiteter gör att jag lägger extra mycket hjärta på att skapa tillgängliga och responsiva gränssnitt. Efter att nyligen ha avslutat en sex månader lång och lärorik LIA-praktik, fokuserar jag just nu på att bygga en egen webbapplikation skräddarsydd för småföretagare inom byggbranschen. Det är ett projekt där jag självständigt får planera, strukturera och bygga hela systemet från grunden.",
+    "p4": "Som person är jag driven och har en stark vilja att hela tiden lära mig nya saker. Jag motiveras av att driva projekt framåt och omsätta idéer till färdig kod. Nu letar jag efter en fast arbetsplats där jag kan fortsätta växa, bidra till teamet och bygga smarta lösningar.",
+    "p5": "När skärmarna släcks hittar du mig oftast ute i naturen för att ladda batterierna, vid pianot, eller så kopplar jag av med lite datorspel och pyssel.",
     "videoLabel": "Piano trudelutt"
   },
   "portfolio": {

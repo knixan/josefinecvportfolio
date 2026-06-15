@@ -7,6 +7,7 @@ import {
   FaEnvelope,
   FaPhone,
   FaDownload,
+  FaQuoteRight,
 } from "react-icons/fa";
 import { getTechIcons } from "@/data/techIcons";
 import { useTranslate } from "@/locales/use-locales";
@@ -17,135 +18,121 @@ const programs = getTechIcons(
 
 export default function Aside() {
   const { t } = useTranslate();
-
   const languages = [t("aside.swedish"), t("aside.english")];
 
   return (
     <aside className="left-column flex-none w-full lg:w-1/3">
       <div className="relative group">
-        <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 rounded-3xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
-        <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl shadow-2xl overflow-hidden">
-          {/* Profile Image Section */}
-          <div className="relative">
-            <div className="w-full">
-              <Image
-                src="/Image/josefineeriksson.png"
-                alt="Avatar"
-                width={500}
-                height={400}
-                className="object-cover w-full h-full rounded-t-3xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent rounded-t-3xl"></div>
-            </div>
-            <div className="absolute bottom-4 left-4">
-              <div className="backdrop-blur-xl animate-bounce bg-white/20 border border-white/30 px-6 py-3 rounded-2xl">
-                <h2 className="font-bold text-white text-lg">{t("aside.greeting")}</h2>
-              </div>
+        {/* Subtil och lyxig glow */}
+        <div className="absolute -inset-px bg-gradient-to-b from-indigo-500/20 to-cyan-500/20 rounded-2xl blur-md transition duration-500" />
+        
+        <div className="relative bg-slate-900/60 border border-slate-800/80 rounded-2xl shadow-xl overflow-hidden backdrop-blur-md">
+          
+          {/* Profilbild med ett högre 3:4-porträttformat */}
+          <div className="relative aspect-[3/4] w-full overflow-hidden rounded-t-2xl">
+            <Image
+              src="/Image/josefineeriksson-profil.jpg"
+              alt="Josefine Eriksson"
+              width={500}
+              height={667}
+              priority
+              className="object-cover object-top w-full h-full grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+            />
+            {/* Elegant mörk toning i botten för textens läsbarhet */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
+            <div className="absolute bottom-4 left-6">
+              <span className="text-xs font-semibold tracking-wider text-indigo-400 uppercase">
+                {t("aside.greeting")}
+              </span>
             </div>
           </div>
 
-          {/* Contact Info */}
-          <div className="p-8">
-            <div className="space-y-4 mb-8">
+          <div className="p-6 lg:p-8 space-y-8">
+            {/* Kontaktinfo */}
+            <div className="space-y-4">
               {[
-                {
-                  icon: FaBriefcase,
-                  text: t("aside.jobTitle"),
-                  color: "from-purple-400 to-pink-400",
-                },
-                {
-                  icon: FaHome,
-                  text: t("aside.location"),
-                  color: "from-pink-400 to-rose-400",
-                },
-                {
-                  icon: FaEnvelope,
-                  text: "josefineeriksson@live.se",
-                  color: "from-rose-400 to-orange-400",
-                },
-                {
-                  icon: FaPhone,
-                  text: "0762484234",
-                  color: "from-orange-400 to-cyan-400",
-                },
+                { icon: FaBriefcase, text: t("aside.jobTitle") },
+                { icon: FaHome, text: t("aside.location") },
+                { icon: FaEnvelope, text: "josefineeriksson@live.se", isLink: true, href: "mailto:josefineeriksson@live.se" },
+                { icon: FaPhone, text: "076-248 42 34" },
               ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-3 group">
-                  <div
-                    className={`w-10 h-10 rounded-xl bg-gradient-to-r ${item.color} flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <item.icon className="text-white text-sm" />
+                <div key={index} className="flex items-center space-x-3 text-slate-300 group/item">
+                  <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700/50 group-hover/item:border-indigo-500/50 group-hover/item:text-indigo-400 transition-colors duration-300">
+                    <item.icon className="text-sm text-slate-400 group-hover/item:text-indigo-400" />
                   </div>
-                  <p className="text-slate-200 font-medium">{item.text}</p>
+                  {item.isLink ? (
+                    <a href={item.href} className="text-sm font-medium hover:text-white transition-colors">
+                      {item.text}
+                    </a>
+                  ) : (
+                    <p className="text-sm font-medium">{item.text}</p>
+                  )}
                 </div>
               ))}
             </div>
-{/* CV ENGELSKA */}
-            {/* Download CV Button */}
-            <div className="mb-8">
+
+            {/* Ladda ner CV-knapp */}
+            <div>
               <a
                 href="/Pdf/CVJosefineErikssonENGB.pdf"
                 download="CV-JosefineEriksson-English.pdf"
-                className="group/btn relative block w-full"
+                className="relative block w-full group/btn"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 rounded-2xl blur-lg opacity-30 group-hover/btn:opacity-60 transition duration-500"></div>
-                <button className="relative w-full px-6 py-4 rounded-2xl font-bold text-white overflow-hidden transition-all duration-300 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-600 hover:via-teal-600 hover:to-cyan-600 transform hover:scale-105 shadow-lg hover:shadow-emerald-500/25 border border-white/20">
-                  <div className="flex items-center justify-center space-x-3">
-                    <div className="w-8 h-8 rounded-xl bg-white/20 flex items-center justify-center">
-                      <FaDownload className="text-white text-sm" />
-                    </div>
-                    <span className="relative z-10 text-lg">{t("aside.downloadCv")}</span>
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                <button className="w-full py-3.5 px-6 rounded-xl font-semibold text-sm text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300 flex items-center justify-center space-x-2 shadow-sm hover:bg-slate-750">
+                  <FaDownload className="text-xs text-slate-400 group-hover/btn:text-white transition-colors" />
+                  <span>{t("aside.downloadCv")}</span>
                 </button>
               </a>
-
-
             </div>
 
-            {/* Skills Sections */}
-            <div className="space-y-8">
-              {/* Programs */}
+            {/* Kompetenser */}
+            <div className="space-y-6 pt-2 border-t border-slate-800/60">
               <div>
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <h3 className="text-sm font-bold tracking-wider uppercase text-slate-400 mb-4">
                   {t("aside.programs")}
                 </h3>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-2.5">
                   {programs.map((program, index) => (
                     <div
                       key={index}
-                      className="flex flex-col items-center gap-1 w-16 group/icon"
+                      className="flex items-center space-x-1.5 bg-slate-800/40 border border-slate-800 px-3 py-1.5 rounded-lg hover:border-slate-700 transition-all duration-300"
                     >
-                      <div className="w-12 h-12 rounded-xl backdrop-blur-xl bg-purple-500/20 border border-purple-300/30 flex items-center justify-center hover:bg-purple-500/30 transition-all duration-300 group-hover/icon:scale-110">
-                        <program.icon
-                          className="text-2xl"
-                          style={{ color: program.color }}
-                        />
-                      </div>
-                      <span className="text-purple-200 text-[10px] font-medium text-center leading-tight">
-                        {program.name}
-                      </span>
+                      <program.icon className="text-base" style={{ color: program.color }} />
+                      <span className="text-slate-300 text-xs font-medium">{program.name}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Languages */}
+              {/* Språk */}
               <div>
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+                <h3 className="text-sm font-bold tracking-wider uppercase text-slate-400 mb-3">
                   {t("aside.languages")}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {languages.map((language, index) => (
                     <span
                       key={index}
-                      className="backdrop-blur-xl bg-pink-500/20 border border-pink-300/30 text-pink-200 text-xs font-semibold px-3 py-2 rounded-full hover:bg-pink-500/30 transition-colors duration-300"
+                      className="bg-slate-800/60 border border-slate-700/50 text-slate-300 text-xs font-medium px-3 py-1 rounded-md"
                     >
                       {language}
                     </span>
                   ))}
                 </div>
               </div>
+
+              {/* Referenser */}
+              <div className="pt-2">
+                <h3 className="text-sm font-bold tracking-wider uppercase text-slate-400 mb-3 flex items-center gap-2">
+                  <FaQuoteRight className="text-xs text-indigo-400" />
+                  {t("aside.references")}
+                </h3>
+                <p className="text-slate-400 text-xs leading-relaxed italic font-light">
+                  {t("aside.referencesText")}
+                </p>
+              </div>
             </div>
+
           </div>
         </div>
       </div>

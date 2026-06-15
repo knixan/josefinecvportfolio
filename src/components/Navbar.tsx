@@ -2,115 +2,93 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaBars, FaTimes, FaCode, FaUser, FaFolderOpen, FaFileAlt, FaGlobe } from "react-icons/fa";
-import { useTranslate } from "@/locales/use-locales";
-import { useLocales } from "@/locales/use-locales";
+import { usePathname } from "next/navigation";
+import { FaBars, FaTimes, FaCode, FaUser, FaFolderOpen, FaFileAlt, FaGlobe, FaChevronDown } from "react-icons/fa";
+import { useTranslate, useLocales } from "@/locales/use-locales";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  
+  const pathname = usePathname();
   const { t, onChangeLang } = useTranslate();
   const { allLangs, currentLang } = useLocales();
 
   const NAV_ITEMS = [
-    { href: "/", label: t("nav.cv"), icon: FaFileAlt, gradient: "from-purple-400 to-pink-400" },
-    { href: "/ommig", label: t("nav.aboutMe"), icon: FaUser, gradient: "from-pink-400 to-rose-400" },
-    { href: "/portfolio", label: t("nav.portfolio"), icon: FaFolderOpen, gradient: "from-rose-400 to-orange-400" },
-    { href: "https://kodochdesign.se", label: t("nav.kodDesign"), icon: FaCode, gradient: "from-orange-400 to-cyan-400", external: true },
+    { href: "/", label: t("nav.cv"), icon: FaFileAlt },
+    { href: "/ommig", label: t("nav.aboutMe"), icon: FaUser },
+    { href: "/portfolio", label: t("nav.portfolio"), icon: FaFolderOpen },
+    { href: "https://kodochdesign.se", label: t("nav.kodDesign"), icon: FaCode, external: true },
   ];
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className="fixed w-full z-50 top-0">
-      {/* Backgrounds */}
-      <div className={`absolute inset-0 transition-all duration-700 ${
-        isScrolled
-          ? "backdrop-blur-xl bg-slate-950/80 border-b border-white/10"
-          : "backdrop-blur-md bg-slate-950/60"
-      }`} />
-      <div className={`absolute inset-0 transition-all duration-700 ${
-        isScrolled
-          ? "bg-gradient-to-r from-violet-600/20 via-pink-600/20 to-cyan-600/20 blur-sm"
-          : "bg-gradient-to-r from-violet-600/10 via-pink-600/10 to-cyan-600/10 blur-lg"
-      }`} />
-
-      <div className="relative z-10 max-w-screen-xl flex items-center justify-between mx-auto p-4">
+    <nav className={`fixed w-full z-50 top-0 transition-all duration-300 ${
+      isScrolled ? "bg-slate-950/80 backdrop-blur-md border-b border-slate-900 py-3" : "bg-transparent py-5"
+    }`}>
+      <div className="max-w-screen-xl mx-auto px-6 flex items-center justify-between">
+        
         {/* Logo */}
-        <Link href="/" className="text-2xl lg:text-3xl font-bold group">
-          <span className="bg-gradient-to-r from-violet-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:via-pink-400 group-hover:to-violet-400 transition-all duration-500">
-            Josefine Eriksson
-          </span>
+        <Link href="/" className="text-xl font-bold tracking-tight text-white hover:opacity-90 transition-opacity">
+          Josefine Eriksson
+          <span className="text-indigo-400 ml-1">.</span>
         </Link>
 
-        {/* Mobile toggle */}
+        {/* Mobil-meny knapp */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-3 w-12 h-12 rounded-xl backdrop-blur-xl bg-slate-800/40 border border-white/20 hover:bg-slate-700/60 transition-all duration-300 group"
+          className="md:hidden text-white text-xl p-2"
         >
-          <span className="sr-only">{t("nav.openMenu")}</span>
-          {isOpen ? <FaTimes className="text-xl text-white" /> : <FaBars className="text-xl text-white" />}
-          <div className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
+          {isOpen ? <FaTimes /> : <FaBars />}
         </button>
 
-        {/* Nav menu */}
-        <div className={`w-full md:w-auto md:flex ${isOpen ? "flex" : "hidden"}`}>
-          <ul className="flex flex-col md:flex-row p-4 md:p-0 mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-2 backdrop-blur-xl bg-slate-900/60 md:bg-transparent rounded-2xl md:rounded-none border border-white/10 md:border-none">
-            {NAV_ITEMS.map((item, i) => (
-              <li key={i}>
-                <Link
-                  href={item.href}
-                  {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
-                  onClick={() => setIsOpen(false)}
-                  className="relative block py-3 px-6 rounded-xl group/link overflow-hidden"
-                >
-                  {/* Hover effects */}
-                  <div className="absolute inset-0 backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl opacity-0 group-hover/link:opacity-100 transition-all duration-300" />
-                  <div className={`absolute inset-0 bg-gradient-to-r ${item.gradient} opacity-0 group-hover/link:opacity-20 rounded-xl transition-all duration-300`} />
+        {/* Navigationslänkar */}
+        <div className={`absolute md:relative top-full left-0 w-full md:w-auto bg-slate-950 md:bg-transparent border-b border-slate-900 md:border-none p-6 md:p-0 flex-col md:flex-row md:flex items-center gap-2 md:gap-1 ${
+          isOpen ? "flex" : "hidden"
+        }`}>
+          <ul className="flex flex-col md:flex-row items-stretch md:items-center gap-1 w-full md:w-auto">
+            {NAV_ITEMS.map((item, i) => {
+              const isActive = pathname === item.href;
+              return (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
+                    onClick={() => setIsOpen(false)}
+                    className={`flex items-center space-x-2.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                      isActive 
+                        ? "bg-slate-900 text-white border border-slate-800" 
+                        : "text-slate-400 hover:text-white hover:bg-slate-900/50"
+                    }`}
+                  >
+                    <item.icon className={`text-xs ${isActive ? "text-indigo-400" : "text-slate-500"}`} />
+                    <span>{item.label}</span>
+                  </Link>
+                </li>
+              );
+            })}
 
-                  {/* Content */}
-                  <div className="relative flex items-center space-x-3">
-                    <div className={`w-6 h-6 rounded-lg bg-gradient-to-r ${item.gradient} flex items-center justify-center group-hover/link:scale-110 transition-transform duration-300`}>
-                      <item.icon className="text-white text-xs" />
-                    </div>
-                    <span className="text-white font-medium">{item.label}</span>
-                    {item.external && (
-                      <svg className="w-3 h-3 text-slate-400 group-hover/link:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    )}
-                  </div>
-
-                  {/* Shimmer */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-full group-hover/link:translate-x-full transition-transform duration-700" />
-                </Link>
-              </li>
-            ))}
-
-            {/* Language Switcher */}
-            <li className="relative">
+            {/* Språkväljare */}
+            <li className="relative mt-2 md:mt-0 md:ml-2 pt-2 md:pt-0 border-t border-slate-900 md:border-none">
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
-                className="relative block py-3 px-6 rounded-xl group/link overflow-hidden w-full text-left"
+                className="flex items-center justify-between md:justify-start space-x-2 w-full px-4 py-2 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-slate-900/50 transition-colors"
               >
-                <div className="absolute inset-0 backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl opacity-0 group-hover/link:opacity-100 transition-all duration-300" />
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-400 opacity-0 group-hover/link:opacity-20 rounded-xl transition-all duration-300" />
-                <div className="relative flex items-center space-x-3">
-                  <div className="w-6 h-6 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-400 flex items-center justify-center group-hover/link:scale-110 transition-transform duration-300">
-                    <FaGlobe className="text-white text-xs" />
-                  </div>
-                  <span className="text-white font-medium">{currentLang.icon} {currentLang.label}</span>
+                <div className="flex items-center space-x-2">
+                  <FaGlobe className="text-slate-500 text-xs" />
+                  <span>{currentLang.icon} {currentLang.label}</span>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-full group-hover/link:translate-x-full transition-transform duration-700" />
+                <FaChevronDown className={`text-[10px] text-slate-500 transition-transform ${langMenuOpen ? "rotate-180" : ""}`} />
               </button>
 
               {langMenuOpen && (
-                <div className="absolute right-0 mt-2 backdrop-blur-xl text-slate-100 bg-slate-900/90 border border-white/10 rounded-xl shadow-2xl overflow-hidden min-w-[160px] z-50">
+                <div className="absolute right-0 mt-2 w-40 bg-slate-900 border border-slate-800 rounded-xl shadow-xl overflow-hidden z-50">
                   {allLangs.map((lang) => (
                     <button
                       key={lang.value}
@@ -119,12 +97,12 @@ export default function Navbar() {
                         setLangMenuOpen(false);
                         setIsOpen(false);
                       }}
-                      className={`w-full text-left px-5 py-3 flex items-center space-x-3 hover:bg-white/10 transition-colors duration-200 ${
-                        currentLang.value === lang.value ? "bg-white/5" : ""
+                      className={`w-full text-left px-4 py-2.5 text-xs font-medium flex items-center space-x-2 hover:bg-slate-800 transition-colors ${
+                        currentLang.value === lang.value ? "text-white bg-slate-800/40" : "text-slate-400"
                       }`}
                     >
-                      <span className="text-lg">{lang.icon}</span>
-                      <span className="text-white font-medium text-sm">{lang.label}</span>
+                      <span>{lang.icon}</span>
+                      <span>{lang.label}</span>
                     </button>
                   ))}
                 </div>
@@ -133,10 +111,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-
-      {/* Decorative dots */}
-      <div className="absolute top-2 left-4 w-1 h-1 bg-gradient-to-r from-violet-400 to-pink-400 rounded-full opacity-60 animate-pulse" />
-      <div className="absolute bottom-2 right-4 w-1 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full opacity-80 animate-pulse" />
     </nav>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
-import { FaUser, FaPlay } from "react-icons/fa";
+import Image from "next/image";
+import { FaUser } from "react-icons/fa";
 import { useTranslate } from "@/locales/use-locales";
 
 export default function AboutMe() {
@@ -8,79 +9,50 @@ export default function AboutMe() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white relative overflow-hidden">
-      {/* Background elements */}
-      <div className="fixed inset-0 bg-gradient-to-br from-slate-950 via-purple-950/20 to-cyan-950/20"></div>
-      <div className="fixed top-1/4 left-20 w-80 h-80 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="fixed bottom-1/4 right-20 w-96 h-96 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      {/* Bakgrundselement - Dämpade och lyxiga */}
+      <div className="fixed inset-0 bg-gradient-to-br from-slate-950 via-slate-900/50 to-slate-950"></div>
+      <div className="fixed top-1/4 left-20 w-80 h-80 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="fixed bottom-1/4 right-20 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div className="relative z-10 container max-w-4xl mx-auto pt-24 pb-20 px-4">
-        <main className="space-y-8">
-          {/* Om mig Section */}
-          <section className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 via-pink-600 to-cyan-600 rounded-3xl blur-lg opacity-20 group-hover:opacity-40 transition duration-500"></div>
-            <div className="relative backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-3xl p-10 shadow-2xl">
-              <h2 className="flex items-center text-3xl font-bold mb-8 bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
-                <FaUser className="mr-4 text-violet-400" />
-                {t("aboutMe.title")}
-              </h2>
+      <div className="relative z-10 container max-w-3xl mx-auto pt-32 pb-20 px-6">
+        <main>
+          {/* Om mig sektion */}
+          <section className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 lg:p-10 shadow-xl backdrop-blur-md">
+            
+            {/* Rubrik */}
+            <h2 className="flex items-center text-xl font-bold mb-8 text-white tracking-tight">
+              <FaUser className="mr-3 text-indigo-400 text-lg" />
+              {t("aboutMe.title")}
+            </h2>
 
-              <div className="space-y-6">
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  {t("aboutMe.p1")}
-                </p>
+            {/* Brödtext */}
+            <div className="space-y-5 text-slate-300 text-sm md:text-base leading-relaxed font-light">
+              <p>{t("aboutMe.p1")}</p>
+              <p>{t("aboutMe.p2")}</p>
+              <p>{t("aboutMe.p3")}</p>
+              <p>{t("aboutMe.p4")}</p>
+              <p>{t("aboutMe.p5")}</p>
+            </div>
 
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  {t("aboutMe.p2")}
-                </p>
-
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  {t("aboutMe.p3")}
-                </p>
-
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  {t("aboutMe.p4")}
-                </p>
-
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  {t("aboutMe.p5")}
-                </p>
-
-                <p className="text-slate-300 text-lg leading-relaxed font-light">
-                  {t("aboutMe.p6")}
-                </p>
-              </div>
-
-              {/* Video Section */}
-              <div className="relative group/video mt-8">
-                <div className="absolute -inset-1 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-2xl blur-sm group-hover/video:blur-md transition-all duration-300"></div>
-                <div className="relative backdrop-blur-xl bg-slate-800/50 border border-white/20 rounded-2xl p-4 overflow-hidden">
-                  <div className="flex items-center mb-4">
-                    <FaPlay className="text-pink-400 mr-3" />
-                    <span className="text-slate-200 font-semibold">
-                      {t("aboutMe.videoLabel")}
-                    </span>
-                  </div>
-                  <div className="relative rounded-xl overflow-hidden">
-                    <iframe
-                      src="https://www.youtube.com/embed/45WJX69-ZK0?si=1ChHTv36IAtv5Jp1"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                      className="w-full aspect-video rounded-xl"
-                    ></iframe>
-                  </div>
+            {/* Profilbild längst ner */}
+            <div className="mt-10 pt-8 border-t border-slate-800/60">
+              <div className="flex justify-center">
+                <div className="relative w-full max-w-md aspect-[4/5] rounded-2xl overflow-hidden ">
+                  <Image
+                    src="/Image/josefineeriksson.png"
+                    alt="Josefine Eriksson"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 450px"
+                    priority
+                  />
                 </div>
               </div>
             </div>
+
           </section>
         </main>
       </div>
-
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-3 h-3 bg-gradient-to-r from-violet-400 to-pink-400 rounded-full opacity-60 animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full opacity-80 animate-pulse delay-500"></div>
     </div>
   );
 }
