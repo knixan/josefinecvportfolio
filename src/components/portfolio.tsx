@@ -31,7 +31,7 @@ const PROJECT_DATA: Record<
   sweettimeUf: {
     image: "/Image/mockup-sweettime-uf.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Zod, BetterAuth, Shadcn",
-    projectLink: "https://sweettimeuf.vercel.app/",
+    projectLink: "sweettimeuf-woad.vercel.app/",
     codeLink: "https://github.com/knixan/sweettimeuf",
   },
 
