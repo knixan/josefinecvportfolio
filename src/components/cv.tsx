@@ -36,7 +36,7 @@ export default function CV() {
             <div key={index} className="relative pl-6 group/item">
               {/* Minimalistisk tidslinjeprick */}
               <div className="absolute -left-[4.5px] top-1.5 w-2 h-2 bg-slate-700 rounded-full border border-slate-900 group-hover/item:bg-indigo-400 group-hover/item:scale-125 transition-all duration-300" />
-              
+
               <div className="bg-slate-900/40 border border-slate-800/60 hover:border-slate-700/80 rounded-xl p-5 transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1">
                   <h3 className="font-semibold text-base text-white group-hover/item:text-indigo-400 transition-colors">
@@ -47,7 +47,7 @@ export default function CV() {
                     {t(`cv.jobs.${job.key}.period`)}
                   </span>
                 </div>
-                
+
                 <p className="text-xs text-indigo-400/90 font-medium mb-3">
                   {t(`cv.jobs.${job.key}.company`)}
                 </p>
@@ -69,11 +69,14 @@ export default function CV() {
 
         <div className="relative border-l border-slate-800 ml-3 space-y-8">
           {educations.map((education, index) => {
-            const description = t(`cv.educations.${education.key}.description`, { defaultValue: "" });
+            const description = t(
+              `cv.educations.${education.key}.description`,
+              { defaultValue: "" },
+            );
             return (
               <div key={index} className="relative pl-6 group/item">
                 <div className="absolute -left-[4.5px] top-1.5 w-2 h-2 bg-slate-700 rounded-full border border-slate-900 group-hover/item:bg-cyan-400 group-hover/item:scale-125 transition-all duration-300" />
-                
+
                 <div className="bg-slate-900/40 border border-slate-800/60 hover:border-slate-700/80 rounded-xl p-5 transition-all duration-300">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1">
                     <h3 className="font-semibold text-base text-white group-hover/item:text-cyan-400 transition-colors">
@@ -84,7 +87,7 @@ export default function CV() {
                       {t(`cv.educations.${education.key}.period`)}
                     </span>
                   </div>
-                  
+
                   <p className="text-xs text-cyan-400/90 font-medium mb-3">
                     {t(`cv.educations.${education.key}.school`)}
                   </p>
@@ -92,9 +95,17 @@ export default function CV() {
                   {education.hasDescription && description && (
                     <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-800/60">
                       {getTechIcons(description).map((tech, i) => (
-                        <div key={i} className="flex items-center space-x-1 bg-slate-800/50 border border-slate-800 px-2.5 py-1 rounded-md">
-                          <tech.icon className="text-xs" style={{ color: tech.color }} />
-                          <span className="text-slate-300 text-[11px] font-medium">{tech.name}</span>
+                        <div
+                          key={i}
+                          className="flex items-center space-x-1 bg-slate-800/50 border border-slate-800 px-2.5 py-1 rounded-md"
+                        >
+                          <tech.icon
+                            className="text-xs"
+                            style={{ color: tech.color }}
+                          />
+                          <span className="text-slate-300 text-[11px] font-medium">
+                            {tech.name}
+                          </span>
                         </div>
                       ))}
                     </div>

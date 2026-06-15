@@ -1,16 +1,17 @@
-'use client';
+"use client";
 
-import { useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useCallback } from "react";
+import { useTranslation } from "react-i18next";
 
-import { allLangs, defaultLang } from './config-lang';
+import { allLangs, defaultLang } from "./config-lang";
 
 // ----------------------------------------------------------------------
 
 export function useLocales() {
   const { i18n } = useTranslation();
 
-  const currentLang = allLangs.find((lang) => lang.value === i18n.language) || defaultLang;
+  const currentLang =
+    allLangs.find((lang) => lang.value === i18n.language) || defaultLang;
 
   return {
     allLangs,
@@ -27,7 +28,7 @@ export function useTranslate() {
     (newlang: string) => {
       i18n.changeLanguage(newlang);
     },
-    [i18n]
+    [i18n],
   );
 
   return {

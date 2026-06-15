@@ -19,7 +19,6 @@ Se en skärmbild i repositoryt: `screenshot.png`. Kör projektet lokalt för ful
 - Tailwind CSS
 - React
 
-
 ## Komma igång (lokalt)
 
 1. Klona repot:
@@ -55,8 +54,6 @@ För ändringar och förbättringar:
 
 1. Skapa en feature-branch.
 2. Skicka en pull request med tydlig beskrivning av ändringen.
-
-
 
 ## Kontakt
 

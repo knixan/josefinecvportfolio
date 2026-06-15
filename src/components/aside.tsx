@@ -13,7 +13,7 @@ import { getTechIcons } from "@/data/techIcons";
 import { useTranslate } from "@/locales/use-locales";
 
 const programs = getTechIcons(
-  "React, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure"
+  "React, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure",
 );
 
 export default function Aside() {
@@ -25,9 +25,8 @@ export default function Aside() {
       <div className="relative group">
         {/* Subtil och lyxig glow */}
         <div className="absolute -inset-px bg-gradient-to-b from-indigo-500/20 to-cyan-500/20 rounded-2xl blur-md transition duration-500" />
-        
+
         <div className="relative bg-slate-900/60 border border-slate-800/80 rounded-2xl shadow-xl overflow-hidden backdrop-blur-md">
-          
           {/* Profilbild med ett högre 3:4-porträttformat */}
           <div className="relative aspect-[3/4] w-full overflow-hidden rounded-t-2xl">
             <Image
@@ -53,15 +52,26 @@ export default function Aside() {
               {[
                 { icon: FaBriefcase, text: t("aside.jobTitle") },
                 { icon: FaHome, text: t("aside.location") },
-                { icon: FaEnvelope, text: "josefineeriksson@live.se", isLink: true, href: "mailto:josefineeriksson@live.se" },
+                {
+                  icon: FaEnvelope,
+                  text: "josefineeriksson@live.se",
+                  isLink: true,
+                  href: "mailto:josefineeriksson@live.se",
+                },
                 { icon: FaPhone, text: "076-248 42 34" },
               ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-3 text-slate-300 group/item">
+                <div
+                  key={index}
+                  className="flex items-center space-x-3 text-slate-300 group/item"
+                >
                   <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700/50 group-hover/item:border-indigo-500/50 group-hover/item:text-indigo-400 transition-colors duration-300">
                     <item.icon className="text-sm text-slate-400 group-hover/item:text-indigo-400" />
                   </div>
                   {item.isLink ? (
-                    <a href={item.href} className="text-sm font-medium hover:text-white transition-colors">
+                    <a
+                      href={item.href}
+                      className="text-sm font-medium hover:text-white transition-colors"
+                    >
                       {item.text}
                     </a>
                   ) : (
@@ -97,8 +107,13 @@ export default function Aside() {
                       key={index}
                       className="flex items-center space-x-1.5 bg-slate-800/40 border border-slate-800 px-3 py-1.5 rounded-lg hover:border-slate-700 transition-all duration-300"
                     >
-                      <program.icon className="text-base" style={{ color: program.color }} />
-                      <span className="text-slate-300 text-xs font-medium">{program.name}</span>
+                      <program.icon
+                        className="text-base"
+                        style={{ color: program.color }}
+                      />
+                      <span className="text-slate-300 text-xs font-medium">
+                        {program.name}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -132,7 +147,6 @@ export default function Aside() {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </div>

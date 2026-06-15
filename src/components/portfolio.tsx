@@ -4,12 +4,24 @@ import ProjectCard from "./ProjectCard";
 import { useTranslate } from "@/locales/use-locales";
 
 const PROJECT_KEYS = [
-  "fakeyNails", "bMovies", "dagensDons", "motionzone", "kladerEfterVader",
-  "skeningeVvs", "vaderskuggan", "studenthubben", "sweettimeUf",
-  "gammelBygg", "ledningsteknik", "jonnyEriksson",
+  "fakeyNails",
+  "bMovies",
+  "dagensDons",
+  "motionzone",
+  "kladerEfterVader",
+  "skeningeVvs",
+  "vaderskuggan",
+  "studenthubben",
+  "sweettimeUf",
+  "gammelBygg",
+  "ledningsteknik",
+  "jonnyEriksson",
 ];
 
-const PROJECT_DATA: Record<string, { image: string; tech: string; projectLink?: string; codeLink?: string }> = {
+const PROJECT_DATA: Record<
+  string,
+  { image: string; tech: string; projectLink?: string; codeLink?: string }
+> = {
   bMovies: {
     image: "/Image/mockup-bmovies.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth, API",
@@ -92,7 +104,7 @@ export default function Portfolio() {
         <h2 className="text-2xl font-bold text-center text-white mb-16 tracking-tight">
           {t("portfolio.title")}
         </h2>
-        
+
         {/* Ändrat till en vertikal lista med ordentligt avstånd */}
         <div className="space-y-16 lg:space-y-24">
           {PROJECT_KEYS.map((key, index) => {

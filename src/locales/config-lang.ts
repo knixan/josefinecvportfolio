@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
 export const allLangs = [
   {
-    label: 'English',
-    value: 'en',
-    icon: '🇬🇧',
+    label: "English",
+    value: "en",
+    icon: "🇬🇧",
   },
   {
-    label: 'Svenska',
-    value: 'sv',
-    icon: '🇸🇪',
+    label: "Svenska",
+    value: "sv",
+    icon: "🇸🇪",
   },
 ];
 

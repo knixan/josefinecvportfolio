@@ -18,7 +18,6 @@ export default function AboutMe() {
         <main>
           {/* Om mig sektion */}
           <section className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 lg:p-10 shadow-xl backdrop-blur-md">
-            
             {/* Rubrik */}
             <h2 className="flex items-center text-xl font-bold mb-8 text-white tracking-tight">
               <FaUser className="mr-3 text-indigo-400 text-lg" />
@@ -49,7 +48,6 @@ export default function AboutMe() {
                 </div>
               </div>
             </div>
-
           </section>
         </main>
       </div>
