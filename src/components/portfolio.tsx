@@ -26,7 +26,7 @@ const PROJECT_DATA: Record<
     image: "/Image/mockup-bmovies.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth, API",
     codeLink: "https://github.com/knixan/b-movies",
-    projectLink: "https://b-movies-ag6m.vercel.app/",
+    projectLink: "https://b-movies.vercel.app/",
   },
   sweettimeUf: {
     image: "/Image/mockup-sweettime-uf.png",
