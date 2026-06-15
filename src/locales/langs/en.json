@@ -25,37 +25,37 @@
       "fullstack": {
         "title": "Fullstack Developer & Graphic Designer",
         "period": "Ongoing - until further notice",
-        "company": "kodochdesign.se",
+        "company": "kodochdesign.se - Mjölby",
         "description": "I combine code and design to build complete digital solutions. As a full-stack developer, I manage the entire process – from planning and user-friendly UX/UI design to both frontend and backend development. My tech stack: React, Next.js, TypeScript, Node.js, PostgreSQL, Prisma, HTML, and CSS. I also accept smaller graphic design projects, such as logos, banners, and print materials."
       },
       "frontend": {
         "title": "Frontend Developer React Next.js Material UI",
         "period": "Nov 2025 - May 2026",
-        "company": "hitract.se",
+        "company": "hitract.se - Stockholm",
         "description": "Internship (LIA) - hitract.se is a platform for students and student unions. Working with frontend development in React, Next.js with Material UI based on Figma designs from UX/UI designers."
       },
       "graphicDesign": {
         "title": "Graphic Design / Web Design",
         "period": "2022 - 2025",
-        "company": "posterstillhemmet.se",
+        "company": "posterstillhemmet.se - Värmdö",
         "description": "Web design, Social Media, Graphic Design"
       },
       "shopAssistant": {
         "title": "Shop Assistant",
         "period": "2023 - 2025",
-        "company": "Flügger färg",
+        "company": "Flügger färg - Örebro",
         "description": "Sales of paint, tools, and painting accessories. Color consultant."
       },
       "sales": {
         "title": "Sales Representative",
         "period": "2022 - 2023",
-        "company": "Bygghemma",
+        "company": "Bygghemma - Örebro",
         "description": "Sales of bathrooms, windows, and doors."
       },
       "graphicDesigner": {
         "title": "Graphic Designer",
         "period": "2016 - 2022",
-        "company": "Esmilia Design",
+        "company": "Esmilia Design - Hallsberg",
         "description": "Graphic Design, web design, logistics, sales, social media"
       }
     },
@@ -63,18 +63,18 @@
       "fullstack": {
         "title": "Fullstack - React, Next.js, TypeScript",
         "period": "2025 - 2026",
-        "school": "Lexicon Linköping",
+        "school": "Lexicon - Linköping",
         "description": "React, Next.js, HTML, CSS, JavaScript/TypeScript, Prisma, SQL, Tailwind CSS, Bootstrap, PostgreSQL, Git/GitHub, AI, Node.js"
       },
       "itProfile": {
         "title": "IT Profile",
         "period": "2006 - 2007",
-        "school": "Kristinehamns Folkhögskola"
+        "school": "Kristinehamns Folkhögskola - Kristinehamn"
       },
       "construction": {
         "title": "Building & Crafts Program, Painting",
         "period": "2002 - 2005",
-        "school": "Tullängsskolan Örebro"
+        "school": "Tullängsskolan - Örebro"
       }
     }
   },
