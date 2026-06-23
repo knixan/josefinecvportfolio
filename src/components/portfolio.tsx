@@ -77,13 +77,13 @@ const PROJECT_DATA: Record<
     codeLink: "https://github.com/knixan/skeningevvsab",
   },
   vaderskuggan: {
-    image: "/image/mockup-vaderskuggan.png",
+    image: "/image/mockupbilder/vaderskuggan.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, API",
     projectLink: "https://vaderskuggan.vercel.app/",
     codeLink: "https://github.com/knixan/vaderskuggan",
   },
   studenthubben: {
-    image: "/image/mockup-studenthubben.png",
+    image: "/image/mockupbilder/studenthubben.png",
     tech: "React, Next.js, TypeScript, Material UI",
     projectLink: "https://studenthubben-six.vercel.app/",
     codeLink: "https://github.com/knixan/studenthubben",
