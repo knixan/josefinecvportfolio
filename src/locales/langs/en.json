@@ -93,6 +93,13 @@
     "viewCode": "View code",
     "tech": "Tech:",
     "projects": {
+
+         "knegarloggen": {
+        "title": "Knegarloggen",
+        "description": "SaaS app for construction companies to easily plan their jobs, purchases, and costs, as well as send invoices directly to their customers.",
+        "alt": "Knegarloggen"
+      },
+
       "fakeyNails": {
         "title": "Fakey Nails",
         "description": "Website and booking for a nail salon.",
@@ -135,7 +142,7 @@
       },
       "sweettimeUf": {
         "title": "Sweettime-UF",
-        "description": "Website for quotes for the UF company Sweettime-UF",
+        "description": "WWebstore for quotes for the UF company Sweettime-UF",
         "alt": "Sweettime-UF"
       },
       "gammelBygg": {

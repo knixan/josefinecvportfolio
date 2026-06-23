@@ -93,6 +93,13 @@
     "viewCode": "Visa kod",
     "tech": "Teknik:",
     "projects": {
+
+           "knegarloggen": {
+        "title": "Knegarloggen",
+        "description": "SaaS-app för byggföretag så de enkelt kan planera sina jobb, inköp och kostnader, samt kunna skicka fakturor direkt till sina kunder.",
+        "alt": "Knegarloggen"
+      },
+
       "fakeyNails": {
         "title": "Fakey Nails",
         "description": "Hemsida och bokning för en nagelsalong.",
@@ -135,7 +142,7 @@
       },
       "sweettimeUf": {
         "title": "Sweettime-UF",
-        "description": "Hemsida för offerter åt UF-företaget Sweettime-UF",
+        "description": "Webbutik för offerter åt UF-företaget Sweettime-UF",
         "alt": "Sweettime-UF"
       },
       "gammelBygg": {
