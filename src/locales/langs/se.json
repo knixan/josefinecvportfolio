@@ -122,7 +122,7 @@
       },
       "kladerEfterVader": {
         "title": "Kläder efter väder",
-        "description": " PWA app En väderapplikation som ger kommentarer och visar klädförslag beroende på vädret.",
+        "description": " PWA app En väderapplikation som ger kommentarer och visar klädförslag beroende på vädret. Med Api från SMHI",
         "alt": "Väder efter kläder"
       },
       "skeningeVvs": {
@@ -132,7 +132,7 @@
       },
       "vaderskuggan": {
         "title": "Väderskuggan",
-        "description": "Väderapplikation som ger lite sakastiska kommentarer beroende på vädret.",
+        "description": "Väderapplikation som ger lite sakastiska kommentarer beroende på vädret med API från OpenWeatherMap.",
         "alt": "Väderskuggan"
       },
       "studenthubben": {

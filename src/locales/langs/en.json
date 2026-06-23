@@ -122,7 +122,7 @@
       },
       "kladerEfterVader": {
         "title": "Clothes by Weather",
-        "description": "A weather application that provides comments and shows clothing suggestions based on the weather.",
+        "description": "A weather application that provides comments and shows clothing suggestions based on the weather. With API from SMHI.",
         "alt": "Clothes by weather"
       },
       "skeningeVvs": {
