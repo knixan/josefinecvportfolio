@@ -32,7 +32,7 @@ const PROJECT_DATA: Record<
   },
 
     kladerEfterVader: {
-    image: "/image/mockupbilder/vaderefterklader.jpg",
+    image: "/image/mockupbilder/vaderefterklader.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, OpenWeatherMap API",
     projectLink: "https://vaderefterklader.se",
     codeLink: "https://github.com/knixan/vaderefterklader",
@@ -45,7 +45,7 @@ const PROJECT_DATA: Record<
     projectLink: "https://b-movies.vercel.app/",
   },
   sweettimeUf: {
-    image: "/image/mockup-sweettime-uf.png",
+    image: "/image/mockupbilder/sweettimeuf.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Zod, BetterAuth, Shadcn",
     projectLink: "https://sweettimeuf.vercel.app/",
     codeLink: "https://github.com/knixan/sweettimeuf",
