@@ -110,8 +110,8 @@
         "description": "Fullstack webbutik för B-movies",
         "alt": "B-movies"
       },
-      "dagensDons": {
-        "title": "Dagens Dons",
+      "dagensDos": {
+        "title": "Dagens Dos",
         "description": "Fullstack nyhetssida",
         "alt": "Dagens Dos"
       },

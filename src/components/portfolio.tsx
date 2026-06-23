@@ -7,7 +7,7 @@ const PROJECT_KEYS = [
   "knegarloggen",
     "kladerEfterVader",
   "bMovies",
-  "dagensDons",
+  "dagensDos",
   "motionzone",
   "sweettimeUf",
   "skeningeVvs",
@@ -64,7 +64,7 @@ const PROJECT_DATA: Record<
     codeLink: "https://github.com/knixan/fakey-nails",
     projectLink: "https://fakey-nails.vercel.app/",
   },
-  dagensDons: {
+  dagensDos: {
     image: "/image/mockupbilder/dagensdos.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
     codeLink: "https://github.com/knixan/dagens-dos",
