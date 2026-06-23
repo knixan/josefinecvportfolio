@@ -38,7 +38,7 @@ export default function AboutMe() {
               <div className="flex justify-center">
                 <div className="relative w-full max-w-md aspect-[4/5] rounded-2xl overflow-hidden ">
                   <Image
-                    src="/Image/josefineeriksson.png"
+                    src="/image/josefineeriksson.png"
                     alt="Josefine Eriksson"
                     fill
                     className="object-cover"

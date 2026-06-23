@@ -30,7 +30,7 @@ export default function Aside() {
           {/* Profilbild med ett högre 3:4-porträttformat */}
           <div className="relative aspect-[3/4] w-full overflow-hidden rounded-t-2xl">
             <Image
-              src="/Image/josefineeriksson-profil.jpg"
+              src="/image/josefineeriksson-profil.jpg"
               alt="Josefine Eriksson"
               width={500}
               height={667}
