@@ -96,7 +96,7 @@
 
          "knegarloggen": {
         "title": "Knegarloggen",
-        "description": "SaaS app for construction companies to easily plan their jobs, purchases, and costs, as well as send invoices directly to their customers.",
+        "description": "Fullstack SaaS app for construction companies to easily plan their jobs, purchases, and costs, as well as send invoices directly to their customers.",
         "alt": "Knegarloggen"
       },
 
@@ -107,17 +107,17 @@
       },
       "bMovies": {
         "title": "B-Movies",
-        "description": "Web store for B-movies",
+        "description": "Fullstack web store for B-movies",
         "alt": "B-movies"
       },
       "dagensDons": {
         "title": "Dagens Dons",
-        "description": "News site",
+        "description": "Fullstack news site",
         "alt": "Dagens Dos"
       },
       "motionzone": {
         "title": "Motionzone in Växjö",
-        "description": "A website for a dance studio in Växjö.",
+        "description": "Fullstack website for a dance studio in Växjö.",
         "alt": "Motionzone in Växjö"
       },
       "kladerEfterVader": {
@@ -131,7 +131,7 @@
         "alt": "Skeninge VVS AB"
       },
       "vaderskuggan": {
-        "title": "Weather Shadow",
+        "title": "Väderskuggan",
         "description": "Weather application that gives slightly sarcastic comments based on the weather.",
         "alt": "Weather Shadow"
       },
@@ -142,7 +142,7 @@
       },
       "sweettimeUf": {
         "title": "Sweettime-UF",
-        "description": "WWebstore for quotes for the UF company Sweettime-UF",
+        "description": "Fullstack webstore for quotes for the UF company Sweettime-UF",
         "alt": "Sweettime-UF"
       },
       "gammelBygg": {

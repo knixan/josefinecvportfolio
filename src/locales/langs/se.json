@@ -96,7 +96,7 @@
 
            "knegarloggen": {
         "title": "Knegarloggen",
-        "description": "SaaS-app för byggföretag så de enkelt kan planera sina jobb, inköp och kostnader, samt kunna skicka fakturor direkt till sina kunder.",
+        "description": "Fullstack SaaS-app för byggföretag så de enkelt kan planera sina jobb, inköp och kostnader, samt kunna skicka fakturor direkt till sina kunder.",
         "alt": "Knegarloggen"
       },
 
@@ -107,22 +107,22 @@
       },
       "bMovies": {
         "title": "B-Movies",
-        "description": "Webbutik för B-movies",
+        "description": "Fullstack webbutik för B-movies",
         "alt": "B-movies"
       },
       "dagensDons": {
         "title": "Dagens Dons",
-        "description": "Nyhetssida",
+        "description": "Fullstack nyhetssida",
         "alt": "Dagens Dos"
       },
       "motionzone": {
         "title": "Motionzone i Växjö",
-        "description": "En hemsida för en dansstudio i Växjö.",
+        "description": "Fullstack hemsida för en dansstudio i Växjö.",
         "alt": "Motionzone i Växjö"
       },
       "kladerEfterVader": {
         "title": "Kläder efter väder",
-        "description": "En väderapplikation som ger kommentarer och visar klädförslag beroende på vädret.",
+        "description": " PWA app En väderapplikation som ger kommentarer och visar klädförslag beroende på vädret.",
         "alt": "Väder efter kläder"
       },
       "skeningeVvs": {
@@ -142,7 +142,7 @@
       },
       "sweettimeUf": {
         "title": "Sweettime-UF",
-        "description": "Webbutik för offerter åt UF-företaget Sweettime-UF",
+        "description": "Fullstack webbutik för offerter åt UF-företaget Sweettime-UF",
         "alt": "Sweettime-UF"
       },
       "gammelBygg": {

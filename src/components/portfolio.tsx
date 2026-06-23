@@ -47,7 +47,7 @@ const PROJECT_DATA: Record<
   sweettimeUf: {
     image: "/image/mockup-sweettime-uf.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Zod, BetterAuth, Shadcn",
-    projectLink: "sweettimeuf-woad.vercel.app/",
+    projectLink: "https://sweettimeuf.vercel.app/",
     codeLink: "https://github.com/knixan/sweettimeuf",
   },
 
@@ -71,7 +71,7 @@ const PROJECT_DATA: Record<
   },
 
   skeningeVvs: {
-    image: "/image/mockupbilder/skenningevvs.jpg",
+    image: "/image/mockupbilder/skeningevvs.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS",
     projectLink: "https://skeningevvs.se/",
     codeLink: "https://github.com/knixan/skeningevvsab",
