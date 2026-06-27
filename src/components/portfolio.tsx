@@ -47,7 +47,7 @@ const PROJECT_DATA: Record<
     projectLink: "https://b-movies.vercel.app/",
   },
   motionzone: {
-    image: "/image/mockupbilder/motionzone.jpg",
+    image: "/image/mockupbilder/motionzone.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma",
     projectLink: "https://dev.motionzoneworld.com/",
     codeLink: "https://github.com/motionzoneproject/motionzoneproject",
