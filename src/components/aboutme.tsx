@@ -30,7 +30,6 @@ export default function AboutMe() {
               <p>{t("aboutMe.p2")}</p>
               <p>{t("aboutMe.p3")}</p>
               <p>{t("aboutMe.p4")}</p>
-              <p>{t("aboutMe.p5")}</p>
             </div>
 
             {/* Profilbild längst ner */}

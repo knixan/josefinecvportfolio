@@ -8,12 +8,11 @@ export default function CV() {
   const { t } = useTranslate();
 
   const jobs = [
-    { key: "fullstack" },
-    { key: "frontend" },
-    { key: "graphicDesign" },
-    { key: "shopAssistant" },
-    { key: "sales" },
-    { key: "graphicDesigner" },
+    "codeAndDesign",
+    "knegarloggen",
+    "frontend",
+    "retail",
+    "graphicDesigner",
   ];
 
   const educations = [
@@ -32,31 +31,46 @@ export default function CV() {
         </h2>
 
         <div className="relative border-l border-slate-800 ml-3 space-y-8">
-          {jobs.map((job, index) => (
-            <div key={index} className="relative pl-6 group/item">
-              {/* Minimalistisk tidslinjeprick */}
-              <div className="absolute -left-[4.5px] top-1.5 w-2 h-2 bg-slate-700 rounded-full border border-slate-900 group-hover/item:bg-indigo-400 group-hover/item:scale-125 transition-all duration-300" />
+          {jobs.map((key, index) => {
+            const bullets = t(`cv.jobs.${key}.bullets`, {
+              returnObjects: true,
+            }) as string[];
+            return (
+              <div key={index} className="relative pl-6 group/item">
+                <div className="absolute -left-[4.5px] top-1.5 w-2 h-2 bg-slate-700 rounded-full border border-slate-900 group-hover/item:bg-indigo-400 group-hover/item:scale-125 transition-all duration-300" />
 
-              <div className="bg-slate-900/40 border border-slate-800/60 hover:border-slate-700/80 rounded-xl p-5 transition-all duration-300">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1">
-                  <h3 className="font-semibold text-base text-white group-hover/item:text-indigo-400 transition-colors">
-                    {t(`cv.jobs.${job.key}.title`)}
-                  </h3>
-                  <span className="flex items-center text-xs text-slate-400 font-medium">
-                    <FaCalendarAlt className="mr-1.5 text-[10px]" />
-                    {t(`cv.jobs.${job.key}.period`)}
-                  </span>
+                <div className="bg-slate-900/40 border border-slate-800/60 hover:border-slate-700/80 rounded-xl p-5 transition-all duration-300">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1">
+                    <h3 className="font-semibold text-base text-white group-hover/item:text-indigo-400 transition-colors">
+                      {t(`cv.jobs.${key}.title`)}
+                    </h3>
+                    <span className="flex items-center text-xs text-slate-400 font-medium shrink-0">
+                      <FaCalendarAlt className="mr-1.5 text-[10px]" />
+                      {t(`cv.jobs.${key}.period`)}
+                    </span>
+                  </div>
+
+                  <p className="text-xs text-indigo-400/90 font-medium mb-3">
+                    {t(`cv.jobs.${key}.company`)}
+                  </p>
+
+                  {Array.isArray(bullets) && bullets.length > 0 && (
+                    <ul className="space-y-1.5">
+                      {bullets.map((bullet, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-2 text-sm text-slate-300 leading-relaxed font-light"
+                        >
+                          <span className="mt-2 w-1 h-1 rounded-full bg-indigo-400/60 shrink-0" />
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-
-                <p className="text-xs text-indigo-400/90 font-medium mb-3">
-                  {t(`cv.jobs.${job.key}.company`)}
-                </p>
-                <p className="text-sm text-slate-300 leading-relaxed font-light">
-                  {t(`cv.jobs.${job.key}.description`)}
-                </p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
@@ -82,7 +96,7 @@ export default function CV() {
                     <h3 className="font-semibold text-base text-white group-hover/item:text-cyan-400 transition-colors">
                       {t(`cv.educations.${education.key}.title`)}
                     </h3>
-                    <span className="flex items-center text-xs text-slate-400 font-medium">
+                    <span className="flex items-center text-xs text-slate-400 font-medium shrink-0">
                       <FaCalendarAlt className="mr-1.5 text-[10px]" />
                       {t(`cv.educations.${education.key}.period`)}
                     </span>

@@ -5,16 +5,17 @@ import { useTranslate } from "@/locales/use-locales";
 
 const PROJECT_KEYS = [
   "knegarloggen",
-    "kladerEfterVader",
+  "tassaIn",
+  "kladerEfterVader",
   "bMovies",
-  "dagensDos",
   "motionzone",
+  "fakeyNails",
   "sweettimeUf",
+  "dagensDos",
   "skeningeVvs",
   "vaderskuggan",
   "studenthubben",
   "gammelBygg",
-  "fakeyNails",
   "ledningsteknik",
   "jonnyEriksson",
 ];
@@ -23,26 +24,39 @@ const PROJECT_DATA: Record<
   string,
   { image: string; tech: string; projectLink?: string; codeLink?: string }
 > = {
-
   knegarloggen: {
     image: "/image/mockupbilder/knegarloggen.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth, API, Stripe, Nodmailer,",
     codeLink: "https://github.com/knixan/knegarloggen",
     projectLink: "https://knegarloggen.vercel.app/",
   },
-
-    kladerEfterVader: {
+  tassaIn: {
+    image: "/image/mockupbilder/tassa-in.png",
+    tech: "React Vite, C#, TypeScript, Tailwind CSS, Shadcn",
+  },
+  kladerEfterVader: {
     image: "/image/mockupbilder/vaderefterklader.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, OpenWeatherMap API",
     projectLink: "https://vaderefterklader.se",
-    codeLink: "https://github.com/knixan/vaderefterklader",
+    codeLink: "https://github.com/knixan/kladereftervader",
   },
-
   bMovies: {
     image: "/image/mockupbilder/bmovies.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth, API",
     codeLink: "https://github.com/knixan/b-movies",
     projectLink: "https://b-movies.vercel.app/",
+  },
+  motionzone: {
+    image: "/image/mockupbilder/motionzone.jpg",
+    tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma",
+    projectLink: "https://dev.motionzoneworld.com/",
+    codeLink: "https://github.com/motionzoneproject/motionzoneproject",
+  },
+  fakeyNails: {
+    image: "/image/mockupbilder/fakey-nails.png",
+    tech: "React, Next.js, Sanity CMS, TypeScript, TailwindCSS, Shadcn, Nodmailer",
+    codeLink: "https://github.com/knixan/fakey-nails",
+    projectLink: "https://fakey-nails.vercel.app/",
   },
   sweettimeUf: {
     image: "/image/mockupbilder/sweettimeuf.png",
@@ -50,31 +64,16 @@ const PROJECT_DATA: Record<
     projectLink: "https://sweettimeuf.vercel.app/",
     codeLink: "https://github.com/knixan/sweettimeuf",
   },
-
-    motionzone: {
-    image: "/image/mockupbilder/motionzone.jpg",
-    tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma",
-    projectLink: "https://dev.motionzoneworld.com/",
-    codeLink: "https://github.com/motionzoneproject/motionzoneproject",
-  },
-
-  fakeyNails: {
-    image: "/image/mockupbilder/fakeynails.jpg",
-    tech: "React, Next.js, Sanity CMS, TypeScript, TailwindCSS, Shadcn, Nodmailer",
-    codeLink: "https://github.com/knixan/fakey-nails",
-    projectLink: "https://fakey-nails.vercel.app/",
-  },
   dagensDos: {
     image: "/image/mockupbilder/dagensdos.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
     codeLink: "https://github.com/knixan/dagens-dos",
   },
-
   skeningeVvs: {
-    image: "/image/mockupbilder/skeningevvs.jpg",
+    image: "/image/mockupbilder/skeningevvs.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS",
     projectLink: "https://skeningevvs.se/",
-    codeLink: "https://github.com/knixan/skeningevvsab",
+    codeLink: "https://github.com/skeningevvs/skeningevvs",
   },
   vaderskuggan: {
     image: "/image/mockupbilder/vaderskuggan.png",
@@ -98,7 +97,7 @@ const PROJECT_DATA: Record<
     image: "/image/mockupbilder/ledningsteknink-mockup.jpg",
     tech: "React, Next.js, TypeScript, Tailwind CSS",
     projectLink: "https://ledningsteknik.vercel.app/",
-    codeLink: "https://github.com/knixan/ledningsteknik",
+    codeLink: "https://github.com/knixan/ledningsteknikAB",
   },
   jonnyEriksson: {
     image: "/image/mockupbilder/jonnyeriksson-mockup.jpg",
@@ -118,7 +117,6 @@ export default function Portfolio() {
           {t("portfolio.title")}
         </h2>
 
-        {/* Ändrat till en vertikal lista med ordentligt avstånd */}
         <div className="space-y-16 lg:space-y-24">
           {PROJECT_KEYS.map((key, index) => {
             const data = PROJECT_DATA[key];

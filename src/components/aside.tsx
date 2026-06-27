@@ -81,16 +81,26 @@ export default function Aside() {
               ))}
             </div>
 
-            {/* Ladda ner CV-knapp */}
-            <div>
+            {/* Ladda ner CV-knappar */}
+            <div className="flex gap-2">
               <a
-                href="/Pdf/CVJosefineErikssonENGB.pdf"
-                download="CV-JosefineEriksson-English.pdf"
-                className="relative block w-full group/btn"
+                href="/Pdf/CV-SV-JosefineEriksson.pdf"
+                download="CV-SV-JosefineEriksson.pdf"
+                className="relative flex-1 group/btn"
               >
-                <button className="w-full py-3.5 px-6 rounded-xl font-semibold text-sm text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300 flex items-center justify-center space-x-2 shadow-sm hover:bg-slate-750">
-                  <FaDownload className="text-xs text-slate-400 group-hover/btn:text-white transition-colors" />
-                  <span>{t("aside.downloadCv")}</span>
+                <button className="w-full py-3 px-3 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:bg-slate-750">
+                  <FaDownload className="text-xs text-slate-400 group-hover/btn:text-white transition-colors shrink-0" />
+                  <span>{t("aside.downloadCvSv")}</span>
+                </button>
+              </a>
+              <a
+                href="/Pdf/CV-EN-JosefineEriksson.pdf"
+                download="CV-EN-JosefineEriksson.pdf"
+                className="relative flex-1 group/btn"
+              >
+                <button className="w-full py-3 px-3 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:bg-slate-750">
+                  <FaDownload className="text-xs text-slate-400 group-hover/btn:text-white transition-colors shrink-0" />
+                  <span>{t("aside.downloadCvEn")}</span>
                 </button>
               </a>
             </div>

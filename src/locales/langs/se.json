@@ -11,6 +11,8 @@
     "jobTitle": "Josefine Eriksson, Fullstackutvecklare & Grafisk/Webbdesigner",
     "location": "Mjölby, Sverige",
     "downloadCv": "Ladda ner CV",
+    "downloadCvSv": "CV på svenska",
+    "downloadCvEn": "CV på engelska",
     "programs": "Program",
     "languages": "Språk",
     "swedish": "Svenska",
@@ -22,41 +24,53 @@
     "workExperience": "Arbetslivserfarenhet",
     "education": "Utbildning",
     "jobs": {
-      "fullstack": {
-        "title": "Fullstack utvecklare & Grafisk Designer",
-        "period": "Pågående - tills vidare",
-        "company": "kodochdesign.se - Mjölby",
-        "description": "Jag kombinerar kod och design för att bygga digitala helhetslösningar. Som fullstackutvecklare tar jag hand om hela kedjan – från planering och användarvänlig UX/UI-design till utveckling av både frontend och backend. Min tech-stack: React, Next.js, TypeScript, Node.js, PostgreSQL, Prisma, HTML och CSS. Jag tar även mindre uppdrag inom grafisk formgivning, som logotyper, banners och trycksaker."
+      "codeAndDesign": {
+        "title": "Systemutvecklare & Grundare",
+        "period": "November 2025 – Tills vidare",
+        "company": "Kod & Design (kodochdesign.se)",
+        "bullets": [
+          "Driver webbyrå med inriktning på modern webbutveckling och grafisk design",
+          "Bygger kundlösningar i React, Next.js, TypeScript och Tailwind CSS",
+          "Ansvarar för hela kedjan: kravställning, design, utveckling och deployment"
+        ]
+      },
+      "knegarloggen": {
+        "title": "Eget Projekt – Knegarloggen (SaaS-applikation)",
+        "period": "2025 – Pågående",
+        "company": "knegarloggen.vercel.app",
+        "bullets": [
+          "Fakturerings- och jobbloggningsverktyg för hantverkare, byggt från grunden",
+          "Stack: Next.js (App Router), TypeScript, Prisma, PostgreSQL, Tailwind CSS, better-auth",
+          "Publiceras som PWA med stöd för Android och iOS"
+        ]
       },
       "frontend": {
-        "title": "Frontend utvecklare React Next.js Material UI",
-        "period": "Nov 2025 - Maj 2026",
-        "company": "hitract.se - Stockholm",
-        "description": "LIA - Praktik hitract.se är en plattform för Studeter och studentkårer. Arbetar med Frontend utveckling i React, Next,js med Matierial UI efter Figma design från UX/UI designer."
+        "title": "Frontend-utvecklare (LIA)",
+        "period": "November 2025 – 8 Maj 2026",
+        "company": "hitract.se · Stockholm",
+        "bullets": [
+          "Utveckling av frontend-lösningar för en plattform riktad mot studenter och kårer",
+          "Implementering av designsystem i React och Next.js med Material UI (MUI)",
+          "Översättning av Figma-design till responsiv och tillgänglig kod i nära samarbete med UX/UI-designers"
+        ]
       },
-      "graphicDesign": {
-        "title": "Grafisk Design / Webbdesign",
-        "period": "2022 - 2025",
-        "company": "posterstillhemmet.se - Värmdö",
-        "description": "Webdesign, Social Media, Grafisk Design"
-      },
-      "shopAssistant": {
-        "title": "Butiksbiträde",
-        "period": "2023 - 2025",
-        "company": "Flügger färg - Örebro",
-        "description": "Försäljning av färg, verktyg och måleritillbehör. Färgrådgivare."
-      },
-      "sales": {
-        "title": "Säljare",
-        "period": "2022 - 2023",
-        "company": "Bygghemma - Örebro",
-        "description": "Försäljning av badrum, fönster och dörrar."
+      "retail": {
+        "title": "Butiksbiträde & Säljare",
+        "period": "2022 – 2025",
+        "company": "Flügger färg / Bygghemma",
+        "bullets": [
+          "Kundservice, teknisk rådgivning och specialiserad försäljning"
+        ]
       },
       "graphicDesigner": {
-        "title": "Grafisk Designer",
-        "period": "2016 - 2022",
-        "company": "Esmilia Design - Hallsberg",
-        "description": "Grafisk Design, webdesign, logistik, försäljning, social media"
+        "title": "Grafisk Designer & Webbansvarig",
+        "period": "2016 – 2025",
+        "company": "Esmilia Design / Posters till Hemmet",
+        "bullets": [
+          "Helhetsansvar för grafisk formgivning, webbdesign och visuell identitet",
+          "Drev webbbutik med försäljning av posters via egen hemsida och Fyndiq.se",
+          "Ansvarig för innehåll, sociala medier och grafisk produktion"
+        ]
       }
     },
     "educations": {
@@ -80,11 +94,10 @@
   },
   "aboutMe": {
     "title": "Om mig",
-    "p1": "Hej! Jag heter Josefine och bor i Mjölby tillsammans med mina två tonårsdöttrar.",
-    "p2": "Min resa inom det digitala skapandet började faktiskt redan 2007. Det som startade som en nyfikenhet kring att designa bloggar, bygga en egen webbutik och sälja egna produkter på Fyndiq, har genom åren utvecklats till ett djupt intresse för webbutveckling. Med en stabil grund inom grafisk design, HTML, CSS och bildredigering tog jag steget att bredda mig till modern fullstackutveckling. Idag kodar jag framförallt i React, Next.js och Node.js.",
-    "p3": "Jag beskriver mig gärna som en fullstackutvecklare med rötterna i frontend. Jag älskar att bygga logiken bakom kulisserna, men mitt öga för detaljer och visuella identiteter gör att jag lägger extra mycket hjärta på att skapa tillgängliga och responsiva gränssnitt. Efter att nyligen ha avslutat en sex månader lång och lärorik LIA-praktik, fokuserar jag just nu på att bygga en egen webbapplikation skräddarsydd för småföretagare inom byggbranschen. Det är ett projekt där jag självständigt får planera, strukturera och bygga hela systemet från grunden.",
-    "p4": "Som person är jag driven och har en stark vilja att hela tiden lära mig nya saker. Jag motiveras av att driva projekt framåt och omsätta idéer till färdig kod. Nu letar jag efter en fast arbetsplats där jag kan fortsätta växa, bidra till teamet och bygga smarta lösningar.",
-    "p5": "När skärmarna släcks hittar du mig oftast ute i naturen för att ladda batterierna, vid pianot, eller så kopplar jag av med lite datorspel och pyssel.",
+    "p1": "Jag är en fullstackutvecklare med rötterna i frontend och ett öga för design som funnits med sedan 2007. Det som började som nyfikenhet – att designa bloggar, bygga webbutiker och sälja egna produkter – har vuxit till ett djupt och genuint intresse för att bygga moderna webbapplikationer från grunden.",
+    "p2": "Idag arbetar jag primärt i Next.js, TypeScript, React och Node.js med PostgreSQL och Prisma som databaslager. Jag rör mig bekvämt genom hela stacken, men det är i skärningspunkten mellan logik och gränssnitt jag trivs bäst – där affärslogiken möter ett genomtänkt UI. Mitt senaste egna projekt är Knegarloggen, en SaaS-applikation för fakturering och jobbloggning riktad mot svenska hantverkare, byggd med fullständig auth och relationsdatabas – och kommer att publiceras som PWA samt som Android-app via Google Play.",
+    "p3": "Jag har också byggt Kläder efter väder – en PWA riktad mot barn med IF och autism, som hjälper dem att självständigt välja rätt kläder baserat på vädret.",
+    "p4": "Jag är driven, lär mig snabbt och motiveras av att ta ett projekt från idé till färdig produkt. Jag söker nu en fast tjänst där jag kan bidra med både teknisk bredd och designkänsla – och fortsätta växa tillsammans med ett team.",
     "videoLabel": "Piano trudelutt"
   },
   "portfolio": {
@@ -99,30 +112,35 @@
         "description": "Fullstack SaaS-app för byggföretag så de enkelt kan planera sina jobb, inköp och kostnader, samt kunna skicka fakturor direkt till sina kunder.",
         "alt": "Knegarloggen"
       },
+      "tassaIn": {
+        "title": "Tassa In",
+        "description": "Bokningssystem för djurvård med eget API, tidshantering, kapacitetskontroll och adminpanel.",
+        "alt": "Tassa In"
+      },
 
       "fakeyNails": {
         "title": "Fakey Nails",
-        "description": "Hemsida och bokning för en nagelsalong.",
-        "alt": "Kod och Design"
+        "description": "Salongsajt med Sanity CMS – kunden redigerar priser och tjänster själv. Inbäddat bokningssystem.",
+        "alt": "Fakey Nails"
       },
       "bMovies": {
         "title": "B-Movies",
-        "description": "Fullstack webbutik för B-movies",
+        "description": "Webbutik för B-movies med TMDb API för att hämta filmer till databasen, varukorg, checkout och adminpanel.",
         "alt": "B-movies"
       },
       "dagensDos": {
         "title": "Dagens Dos",
-        "description": "Fullstack nyhetssida",
+        "description": "Nyhetssajt med prenumerationssystem via Stripe, AI-assisterad artikelgenerering med Gemini, MDXEditor, dashboard med statistik och externa API-integrationer för elpriser och väderdata från SMHI.",
         "alt": "Dagens Dos"
       },
       "motionzone": {
         "title": "Motionzone i Växjö",
-        "description": "Fullstack hemsida för en dansstudio i Växjö.",
+        "description": "Dansstudio-plattform med bokningssystem, kurser, e-handel, adminpanel och rollbaserad autentisering.",
         "alt": "Motionzone i Växjö"
       },
       "kladerEfterVader": {
         "title": "Kläder efter väder",
-        "description": " PWA app En väderapplikation som ger kommentarer och visar klädförslag beroende på vädret. Med Api från SMHI",
+        "description": "PWA app – en väderapplikation som ger kommentarer och visar klädförslag beroende på vädret. Med API från OpenWeatherMap.",
         "alt": "Väder efter kläder"
       },
       "skeningeVvs": {
@@ -132,7 +150,7 @@
       },
       "vaderskuggan": {
         "title": "Väderskuggan",
-        "description": "Väderapplikation som ger lite sakastiska kommentarer beroende på vädret med API från OpenWeatherMap.",
+        "description": "Väderapplikation som ger lite sarkastiska kommentarer beroende på vädret. Med API från SMHI.",
         "alt": "Väderskuggan"
       },
       "studenthubben": {
@@ -142,7 +160,7 @@
       },
       "sweettimeUf": {
         "title": "Sweettime-UF",
-        "description": "Fullstack webbutik för offerter åt UF-företaget Sweettime-UF",
+        "description": "Webbshop med produktkatalog, varianthantering, checkout, orderhantering och adminpanel.",
         "alt": "Sweettime-UF"
       },
       "gammelBygg": {
