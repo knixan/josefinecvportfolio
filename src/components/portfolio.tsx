@@ -10,13 +10,13 @@ const PROJECT_KEYS = [
   "bMovies",
   "motionzone",
   "fakeyNails",
+  "ledningsteknik",
   "sweettimeUf",
   "dagensDos",
   "skeningeVvs",
   "vaderskuggan",
   "studenthubben",
   "gammelBygg",
-  "ledningsteknik",
   "jonnyEriksson",
 ];
 
@@ -35,7 +35,7 @@ const PROJECT_DATA: Record<
     tech: "React Vite, C#, TypeScript, Tailwind CSS, Shadcn",
   },
   kladerEfterVader: {
-    image: "/image/mockupbilder/vaderefterklader.png",
+    image: "/image/mockupbilder/kladereftervader.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, OpenWeatherMap API",
     projectLink: "https://vaderefterklader.se",
     codeLink: "https://github.com/knixan/kladereftervader",
@@ -94,7 +94,7 @@ const PROJECT_DATA: Record<
     codeLink: "https://github.com/knixan/gammelbyggnadsmaleri",
   },
   ledningsteknik: {
-    image: "/image/mockupbilder/ledningsteknink-mockup.jpg",
+    image: "/image/mockupbilder/ledningsteknik.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS",
     projectLink: "https://ledningsteknik.vercel.app/",
     codeLink: "https://github.com/knixan/ledningsteknikAB",

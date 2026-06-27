@@ -170,7 +170,7 @@
       },
       "ledningsteknik": {
         "title": "Ledningsteknik AB",
-        "description": "En uppdaterad hemsida åt Ledningsteknik AB",
+        "description": "Hemsida för Ledningsteknik AB med stöd för svenska och engelska via i18n samt mörkt och ljust läge.",
         "alt": "Ledningsteknik AB"
       },
       "jonnyEriksson": {
