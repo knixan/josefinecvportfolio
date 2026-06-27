@@ -33,11 +33,13 @@ const PROJECT_DATA: Record<
   tassaIn: {
     image: "/image/mockupbilder/tassa-in.png",
     tech: "React Vite, C#, TypeScript, Tailwind CSS, Shadcn",
+    codeLink: "https://github.com/knixan/tassa-in",
+    projectLink: "https://tassa-in.vercel.app/",
   },
   kladerEfterVader: {
     image: "/image/mockupbilder/kladereftervader.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, OpenWeatherMap API",
-    projectLink: "https://vaderefterklader.se",
+    projectLink: "https://kladereftervader.se",
     codeLink: "https://github.com/knixan/kladereftervader",
   },
   bMovies: {
@@ -49,7 +51,7 @@ const PROJECT_DATA: Record<
   motionzone: {
     image: "/image/mockupbilder/motionzone.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma",
-    projectLink: "https://dev.motionzoneworld.com/",
+    projectLink: "https://motionzoneworld.com/",
     codeLink: "https://github.com/motionzoneproject/motionzoneproject",
   },
   fakeyNails: {
@@ -96,7 +98,7 @@ const PROJECT_DATA: Record<
   ledningsteknik: {
     image: "/image/mockupbilder/ledningsteknik.png",
     tech: "React, Next.js, TypeScript, Tailwind CSS",
-    projectLink: "https://ledningsteknik.vercel.app/",
+    projectLink: "https://ledningsteknikab.vercel.app/",
     codeLink: "https://github.com/knixan/ledningsteknikAB",
   },
   jonnyEriksson: {
