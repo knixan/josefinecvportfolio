@@ -18,6 +18,7 @@ import {
   SiBootstrap,
   SiDotnet,
   SiVite,
+  SiAngular,
 } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { VscAzure } from "react-icons/vsc";
@@ -65,6 +66,7 @@ const techIconMap: Record<string, TechIcon> = {
   "asp.net core": { icon: SiDotnet, name: "ASP.NET Core", color: "#f472b6" },
   "c#": { icon: FaCode, name: "C#", color: "#f472b6" },
   csharp: { icon: FaCode, name: "C#", color: "#f472b6" },
+  angular: { icon: SiAngular, name: "Angular", color: "#f472b6" },
 };
 
 export function getTechIcons(techString: string): TechIcon[] {

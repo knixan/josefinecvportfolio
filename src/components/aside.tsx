@@ -13,7 +13,7 @@ import { getTechIcons } from "@/data/techIcons";
 import { useTranslate } from "@/locales/use-locales";
 
 const programs = getTechIcons(
-  "React, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure",
+  "React, Angular, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure",
 );
 
 export default function Aside() {
