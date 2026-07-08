@@ -43,7 +43,7 @@ const PROJECT_DATA: Record<
     codeLink: "https://github.com/knixan/kladereftervader",
   },
   bMovies: {
-    image: "/image/mockupbilder/bmovies.jpg",
+    image: "/image/mockupbilder/b-movies.png",
     tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
     codeLink: "https://github.com/knixan/b-movies",
     projectLink: "https://b-movies.vercel.app/",
