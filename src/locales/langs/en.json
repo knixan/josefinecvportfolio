@@ -143,6 +143,11 @@
         "description": "PWA app – a weather application that provides comments and shows clothing suggestions based on the weather. With API from OpenWeatherMap.",
         "alt": "Clothes by weather"
       },
+      "kodochdesign": {
+        "title": "Kod & Design",
+        "description": "My own web agency where I take client projects in web development and graphic design. Building solutions in Next.js, TypeScript and Tailwind CSS.",
+        "alt": "Kod och Design"
+      },
       "skeningeVvs": {
         "title": "Skeninge VVS AB",
         "description": "Website for Skeninge VVS AB in Skänninge.",
@@ -163,21 +168,24 @@
         "description": "Web store with product catalog, variant handling, checkout, order management and admin panel.",
         "alt": "Sweettime-UF"
       },
-      "gammelBygg": {
-        "title": "Gammel Byggnadsmåleri",
-        "description": "Website for a company that works with traditional painting and building heritage",
-        "alt": "Gammelbyggnads painting"
-      },
+   
       "ledningsteknik": {
         "title": "Ledningsteknik AB",
         "description": "Website for Ledningsteknik AB with Swedish and English support via i18n, and dark/light mode.",
         "alt": "Ledningsteknik AB"
-      },
-      "jonnyEriksson": {
-        "title": "Jonny Eriksson - Artist",
-        "description": "Artist portfolio",
-        "alt": "Jonny Eriksson - Artist"
       }
+    }
+  },
+  "filter": {
+    "all": "All",
+    "apps": "Applications",
+    "websites": "Websites",
+    "design": "Design"
+  },
+  "figma": {
+    "title": "Design & Prototypes",
+    "design1": {
+      "title": "UI Design in Figma"
     }
   },
   "footer": {

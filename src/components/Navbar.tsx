@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import {
   FaBars,
   FaTimes,
-  FaCode,
   FaUser,
   FaFolderOpen,
   FaFileAlt,
@@ -28,12 +27,6 @@ export default function Navbar() {
     { href: "/", label: t("nav.cv"), icon: FaFileAlt },
     { href: "/ommig", label: t("nav.aboutMe"), icon: FaUser },
     { href: "/portfolio", label: t("nav.portfolio"), icon: FaFolderOpen },
-    {
-      href: "https://kodochdesign.se",
-      label: t("nav.kodDesign"),
-      icon: FaCode,
-      external: true,
-    },
   ];
 
   useEffect(() => {
@@ -81,10 +74,6 @@ export default function Navbar() {
                 <li key={i}>
                   <Link
                     href={item.href}
-                    {...(item.external && {
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    })}
                     onClick={() => setIsOpen(false)}
                     className={`flex items-center space-x-2.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                       isActive
