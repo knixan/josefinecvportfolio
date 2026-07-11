@@ -8,7 +8,7 @@ const FIGMA_EMBEDS = [
     titleKey: "figma.design1.title",
   },
   {
-    src: "https://embed.figma.com/design/L7Vwr7ypRMxuGrZfo3o5bC/Skeninge-VVS?node-id=16-111&embed-host=share",
+    src: "https://embed.figma.com/design/L7Vwr7ypRMxuGrZfo3o5bC/Skeninge-VVS?node-id=0-1&embed-host=share",
     titleKey: "figma.design2.title",
   },
 ];
