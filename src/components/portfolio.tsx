@@ -10,16 +10,18 @@ type Category = "all" | "apps" | "websites" | "design";
 const PROJECT_KEYS: string[] = [
 
   "kodochdesign",
+    "skeningeVvs",
   "knegarloggen",
   "dagensDos",
   "kladerEfterVader",
-  "tassaIn",
+  
   "bMovies",
   "motionzone",
   "fakeyNails",
+  "tassaIn",
   "ledningsteknik",
   "sweettimeUf",
-  "skeningeVvs",
+
   "vaderskuggan",
   "studenthubben",
 ];
@@ -41,13 +43,15 @@ const PROJECT_DATA: Record<
     codeLink: "https://github.com/knixan/knegarloggen",
     projectLink: "https://knegarloggen.vercel.app/",
   },
-  tassaIn: {
-    image: "/image/mockupbilder/tassa-in.png",
-    tech: "React Vite, ASP.NET Core, C#, TypeScript, Tailwind CSS, Shadcn",
-    category: "apps",
-    codeLink: "https://github.com/knixan/tassa-in",
-    projectLink: "https://tassa-in.vercel.app/",
+
+    skeningeVvs: {
+    image: "/image/mockupbilder/skeningevvs.png",
+    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS",
+    category: "websites",
+    projectLink: "https://skeningevvs.se/",
+    codeLink: "https://github.com/skeningevvs/skeningevvs",
   },
+
   kladerEfterVader: {
     image: "/image/mockupbilder/kladereftervader.png",
     tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, OpenWeatherMap API",
@@ -69,6 +73,8 @@ const PROJECT_DATA: Record<
     projectLink: "https://motionzoneworld.com/",
     codeLink: "https://github.com/motionzoneproject/motionzoneproject",
   },
+
+
   fakeyNails: {
     image: "/image/mockupbilder/fakey-nails.png",
     tech: "React, Next.js, Node.js, Sanity CMS, TypeScript, Tailwind CSS, Shadcn, Nodmailer",
@@ -76,6 +82,15 @@ const PROJECT_DATA: Record<
     codeLink: "https://github.com/knixan/fakey-nails",
     projectLink: "https://fakey-nails.vercel.app/",
   },
+
+      tassaIn: {
+    image: "/image/mockupbilder/tassa-in.png",
+    tech: "React Vite, ASP.NET Core, C#, TypeScript, Tailwind CSS, Shadcn",
+    category: "apps",
+    codeLink: "https://github.com/knixan/tassa-in",
+    projectLink: "https://tassa-in.vercel.app/",
+  },
+  
   sweettimeUf: {
     image: "/image/mockupbilder/sweettimeuf.png",
     tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Zod, BetterAuth, Shadcn",
@@ -96,13 +111,7 @@ const PROJECT_DATA: Record<
     projectLink: "https://kodochdesign.se/",
     codeLink: "https://github.com/knixan/kodochdesign",
   },
-  skeningeVvs: {
-    image: "/image/mockupbilder/skeningevvs.png",
-    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS",
-    category: "websites",
-    projectLink: "https://skeningevvs.se/",
-    codeLink: "https://github.com/skeningevvs/skeningevvs",
-  },
+
   vaderskuggan: {
     image: "/image/mockupbilder/vaderskuggan.png",
     tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS",
