@@ -8,20 +8,17 @@ import { useTranslate } from "@/locales/use-locales";
 type Category = "all" | "apps" | "websites" | "design";
 
 const PROJECT_KEYS: string[] = [
-
-  "kodochdesign",
-    "skeningeVvs",
   "knegarloggen",
+  "kodochdesign",
+  "skeningeVvs",
   "dagensDos",
   "kladerEfterVader",
-  
   "bMovies",
   "motionzone",
   "fakeyNails",
   "tassaIn",
   "ledningsteknik",
   "sweettimeUf",
-
   "vaderskuggan",
   "studenthubben",
 ];
