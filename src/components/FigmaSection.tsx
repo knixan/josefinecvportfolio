@@ -7,11 +7,11 @@ const FIGMA_EMBEDS = [
     src: "https://embed.figma.com/design/L7Vwr7ypRMxuGrZfo3o5bC/Skeninge-VVS?node-id=0-1&embed-host=share",
     titleKey: "figma.design2.title",
   },
-  {
-    src: "https://embed.figma.com/design/fjj2iJsqWaueN5rBOvPs1c/Untitled?node-id=0-1&embed-host=share",
-    titleKey: "figma.design1.title",
-  },
 
+  {
+    src: "https://embed.figma.com/design/JE8FdREtjy44nce6vVGego/Untitled?node-id=0-1&embed-host=share",
+    titleKey: "figma.design3.title",
+  },
 ];
 
 export default function FigmaSection() {
