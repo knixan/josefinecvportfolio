@@ -9,6 +9,7 @@ type Category = "all" | "apps" | "websites" | "design";
 
 const PROJECT_KEYS: string[] = [
   "knegarloggen",
+   "tassaIn",
   "kodochdesign",
   "skeningeVvs",
   "dagensDos",
@@ -16,7 +17,6 @@ const PROJECT_KEYS: string[] = [
   "bMovies",
   "motionzone",
   "fakeyNails",
-  "tassaIn",
   "ledningsteknik",
   "sweettimeUf",
   "vaderskuggan",
