@@ -12,6 +12,11 @@ const FIGMA_EMBEDS = [
     src: "https://embed.figma.com/design/JE8FdREtjy44nce6vVGego/Untitled?node-id=0-1&embed-host=share",
     titleKey: "figma.design3.title",
   },
+
+    {
+    src: "https://embed.figma.com/design/JSDiPNGil5G61rvKzFxWam/Folket-hus-Tran%C3%A5s?node-id=0-1&embed-host=share",
+    titleKey: "figma.design4.title",
+  },
 ];
 
 export default function FigmaSection() {
