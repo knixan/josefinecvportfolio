@@ -28,11 +28,11 @@
     "education": "Utbildning",
     "jobs": {
       "codeAndDesign": {
-        "title": "Systemutvecklare & Grundare",
+        "title": "Systemutvecklare & Designer",
         "period": "November 2025 – Tills vidare",
-        "company": "Kod & Design (kodochdesign.se)",
+        "company": "Kod & Design (kodochdesign.se) – eget sidoprojekt",
         "bullets": [
-          "Driver webbyrå med inriktning på modern webbutveckling och grafisk design",
+          "Grundat och driver webbyrå med inriktning på modern webbutveckling och grafisk design",
           "Bygger kundlösningar i React, Next.js, TypeScript och Tailwind CSS",
           "Ansvarar för hela kedjan: kravställning, design, utveckling och deployment"
         ]

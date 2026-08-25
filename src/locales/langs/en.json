@@ -28,11 +28,11 @@
     "education": "Education",
     "jobs": {
       "codeAndDesign": {
-        "title": "Software Developer & Founder",
+        "title": "Software Developer & Designer",
         "period": "November 2025 – Present",
-        "company": "Kod & Design (kodochdesign.se)",
+        "company": "Kod & Design (kodochdesign.se) – personal side project",
         "bullets": [
-          "Runs a web agency focused on modern web development and graphic design",
+          "Founded and runs a web agency focused on modern web development and graphic design",
           "Builds client solutions in React, Next.js, TypeScript and Tailwind CSS",
           "Responsible for the full chain: requirements, design, development and deployment"
         ]
