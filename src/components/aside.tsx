@@ -84,8 +84,8 @@ export default function Aside() {
             {/* Ladda ner CV-knappar */}
             <div className="flex gap-2">
               <a
-                href="/Pdf/CV-SV-JosefineEriksson.pdf"
-                download="CV-SV-JosefineEriksson.pdf"
+                href="/Pdf/CV-SWE-JosefineEriksson.pdf"
+                download="CV-SWE-JosefineEriksson.pdf"
                 className="relative flex-1 group/btn"
               >
                 <button className="w-full py-3 px-3 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:bg-slate-750">
@@ -94,8 +94,8 @@ export default function Aside() {
                 </button>
               </a>
               <a
-                href="/Pdf/CV-EN-JosefineEriksson.pdf"
-                download="CV-EN-JosefineEriksson.pdf"
+                href="/Pdf/CV-ENG-JosefineEriksson.pdf"
+                download="CV-ENG-JosefineEriksson.pdf"
                 className="relative flex-1 group/btn"
               >
                 <button className="w-full py-3 px-3 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:bg-slate-750">
@@ -103,6 +103,19 @@ export default function Aside() {
                   <span>{t("aside.downloadCvEn")}</span>
                 </button>
               </a>
+            </div>
+
+            {/* Om mig-text */}
+            <div className="space-y-3 pt-2 border-t border-slate-800/60">
+              <p className="text-indigo-400 text-xs font-semibold italic">
+                {t("aside.tagline")}
+              </p>
+              <p className="text-slate-300 text-xs leading-relaxed font-light">
+                {t("aside.bio1")}
+              </p>
+              <p className="text-slate-400 text-xs leading-relaxed font-light italic">
+                {t("aside.bio2")}
+              </p>
             </div>
 
             {/* Kompetenser */}

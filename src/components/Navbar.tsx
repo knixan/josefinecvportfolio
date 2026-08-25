@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import {
   FaBars,
   FaTimes,
-  FaUser,
   FaFolderOpen,
   FaFileAlt,
   FaGlobe,
@@ -25,7 +24,6 @@ export default function Navbar() {
 
   const NAV_ITEMS = [
     { href: "/", label: t("nav.cv"), icon: FaFileAlt },
-    { href: "/ommig", label: t("nav.aboutMe"), icon: FaUser },
     { href: "/portfolio", label: t("nav.portfolio"), icon: FaFolderOpen },
   ];
 
