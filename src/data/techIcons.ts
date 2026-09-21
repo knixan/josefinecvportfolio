@@ -19,6 +19,9 @@ import {
   SiDotnet,
   SiVite,
   SiAngular,
+  SiDocker,
+  SiSupabase,
+  SiFigma,
 } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { VscAzure } from "react-icons/vsc";
@@ -67,6 +70,9 @@ const techIconMap: Record<string, TechIcon> = {
   "c#": { icon: FaCode, name: "C#", color: "#f472b6" },
   csharp: { icon: FaCode, name: "C#", color: "#f472b6" },
   angular: { icon: SiAngular, name: "Angular", color: "#f472b6" },
+  docker: { icon: SiDocker, name: "Docker", color: "#f472b6" },
+  supabase: { icon: SiSupabase, name: "Supabase", color: "#f472b6" },
+  figma: { icon: SiFigma, name: "Figma", color: "#f472b6" },
 };
 
 export function getTechIcons(techString: string): TechIcon[] {

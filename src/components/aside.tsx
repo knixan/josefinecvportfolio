@@ -13,7 +13,7 @@ import { getTechIcons } from "@/data/techIcons";
 import { useTranslate } from "@/locales/use-locales";
 
 const programs = getTechIcons(
-  "React, Angular, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Photoshop, Lightroom, Illustrator, Azure",
+  "React, Angular, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Supabase, Docker, Figma, Photoshop, Lightroom, Illustrator, Azure",
 );
 
 export default function Aside() {
@@ -107,15 +107,31 @@ export default function Aside() {
 
             {/* Om mig-text */}
             <div className="space-y-3 pt-2 border-t border-slate-800/60">
-              <p className="text-indigo-400 text-xs font-semibold italic">
-                {t("aside.tagline")}
-              </p>
               <p className="text-slate-300 text-xs leading-relaxed font-light">
                 {t("aside.bio1")}
               </p>
               <p className="text-slate-400 text-xs leading-relaxed font-light italic">
                 {t("aside.bio2")}
               </p>
+            </div>
+
+            {/* Primär Stack */}
+            <div className="space-y-2 pt-2 border-t border-slate-800/60">
+              <h3 className="text-xs font-bold tracking-wider uppercase text-slate-400">
+                {t("aside.primaryStack")}
+              </h3>
+              <div className="space-y-1.5">
+                {[
+                  { label: "Frontend", value: "React, Next.js, Vite, React Native, TanStack, Tailwind CSS, Shadcn, Zod" },
+                  { label: "Backend", value: "Node.js, Hono, TypeScript" },
+                  { label: t("aside.stackDatabase"), value: "PostgreSQL, Prisma, Supabase, Docker" },
+                ].map((item) => (
+                  <p key={item.label} className="text-xs text-slate-400 leading-relaxed">
+                    <span className="text-slate-300 font-medium">{item.label}:</span>{" "}
+                    <span className="font-light">{item.value}</span>
+                  </p>
+                ))}
+              </div>
             </div>
 
             {/* Kompetenser */}

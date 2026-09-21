@@ -10,9 +10,10 @@
     "greeting": "Hej hej!",
     "jobTitle": "Josefine Eriksson, Fullstackutvecklare & Grafisk/Webbdesigner",
     "location": "Mjölby, Sverige",
-    "tagline": "Jag gör allt från design till att deploya hela projekt live.",
-    "bio1": "Fullstack-utvecklare med rötter i frontend och design. Min bakgrund går tillbaka till 2007, då jag designade och kodade hundratals bloggar med HTML, CSS och JavaScript – en grund som idag ger mig ett starkt öga för visuell identitet och användarupplevelse i mina moderna fullstack-projekt med React, Next.js och Node.js. Jag planerar, utvecklar och deployar webbapplikationer från start till mål, med fokus på tillgängliga, responsiva och genomtänkta gränssnitt.",
-    "bio2": "Vill du se fler exempel på mitt arbete och min design – ta gärna en titt på min portfolio, den säger mer om mig som utvecklare än ett CV kan göra.",
+    "bio1": "Sedan 2007 har jag designat och kodat webb – från hundratals bloggar i HTML/CSS/JS till dagens fullstack-projekt i React, Next.js och Node.js. Jag planerar, utvecklar och deployar hela applikationer, med fokus på tillgängliga och genomtänkta gränssnitt.",
+    "bio2": "Nyfiken på mitt arbete? Min portfolio säger mer om mig som utvecklare än ett CV kan göra.",
+    "primaryStack": "Primär Stack",
+    "stackDatabase": "Databas/ORM",
     "downloadCv": "Ladda ner CV",
     "downloadCvSv": "CV på svenska",
     "downloadCvEn": "CV på engelska",
@@ -27,32 +28,34 @@
     "workExperience": "Arbetslivserfarenhet",
     "education": "Utbildning",
     "jobs": {
-      "codeAndDesign": {
-        "title": "Systemutvecklare & Designer",
-        "period": "November 2025 – Tills vidare",
-        "company": "Kod & Design (kodochdesign.se) – eget sidoprojekt",
+      "erakcins": {
+        "title": "Systemutvecklare Fullstack & UX/UI Design",
+        "period": "September 2025 – Tills vidare",
+        "company": "Erakcins AB (snickarappen.se)",
         "bullets": [
-          "Grundat och driver webbyrå med inriktning på modern webbutveckling och grafisk design",
+          "Har gått in i ett pågående, AI-augmenterat projekt – ett offert- och kalkylsystem för snickeribranschen i Next.js 16/React 19, med Claude Code integrerat i arbetsflödet",
+          "Arbetar i hela stacken: frontend med SVG-motor och 3D-visualisering (Three.js), backend mot Supabase i Docker",
+          "Bidrar till en regelbaserad motor för byggkalkyler, validerad med Zod",
+          "Är med och tar fram UX/UI-design i Figma och Claude Design",
+          "Kvalitetssäkrar funktioner före release: CSS, SEO, tillgänglighet och regressionstester"
+        ]
+      },
+      "codeAndDesign": {
+        "title": "Systemutvecklare Fullstack",
+        "period": "November 2025 – Augusti 2026",
+        "company": "Kod & Design (kodochdesign.se)",
+        "bullets": [
+          "En webbyrå med inriktning på modern webbutveckling",
           "Bygger kundlösningar i React, Next.js, TypeScript och Tailwind CSS",
           "Ansvarar för hela kedjan: kravställning, design, utveckling och deployment"
         ]
       },
-      "knegarloggen": {
-        "title": "Eget Projekt – Knegarloggen (SaaS-applikation)",
-        "period": "2025 – Pågående",
-        "company": "knegarloggen.vercel.app",
-        "bullets": [
-          "Fakturerings- och jobbloggningsverktyg för hantverkare, byggt från grunden",
-          "Stack: Next.js (App Router), TypeScript, Prisma, PostgreSQL, Tailwind CSS, better-auth",
-          "Publiceras som PWA med stöd för Android och iOS"
-        ]
-      },
       "frontend": {
-        "title": "Frontend-utvecklare (LIA)",
+        "title": "Frontend Utvecklare (LIA)",
         "period": "November 2025 – 8 Maj 2026",
-        "company": "hitract.se · Stockholm",
+        "company": "Hitract AB (hitract.se) · Stockholm",
         "bullets": [
-          "Utveckling av frontend-lösningar för en plattform riktad mot studenter och kårer",
+          "Utveckling av frontend-lösningar för en plattform riktad mot studenter och skolor",
           "Implementering av designsystem i React och Next.js med Material UI (MUI)",
           "Översättning av Figma-design till responsiv och tillgänglig kod i nära samarbete med UX/UI-designers"
         ]
@@ -78,20 +81,30 @@
     },
     "educations": {
       "fullstack": {
-        "title": "Fullstack - React, Next.js, TypeScript",
-        "period": "2025 - 2026",
-        "school": "Lexicon - Linköping",
-        "description": "React, Next.js, HTML, CSS, JavaScript/TypeScript, Prisma, SQL, Tailwind CSS, Bootstrap, PostgreSQL, Git/GitHub, AI, Node.js"
+        "title": "Systemutveckling Fullstack",
+        "period": "2025 – 2026",
+        "school": "Lexicon · Linköping",
+        "bullets": [
+          "Stack: JavaScript/TypeScript, React, Next.js, Node.js",
+          "Backend & databaser: SQL, PostgreSQL, Prisma, Sanity CMS",
+          "Styling & verktyg: Tailwind CSS, Bootstrap, Git/GitHub, AI-assisterad programmering"
+        ]
       },
       "itProfile": {
         "title": "IT Profil",
-        "period": "2006 - 2007",
-        "school": "Kristinehamns Folkhögskola - Kristinehamn"
+        "period": "2006 – 2007",
+        "school": "Kristinehamns Folkhögskola · Kristinehamn",
+        "bullets": [
+          "Allmän profil med inriktning IT. Photoshop, HTML, CSS och JavaScript. Engelska A, Historia A, Biologi A–B, Bild & Form."
+        ]
       },
       "construction": {
-        "title": "Bygg- och hantverksprogrammet, måleri",
-        "period": "2002 - 2005",
-        "school": "Tullängsskolan - Örebro"
+        "title": "Bygg & Hantverksprogrammet – Måleri",
+        "period": "2001 – 2004",
+        "school": "Tullängsskolan · Örebro",
+        "bullets": [
+          "Bygg och hantverk med inriktning måleri. Finsnickeri, mura, kakla, snickra, måla, spackla, tapetsera, ådra."
+        ]
       }
     }
   },
