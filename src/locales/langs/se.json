@@ -30,7 +30,7 @@
     "jobs": {
       "erakcins": {
         "title": "Systemutvecklare Fullstack & UX/UI Design",
-        "period": "September 2025 – Tills vidare",
+        "period": "September 2026 – Tills vidare",
         "company": "Erakcins AB (snickarappen.se)",
         "bullets": [
           "Har gått in i ett pågående, AI-augmenterat projekt – ett offert- och kalkylsystem för snickeribranschen i Next.js 16/React 19, med Claude Code integrerat i arbetsflödet",
@@ -122,10 +122,20 @@
     "viewCode": "Visa kod",
     "tech": "Teknik:",
     "projects": {
+      "nathanget": {
+        "title": "Näthänget (Pågående projekt)",
+        "description": "Monorepo med pnpm och Turborepo, med webbapp i React Vite, mobilapp i React Native/Expo, backend i Hono samt Prisma och PostgreSQL.",
+        "alt": "Näthänget"
+      },
+      "jonnyerikssonKonst": {
+        "title": "Jonny Eriksson Konst",
+        "description": "Webbutik för posters och prints med produktkatalog, kategorier, kundvagn, kassa och orderhantering samt adminpanel. Sanity CMS gör att kunden själv kan redigera texter och byta bilder.",
+        "alt": "Jonny Eriksson Konst"
+      },
 
            "knegarloggen": {
         "title": "Knegarloggen",
-        "description": "Fullstack SaaS-app för byggföretag så de enkelt kan planera sina jobb, inköp och kostnader, samt kunna skicka fakturor direkt till sina kunder.",
+        "description": "Fullstack SaaS i ett pnpm-monorepo med tre syskonappar: Knegarloggen för hantverkare, Giggerloggen för frilansare och konsulter samt Hemfixloggen för städ och trädgård. Planera jobb, material och kostnader och skicka fakturor direkt till kunderna, med ROT- och RUT-avdrag, delade paket för auth, Stripe och UI.",
         "alt": "Knegarloggen"
       },
       "tassaIn": {
@@ -181,7 +191,7 @@
       },
       "sweettimeUf": {
         "title": "Sweettime-UF",
-        "description": "Webbshop med produktkatalog, varianthantering, checkout, orderhantering och adminpanel.",
+        "description": "Webbshop med produktkatalog, varianthantering, checkout, orderhantering och adminpanel med statistik och PDF-fakturor. Sanity CMS med inbäddad Studio gör att kunden själv kan redigera sidornas innehåll.",
         "alt": "Sweettime-UF"
       },
     

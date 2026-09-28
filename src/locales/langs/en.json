@@ -30,7 +30,7 @@
     "jobs": {
       "erakcins": {
         "title": "Fullstack Developer & UX/UI Design",
-        "period": "September 2025 – Present",
+        "period": "September 2026 – Present",
         "company": "Erakcins AB (snickarappen.se)",
         "bullets": [
           "Joined an ongoing, AI-augmented project – a quoting and calculation system for the carpentry industry in Next.js 16/React 19, with Claude Code integrated in the workflow",
@@ -122,10 +122,20 @@
     "viewCode": "View code",
     "tech": "Tech:",
     "projects": {
+      "nathanget": {
+        "title": "Näthänget (Work in progress)",
+        "description": "Monorepo with pnpm and Turborepo, featuring a web app in React Vite, a mobile app in React Native/Expo, a Hono backend, plus Prisma and PostgreSQL.",
+        "alt": "Näthänget"
+      },
+      "jonnyerikssonKonst": {
+        "title": "Jonny Eriksson Konst",
+        "description": "Web shop for posters and prints with a product catalog, categories, cart, checkout and order management, plus an admin panel. Sanity CMS lets the client edit text and change images themselves.",
+        "alt": "Jonny Eriksson Konst"
+      },
 
          "knegarloggen": {
         "title": "Knegarloggen",
-        "description": "Fullstack SaaS app for construction companies to easily plan their jobs, purchases, and costs, as well as send invoices directly to their customers.",
+        "description": "Fullstack SaaS in a pnpm monorepo with three sibling apps: Knegarloggen for tradespeople, Giggerloggen for freelancers and consultants, and Hemfixloggen for cleaning and gardening. Plan jobs, materials and costs and send invoices straight to customers, with ROT and RUT tax deductions and shared packages for auth, Stripe and UI.",
         "alt": "Knegarloggen"
       },
       "tassaIn": {
@@ -181,7 +191,7 @@
       },
       "sweettimeUf": {
         "title": "Sweettime-UF",
-        "description": "Web store with product catalog, variant handling, checkout, order management and admin panel.",
+        "description": "Web store with product catalog, variant handling, checkout, order management and an admin panel with statistics and PDF invoices. Sanity CMS with an embedded Studio lets the client edit page content themselves.",
         "alt": "Sweettime-UF"
       },
    

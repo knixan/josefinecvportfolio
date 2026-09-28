@@ -8,17 +8,19 @@ import { useTranslate } from "@/locales/use-locales";
 type Category = "all" | "apps" | "websites" | "design";
 
 const PROJECT_KEYS: string[] = [
+  "nathanget",
+  "jonnyerikssonKonst",
   "knegarloggen",
-   "tassaIn",
+  "sweettimeUf",
   "kodochdesign",
   "skeningeVvs",
+  "tassaIn",
   "dagensDos",
   "kladerEfterVader",
   "bMovies",
   "motionzone",
   "fakeyNails",
   "ledningsteknik",
-  "sweettimeUf",
   "vaderskuggan",
   "studenthubben",
 ];
@@ -33,9 +35,22 @@ const PROJECT_DATA: Record<
     codeLink?: string;
   }
 > = {
+  nathanget: {
+    image: "/image/mockupbilder/nathanget.png",
+    tech: "React Vite, React Native, Expo, Hono, TypeScript, PostgreSQL, Prisma, pnpm, Turborepo",
+    category: "apps",
+    codeLink: "https://github.com/knixan/nathanget-monorepo",
+  },
+  jonnyerikssonKonst: {
+    image: "/image/mockupbilder/jonnykonst.png",
+    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Shadcn, Sanity CMS, PostgreSQL, Prisma, Stripe",
+    category: "apps",
+    projectLink: "https://jonnyeriksson-konst.vercel.app/",
+    codeLink: "https://github.com/knixan/jonnyeriksson-konst",
+  },
   knegarloggen: {
     image: "/image/mockupbilder/knegarloggen.png",
-    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth, Stripe, Nodmailer",
+    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, pnpm, Zod, BetterAuth, Stripe, Nodmailer",
     category: "apps",
     codeLink: "https://github.com/knixan/knegarloggen",
     projectLink: "https://knegarloggen.vercel.app/",
@@ -89,8 +104,8 @@ const PROJECT_DATA: Record<
   },
   
   sweettimeUf: {
-    image: "/image/mockupbilder/sweettimeuf.png",
-    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Zod, BetterAuth, Shadcn",
+    image: "/image/mockupbilder/sweettime.png",
+    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Sanity CMS, Zod, BetterAuth, Shadcn, Nodmailer",
     category: "apps",
     projectLink: "https://sweettimeuf.vercel.app/",
     codeLink: "https://github.com/knixan/sweettimeuf",

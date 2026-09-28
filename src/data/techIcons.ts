@@ -22,6 +22,11 @@ import {
   SiDocker,
   SiSupabase,
   SiFigma,
+  SiHono,
+  SiExpo,
+  SiPnpm,
+  SiTurborepo,
+  SiStripe,
 } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { VscAzure } from "react-icons/vsc";
@@ -73,6 +78,12 @@ const techIconMap: Record<string, TechIcon> = {
   docker: { icon: SiDocker, name: "Docker", color: "#f472b6" },
   supabase: { icon: SiSupabase, name: "Supabase", color: "#f472b6" },
   figma: { icon: SiFigma, name: "Figma", color: "#f472b6" },
+  "react native": { icon: SiReact, name: "React Native", color: "#f472b6" },
+  expo: { icon: SiExpo, name: "Expo", color: "#f472b6" },
+  hono: { icon: SiHono, name: "Hono", color: "#f472b6" },
+  pnpm: { icon: SiPnpm, name: "pnpm", color: "#f472b6" },
+  turborepo: { icon: SiTurborepo, name: "Turborepo", color: "#f472b6" },
+  stripe: { icon: SiStripe, name: "Stripe", color: "#f472b6" },
 };
 
 export function getTechIcons(techString: string): TechIcon[] {
