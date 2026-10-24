@@ -1,194 +1,107 @@
 "use client";
 
-import Image from "next/image";
-import {
-  FaBriefcase,
-  FaHome,
-  FaEnvelope,
-  FaPhone,
-  FaDownload,
-  FaQuoteRight,
-} from "react-icons/fa";
+import { FaRegStar, FaGlobe, FaRegCommentDots } from "react-icons/fa";
 import { getTechIcons } from "@/data/techIcons";
 import { useTranslate } from "@/locales/use-locales";
+import ContactCard from "./ContactCard";
+import { SwedishFlag, BritishFlag } from "./Flags";
 
 const programs = getTechIcons(
   "React, Angular, React Vite, Next.js, Node.js, ASP.NET Core, C#, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Shadcn, MUI, Sanity, PostgreSQL, Prisma, Supabase, Docker, Figma, Photoshop, Lightroom, Illustrator, Azure",
 );
 
+// Varumärkesfärger för kompetens-rutnätet (övriga sidor använder rosa)
+const BRAND_COLORS: Record<string, string> = {
+  React: "#61dafb",
+  Angular: "#dd0031",
+  "React Vite": "#a78bfa",
+  "Next.js": "#ffffff",
+  "Node.js": "#5fa04e",
+  "ASP.NET Core": "#7c6cf2",
+  "C#": "#a179dc",
+  TypeScript: "#3178c6",
+  JavaScript: "#f7df1e",
+  HTML: "#e34f26",
+  CSS: "#2965f1",
+  Tailwind: "#38bdf8",
+  Shadcn: "#ffffff",
+  MUI: "#007fff",
+  Sanity: "#f36458",
+  PostgreSQL: "#699eca",
+  Prisma: "#ffffff",
+  Supabase: "#3ecf8e",
+  Docker: "#2496ed",
+  Figma: "#f24e1e",
+  Photoshop: "#31a8ff",
+  Lightroom: "#31a8ff",
+  Illustrator: "#ff9a00",
+  Azure: "#0089d6",
+};
+
 export default function Aside() {
   const { t } = useTranslate();
-  const languages = [t("aside.swedish"), t("aside.english")];
+  const languages = [
+    { label: t("aside.swedish"), flag: SwedishFlag },
+    { label: t("aside.english"), flag: BritishFlag },
+  ];
 
   return (
-    <aside className="left-column flex-none w-full lg:w-1/3">
-      <div className="relative group">
-        {/* Subtil och lyxig glow */}
-        <div className="absolute -inset-px bg-gradient-to-b from-indigo-500/20 to-cyan-500/20 rounded-2xl blur-md transition duration-500" />
-
-        <div className="relative bg-slate-900/60 border border-slate-800/80 rounded-2xl shadow-xl overflow-hidden backdrop-blur-md">
-          {/* Profilbild med ett högre 3:4-porträttformat */}
-          <div className="relative aspect-[3/4] w-full overflow-hidden rounded-t-2xl">
-            <Image
-              src="/image/josefineeriksson-profil.jpg"
-              alt="Josefine Eriksson"
-              width={500}
-              height={667}
-              priority
-              className="object-cover object-top w-full h-full grayscale-[20%] hover:grayscale-0 transition-all duration-500"
-            />
-            {/* Elegant mörk toning i botten för textens läsbarhet */}
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
-            <div className="absolute bottom-4 left-6">
-              <span className="text-xs font-semibold tracking-wider text-indigo-400 uppercase">
-                {t("aside.greeting")}
+    <aside className="w-full lg:w-[38%] flex-none space-y-6">
+      {/* Kompetens */}
+      <div className="card p-6">
+        <h3 className="flex items-center gap-3 text-lg font-medium text-white">
+          <FaRegStar className="text-pink-400" />
+          {t("aside.skills")}
+        </h3>
+        <ul className="mt-6 grid grid-cols-4 sm:grid-cols-5 gap-x-2 gap-y-5">
+          {programs.map((program) => (
+            <li
+              key={program.name}
+              className="group flex flex-col items-center gap-1.5 text-center"
+            >
+              <program.icon
+                className="text-2xl transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
+                style={{ color: BRAND_COLORS[program.name] ?? program.color }}
+              />
+              <span className="text-[11px] leading-tight text-slate-300">
+                {program.name}
               </span>
-            </div>
-          </div>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-          <div className="p-6 lg:p-8 space-y-8">
-            {/* Kontaktinfo */}
-            <div className="space-y-4">
-              {[
-                { icon: FaBriefcase, text: t("aside.jobTitle") },
-                { icon: FaHome, text: t("aside.location") },
-                {
-                  icon: FaEnvelope,
-                  text: "josefineeriksson@live.se",
-                  isLink: true,
-                  href: "mailto:josefineeriksson@live.se",
-                },
-                { icon: FaPhone, text: "076-248 42 34" },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-center space-x-3 text-slate-300 group/item"
-                >
-                  <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700/50 group-hover/item:border-indigo-500/50 group-hover/item:text-indigo-400 transition-colors duration-300">
-                    <item.icon className="text-sm text-slate-400 group-hover/item:text-indigo-400" />
-                  </div>
-                  {item.isLink ? (
-                    <a
-                      href={item.href}
-                      className="text-sm font-medium hover:text-white transition-colors"
-                    >
-                      {item.text}
-                    </a>
-                  ) : (
-                    <p className="text-sm font-medium">{item.text}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            {/* Ladda ner CV-knappar */}
-            <div className="flex gap-2">
-              <a
-                href="/Pdf/CV-SWE-JosefineEriksson.pdf"
-                download="CV-SWE-JosefineEriksson.pdf"
-                className="relative flex-1 group/btn"
-              >
-                <button className="w-full py-3 px-3 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:bg-slate-750">
-                  <FaDownload className="text-xs text-slate-400 group-hover/btn:text-white transition-colors shrink-0" />
-                  <span>{t("aside.downloadCvSv")}</span>
-                </button>
-              </a>
-              <a
-                href="/Pdf/CV-ENG-JosefineEriksson.pdf"
-                download="CV-ENG-JosefineEriksson.pdf"
-                className="relative flex-1 group/btn"
-              >
-                <button className="w-full py-3 px-3 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:bg-slate-750">
-                  <FaDownload className="text-xs text-slate-400 group-hover/btn:text-white transition-colors shrink-0" />
-                  <span>{t("aside.downloadCvEn")}</span>
-                </button>
-              </a>
-            </div>
-
-            {/* Om mig-text */}
-            <div className="space-y-3 pt-2 border-t border-slate-800/60">
-              <p className="text-slate-300 text-xs leading-relaxed font-light">
-                {t("aside.bio1")}
-              </p>
-              <p className="text-slate-400 text-xs leading-relaxed font-light italic">
-                {t("aside.bio2")}
-              </p>
-            </div>
-
-            {/* Primär Stack */}
-            <div className="space-y-2 pt-2 border-t border-slate-800/60">
-              <h3 className="text-xs font-bold tracking-wider uppercase text-slate-400">
-                {t("aside.primaryStack")}
-              </h3>
-              <div className="space-y-1.5">
-                {[
-                  { label: "Frontend", value: "React, Next.js, Vite, React Native, TanStack, Tailwind CSS, Shadcn, Zod" },
-                  { label: "Backend", value: "Node.js, Hono, TypeScript" },
-                  { label: t("aside.stackDatabase"), value: "PostgreSQL, Prisma, Supabase, Docker" },
-                ].map((item) => (
-                  <p key={item.label} className="text-xs text-slate-400 leading-relaxed">
-                    <span className="text-slate-300 font-medium">{item.label}:</span>{" "}
-                    <span className="font-light">{item.value}</span>
-                  </p>
-                ))}
-              </div>
-            </div>
-
-            {/* Kompetenser */}
-            <div className="space-y-6 pt-2 border-t border-slate-800/60">
-              <div>
-                <h3 className="text-sm font-bold tracking-wider uppercase text-slate-400 mb-4">
-                  {t("aside.programs")}
-                </h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {programs.map((program, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center space-x-1.5 bg-slate-800/40 border border-slate-800 px-3 py-1.5 rounded-lg hover:border-slate-700 transition-all duration-300"
-                    >
-                      <program.icon
-                        className="text-base"
-                        style={{ color: program.color }}
-                      />
-                      <span className="text-slate-300 text-xs font-medium">
-                        {program.name}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Språk */}
-              <div>
-                <h3 className="text-sm font-bold tracking-wider uppercase text-slate-400 mb-3">
-                  {t("aside.languages")}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {languages.map((language, index) => (
-                    <span
-                      key={index}
-                      className="bg-slate-800/60 border border-slate-700/50 text-slate-300 text-xs font-medium px-3 py-1 rounded-md"
-                    >
-                      {language}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Referenser */}
-              <div className="pt-2">
-                <h3 className="text-sm font-bold tracking-wider uppercase text-slate-400 mb-3 flex items-center gap-2">
-                  <FaQuoteRight className="text-xs text-indigo-400" />
-                  {t("aside.references")}
-                </h3>
-                <p className="text-slate-400 text-xs leading-relaxed italic font-light">
-                  {t("aside.referencesText")}
-                </p>
-              </div>
-            </div>
-          </div>
+      {/* Språk */}
+      <div className="card p-6">
+        <h3 className="flex items-center gap-3 text-lg font-medium text-white">
+          <FaGlobe className="text-slate-300" />
+          {t("aside.languages")}
+        </h3>
+        <div className="mt-4 flex items-center divide-x divide-white/10">
+          {languages.map(({ label, flag: Flag }) => (
+            <span
+              key={label}
+              className="flex items-center gap-3 px-4 first:pl-0 text-sm text-slate-300"
+            >
+              <Flag />
+              {label}
+            </span>
+          ))}
         </div>
       </div>
+
+      {/* Referenser */}
+      <div className="card p-6">
+        <h3 className="flex items-center gap-3 text-lg font-medium text-white">
+          <FaRegCommentDots className="text-pink-400" />
+          {t("aside.references")}
+        </h3>
+        <p className="mt-3 pl-8 text-sm text-slate-400">
+          {t("aside.referencesText")}
+        </p>
+      </div>
+
+      <ContactCard />
     </aside>
   );
 }

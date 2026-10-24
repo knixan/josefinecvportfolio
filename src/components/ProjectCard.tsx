@@ -40,15 +40,17 @@ export default function ProjectCard({
 
   return (
     <>
-      <div
-        className={`flex flex-col md:flex-row gap-8 lg:gap-12 items-center bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 lg:p-8 shadow-xl backdrop-blur-md transition-all duration-300 hover:border-slate-700/60 ${
+      <article
+        className={`card group flex flex-col md:flex-row gap-8 lg:gap-12 items-center p-5 lg:p-8 transition-all duration-300 hover:border-pink-400/30 ${
           isReversed ? "md:flex-row-reverse" : ""
         }`}
       >
         {/* Bildbehållare - Optimerad för breda panoramabilder */}
-        <div
-          className="w-full md:w-[60%] aspect-[16/9] relative rounded-xl overflow-hidden group/image cursor-pointer flex-none"
+        <button
+          type="button"
+          className="w-full md:w-[60%] aspect-[16/9] relative rounded-xl overflow-hidden group/image cursor-pointer flex-none bg-white"
           onClick={toggleModal}
+          aria-label={alt}
         >
           <Image
             src={image}
@@ -56,47 +58,43 @@ export default function ProjectCard({
             fill
             sizes="(max-width: 768px) 100vw, 60vw"
             style={{ objectFit: "contain" }} // Garanterar att HELA bilden alltid syns
-            className="transition-transform duration-700 group-hover/image:scale-102"
+            className="transition-transform duration-700 group-hover/image:scale-[1.03]"
           />
 
-          {/* Subtilt hover-overlay anpassat för contain-format */}
-          <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-xl">
-            <div className="backdrop-blur-md bg-slate-900/80 border border-slate-700/50 p-3 rounded-lg transform scale-90 group-hover/image:scale-100 transition-all duration-300">
+          <div className="absolute inset-0 bg-[#140a22]/30 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 to-fuchsia-600 shadow-lg shadow-pink-500/40 scale-90 group-hover/image:scale-100 transition-transform duration-300">
               <FaExpandAlt className="text-white text-sm" />
             </div>
           </div>
-        </div>
+        </button>
 
         {/* Textinnehåll */}
         <div className="w-full md:w-[40%] flex flex-col justify-between h-full space-y-6">
           <div>
-            <h3 className="text-xl font-bold mb-3 text-white tracking-tight">
+            <span className="text-sm font-medium tracking-[0.2em] text-pink-400/80">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <h3 className="mt-1 text-2xl font-medium text-white tracking-tight">
               {title}
             </h3>
-            <p className="text-slate-300 text-sm leading-relaxed font-light">
+            <span className="mt-3 block h-0.5 w-12 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500" />
+            <p className="mt-4 text-slate-300 text-sm leading-relaxed">
               {description}
             </p>
           </div>
 
-          {/* Knappar och teknik */}
-          <div className="space-y-5 pt-4 border-t border-slate-800/60">
+          <div className="space-y-5 pt-5 border-t border-white/5">
             {/* Länkar */}
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               {projectLink && (
                 <Link
                   href={projectLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1"
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500 px-5 py-2.5 text-xs font-semibold text-white shadow-lg shadow-pink-500/30 hover:brightness-110 transition-all"
                 >
-                  <button
-                    aria-label={t("portfolio.viewProject")}
-                    title={t("portfolio.viewProject")}
-                    className="w-full py-2.5 px-4 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 hover:bg-slate-750 transition-all duration-200 flex items-center justify-center space-x-2 shadow-sm"
-                  >
-                    <FaGlobe className="text-sm text-slate-400" />
-                    <span>{t("portfolio.viewProject") || "Visa projekt"}</span>
-                  </button>
+                  <FaGlobe className="text-sm" />
+                  {t("portfolio.viewProject")}
                 </Link>
               )}
               {codeLink && (
@@ -104,59 +102,52 @@ export default function ProjectCard({
                   href={codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1"
+                  className="inline-flex items-center gap-2 rounded-full border border-pink-400/70 px-5 py-2.5 text-xs font-semibold text-white hover:bg-pink-500/10 transition-colors"
                 >
-                  <button
-                    aria-label={t("portfolio.viewCode")}
-                    title={t("portfolio.viewCode")}
-                    className="w-full py-2.5 px-4 rounded-xl font-semibold text-xs text-white bg-slate-800 border border-slate-700 hover:border-slate-600 hover:bg-slate-750 transition-all duration-200 flex items-center justify-center space-x-2 shadow-sm"
-                  >
-                    <FaGithub className="text-sm text-slate-400" />
-                    <span>{t("portfolio.viewCode") || "Källkod"}</span>
-                  </button>
+                  <FaGithub className="text-sm text-pink-300" />
+                  {t("portfolio.viewCode")}
                 </Link>
               )}
             </div>
 
             {/* Teknologier */}
-            <div>
-              <div className="flex flex-wrap gap-2">
-                {getTechIcons(tech).map((techItem, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center space-x-1.5 bg-slate-800/40 border border-slate-800/80 px-2.5 py-1 rounded-md"
-                    title={techItem.name}
-                  >
-                    <techItem.icon
-                      className="text-xs"
-                      style={{ color: techItem.color }}
-                    />
-                    <span className="text-slate-300 text-[11px] font-medium">
-                      {techItem.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2">
+              {getTechIcons(tech).map((techItem) => (
+                <span
+                  key={techItem.name}
+                  className="flex items-center gap-1.5 rounded-full border border-pink-400/20 bg-white/[0.03] px-3 py-1"
+                  title={techItem.name}
+                >
+                  <techItem.icon
+                    className="text-xs"
+                    style={{ color: techItem.color }}
+                  />
+                  <span className="text-slate-300 text-[11px] font-medium">
+                    {techItem.name}
+                  </span>
+                </span>
+              ))}
             </div>
           </div>
         </div>
-      </div>
+      </article>
 
       {/* Bild-modal (Fullskärm) */}
       {isImageModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div
-            className="absolute inset-0 bg-black/90 backdrop-blur-md"
+            className="absolute inset-0 bg-[#140a22]/90 backdrop-blur-md"
             onClick={toggleModal}
           ></div>
           <div className="relative max-w-6xl max-h-[85vh] w-full h-full flex flex-col items-center justify-center z-10">
             <button
               onClick={toggleModal}
-              className="absolute -top-12 right-0 text-slate-400 hover:text-white transition-colors p-2"
+              className="absolute -top-12 right-0 text-slate-300 hover:text-pink-400 transition-colors p-2"
+              aria-label="Stäng"
             >
               <FaTimes className="text-xl" />
             </button>
-            <div className="relative border border-slate-800/50 rounded-xl p-2 shadow-2xl max-w-full max-h-full">
+            <div className="relative border border-pink-400/20 rounded-xl p-2 shadow-2xl max-w-full max-h-full">
               <Image
                 src={image}
                 alt={alt}

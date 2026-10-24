@@ -8,7 +8,7 @@
   },
   "aside": {
     "greeting": "Hej hej!",
-    "jobTitle": "Josefine Eriksson, Fullstackutvecklare & Grafisk/Webbdesigner",
+    "jobTitle": "Josefine Eriksson, Fullstackutvecklare med fokus på frontend",
     "location": "Mjölby, Sverige",
     "bio1": "Sedan 2007 har jag designat och kodat webb – från hundratals bloggar i HTML/CSS/JS till dagens fullstack-projekt i React, Next.js och Node.js. Jag planerar, utvecklar och deployar hela applikationer, med fokus på tillgängliga och genomtänkta gränssnitt.",
     "bio2": "Nyfiken på mitt arbete? Min portfolio säger mer om mig som utvecklare än ett CV kan göra.",
@@ -22,7 +22,9 @@
     "swedish": "Svenska",
     "english": "Engelska",
     "references": "Referenser",
-    "referencesText": "Referenser lämnas vid förfrågan"
+    "referencesText": "Referenser lämnas vid förfrågan",
+    "role": "Fullstackutvecklare med fokus på frontend",
+    "skills": "Kompetens"
   },
   "cv": {
     "workExperience": "Arbetslivserfarenhet",
@@ -118,6 +120,8 @@
   },
   "portfolio": {
     "title": "Min Portfolio",
+    "tagline": ["Webbapplikationer", "Webbplatser", "UX/UI design"],
+    "subtitle": "Ett urval av projekt jag har designat och byggt – från fullstack-applikationer med databas och betalning till hemsidor och UI-design i Figma.",
     "viewProject": "Visa projekt",
     "viewCode": "Visa kod",
     "tech": "Teknik:",
@@ -133,7 +137,7 @@
         "alt": "Jonny Eriksson Konst"
       },
 
-           "knegarloggen": {
+      "knegarloggen": {
         "title": "Knegarloggen",
         "description": "Fullstack SaaS i ett pnpm-monorepo med tre syskonappar: Knegarloggen för hantverkare, Giggerloggen för frilansare och konsulter samt Hemfixloggen för städ och trädgård. Planera jobb, material och kostnader och skicka fakturor direkt till kunderna, med ROT- och RUT-avdrag, delade paket för auth, Stripe och UI.",
         "alt": "Knegarloggen"
@@ -194,13 +198,12 @@
         "description": "Webbshop med produktkatalog, varianthantering, checkout, orderhantering och adminpanel med statistik och PDF-fakturor. Sanity CMS med inbäddad Studio gör att kunden själv kan redigera sidornas innehåll.",
         "alt": "Sweettime-UF"
       },
-    
+
       "ledningsteknik": {
         "title": "Ledningsteknik AB",
         "description": "Hemsida för Ledningsteknik AB med stöd för svenska och engelska via i18n samt mörkt och ljust läge.",
         "alt": "Ledningsteknik AB"
       }
-
     }
   },
   "filter": {
@@ -220,7 +223,7 @@
     "design3": {
       "title": "Tassa In – UI-design i Figma"
     },
-     "design4": {
+    "design4": {
       "title": "Folkets Hus i Tranås – UI Design in Figma (In progress)"
     }
   },
@@ -228,6 +231,7 @@
     "contact": "Kontakt",
     "followMe": "Följ mig",
     "fullstackDesigner": "Fullstack Developer & Designer",
-    "allRightsReserved": "Alla rättigheter förbehållna"
+    "allRightsReserved": "Alla rättigheter förbehållna",
+    "backToTop": "Till toppen"
   }
 }

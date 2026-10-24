@@ -1,109 +1,78 @@
 "use client";
 
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaGithub,
-  FaPhone,
-  FaEnvelope,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FaChevronUp } from "react-icons/fa";
 import { useTranslate } from "@/locales/use-locales";
-
-const SOCIALS = [
-  {
-    icon: FaFacebook,
-    label: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=61579831973399",
-  },
-  {
-    icon: FaInstagram,
-    label: "Instagram",
-    href: "https://www.instagram.com/kodochdesign/",
-  },
-  {
-    icon: FaLinkedin,
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/josefine-eriksson-349498345/",
-  },
-  { icon: FaGithub, label: "GitHub", href: "https://github.com/knixan" },
-];
+import ContactCard from "./ContactCard";
 
 export default function Footer() {
   const { t } = useTranslate();
+  const pathname = usePathname();
 
   return (
-    <footer className="relative bg-slate-950 text-white border-t border-slate-900">
-      <div className="max-w-screen-xl mx-auto px-6 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-          {/* Kontakt */}
-          <div className="space-y-6">
-            <h4 className="text-sm font-bold tracking-wider uppercase text-slate-400">
-              {t("footer.contact")}
-            </h4>
-            <div className="space-y-4">
-              <div className="text-sm">
-                <p className="text-slate-200 font-semibold text-base">
-                  Josefine Eriksson
-                </p>
-                <p className="text-slate-400 text-xs">
-                  {t("footer.fullstackDesigner")}
-                </p>
-              </div>
-              <div className="flex items-center space-x-3 text-sm text-slate-300">
-                <FaPhone className="text-slate-500 text-xs" />
-                <span>076-248 42 34</span>
-              </div>
-              <div className="flex items-center space-x-3 text-sm text-slate-300">
-                <FaEnvelope className="text-slate-500 text-xs" />
-                <a
-                  href="mailto:josefineeriksson@live.se"
-                  className="hover:text-indigo-400 transition-colors"
-                >
-                  josefineeriksson@live.se
-                </a>
-              </div>
-              <div className="flex items-center space-x-3 text-sm text-slate-300">
-                <FaMapMarkerAlt className="text-slate-500 text-xs" />
-                <span>Norra Strandvägen 1, Mjölby</span>
-              </div>
-            </div>
+    <footer className="relative overflow-hidden bg-[#140a22] text-white">
+      {/* Våg */}
+      <svg
+        className="absolute top-0 left-0 w-full h-20"
+        viewBox="0 0 1440 80"
+        preserveAspectRatio="none"
+        aria-hidden
+      >
+        <path
+          d="M0 60C320 0 700 10 1000 40C1200 60 1340 50 1440 30"
+          stroke="url(#footerWave)"
+          strokeWidth="2"
+          fill="none"
+        />
+        <defs>
+          <linearGradient id="footerWave" x1="0" y1="0" x2="1440" y2="0">
+            <stop stopColor="#a855f7" stopOpacity="0.6" />
+            <stop offset="0.6" stopColor="#ec4899" stopOpacity="0.5" />
+            <stop offset="1" stopColor="#a855f7" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-[radial-gradient(ellipse_at_bottom_left,rgba(168,85,247,0.25),transparent_60%)]" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 pt-24 pb-10">
+        {/* Kontaktkortet ligger i CV-sidans sidokolumn, övriga sidor visar det här */}
+        {pathname !== "/" && (
+          <div className="mb-12 max-w-sm">
+            <ContactCard />
+          </div>
+        )}
+
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-slate-300">
+          <div className="text-center sm:text-left">
+            <p>© {new Date().getFullYear()} Josefine Eriksson Kod & Design</p>
+            <p className="text-slate-400">{t("footer.allRightsReserved")}</p>
           </div>
 
-          {/* Sociala medier */}
-          <div className="space-y-6">
-            <h4 className="text-sm font-bold tracking-wider uppercase text-slate-400">
-              {t("footer.followMe")}
-            </h4>
-            <div className="grid grid-cols-2 gap-3">
-              {SOCIALS.map((social, i) => (
-                <a
-                  key={i}
-                  href={social.href}
-                  className="group flex items-center space-x-3 bg-slate-900/50 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl transition-all duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <social.icon className="text-slate-400 group-hover:text-indigo-400 text-lg transition-colors" />
-                  <span className="text-slate-300 text-xs font-medium group-hover:text-white transition-colors">
-                    {social.label}
-                  </span>
-                </a>
-              ))}
-            </div>
+          <div className="flex items-center gap-6">
+            <nav className="flex items-center divide-x divide-white/15">
+              <Link
+                href="/"
+                className="px-4 hover:text-pink-400 transition-colors"
+              >
+                {t("nav.cv")}
+              </Link>
+              <Link
+                href="/portfolio"
+                className="px-4 hover:text-pink-400 transition-colors"
+              >
+                {t("nav.portfolio")}
+              </Link>
+            </nav>
+            <button
+              type="button"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              aria-label={t("footer.backToTop")}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-pink-500/70 text-pink-300 hover:bg-pink-500/10 transition-colors"
+            >
+              <FaChevronUp className="text-sm" />
+            </button>
           </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            © {new Date().getFullYear()}{" "}
-            <span className="text-slate-300 font-medium">
-              Josefine Eriksson Kod & Design
-            </span>
-          </p>
-          <p>{t("footer.allRightsReserved")}</p>
         </div>
       </div>
     </footer>

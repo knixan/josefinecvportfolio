@@ -8,7 +8,7 @@
   },
   "aside": {
     "greeting": "Hello!",
-    "jobTitle": "Josefine Eriksson, Fullstack Developer & Graphic/Web Designer",
+    "jobTitle": "Josefine Eriksson, Fullstack Developer with a focus on frontend",
     "location": "Mjölby, Sweden",
     "bio1": "Since 2007 I've designed and coded the web – from hundreds of blogs in HTML/CSS/JS to today's fullstack projects in React, Next.js and Node.js. I plan, develop and deploy complete applications, with a focus on accessible and thoughtful interfaces.",
     "bio2": "Curious about my work? My portfolio says more about me as a developer than a CV can.",
@@ -22,7 +22,9 @@
     "swedish": "Swedish",
     "english": "English",
     "references": "References",
-    "referencesText": "References are provided upon request."
+    "referencesText": "References are provided upon request.",
+    "role": "Fullstack Developer with a focus on frontend",
+    "skills": "Skills"
   },
   "cv": {
     "workExperience": "Work Experience",
@@ -64,9 +66,7 @@
         "title": "Sales Associate & Retail Advisor",
         "period": "2022 – 2025",
         "company": "Flügger färg / Bygghemma",
-        "bullets": [
-          "Customer service, technical advice and specialist sales"
-        ]
+        "bullets": ["Customer service, technical advice and specialist sales"]
       },
       "graphicDesigner": {
         "title": "Graphic Designer & Web Manager",
@@ -118,6 +118,8 @@
   },
   "portfolio": {
     "title": "My Portfolio",
+    "tagline": ["Web applications", "Websites", "UX/UI design"],
+    "subtitle": "A selection of projects I have designed and built – from fullstack applications with databases and payments to websites and UI design in Figma.",
     "viewProject": "View project",
     "viewCode": "View code",
     "tech": "Tech:",
@@ -133,7 +135,7 @@
         "alt": "Jonny Eriksson Konst"
       },
 
-         "knegarloggen": {
+      "knegarloggen": {
         "title": "Knegarloggen",
         "description": "Fullstack SaaS in a pnpm monorepo with three sibling apps: Knegarloggen for tradespeople, Giggerloggen for freelancers and consultants, and Hemfixloggen for cleaning and gardening. Plan jobs, materials and costs and send invoices straight to customers, with ROT and RUT tax deductions and shared packages for auth, Stripe and UI.",
         "alt": "Knegarloggen"
@@ -194,7 +196,7 @@
         "description": "Web store with product catalog, variant handling, checkout, order management and an admin panel with statistics and PDF invoices. Sanity CMS with an embedded Studio lets the client edit page content themselves.",
         "alt": "Sweettime-UF"
       },
-   
+
       "ledningsteknik": {
         "title": "Ledningsteknik AB",
         "description": "Website for Ledningsteknik AB with Swedish and English support via i18n, and dark/light mode.",
@@ -219,7 +221,7 @@
     "design3": {
       "title": "Tassa In – UI Design in Figma"
     },
-     "design4": {
+    "design4": {
       "title": "Folk House in Tranås – UI Design in Figma (In progress)"
     }
   },
@@ -227,6 +229,7 @@
     "contact": "Contact",
     "followMe": "Follow me",
     "fullstackDesigner": "Fullstack Developer & Designer",
-    "allRightsReserved": "All rights reserved"
+    "allRightsReserved": "All rights reserved",
+    "backToTop": "Back to top"
   }
 }

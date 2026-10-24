@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
+import { Outfit, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import LocalizationProvider from "../locales/localization-provider";
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-great-vibes",
+});
 
 export const metadata: Metadata = {
   title: "Josefine Eriksson CV",
@@ -15,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="sv">
-      <body className="h-full font-sans m-0 p-0 bg-cover bg-gradient-to-r from-[#3a0ca3] to-[#4cc9f0] text-[#7209b7]">
+    <html lang="sv" className={`${outfit.variable} ${greatVibes.variable}`}>
+      <body className="h-full font-sans m-0 p-0 bg-background text-foreground antialiased">
         <LocalizationProvider>
           <Navbar />
           <main>{children}</main>
