@@ -15,14 +15,9 @@ const PROJECT_KEYS: string[] = [
   "kodochdesign",
   "skeningeVvs",
   "tassaIn",
-  "dagensDos",
   "kladerEfterVader",
   "bMovies",
   "motionzone",
-  "fakeyNails",
-  "ledningsteknik",
-  "vaderskuggan",
-  "studenthubben",
 ];
 
 const PROJECT_DATA: Record<
@@ -36,7 +31,7 @@ const PROJECT_DATA: Record<
   }
 > = {
   nathanget: {
-    image: "/image/mockupbilder/nathanget.png",
+    image: "/image/mockupbilder/näthänget.png",
     tech: "React Vite, React Native, Expo, Hono, TypeScript, PostgreSQL, Prisma, pnpm, Turborepo",
     category: "apps",
     codeLink: "https://github.com/knixan/nathanget-monorepo",
@@ -57,7 +52,7 @@ const PROJECT_DATA: Record<
   },
 
   skeningeVvs: {
-    image: "/image/mockupbilder/skeningevvs.png",
+    image: "/image/mockupbilder/skenningevvs.png",
     tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS",
     category: "websites",
     projectLink: "https://skeningevvs.se/",
@@ -79,23 +74,15 @@ const PROJECT_DATA: Record<
     projectLink: "https://b-movies.vercel.app/",
   },
   motionzone: {
-    image: "/image/mockupbilder/motionzone.png",
+    image: "/image/mockupbilder/mozionzone.png",
     tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma",
     category: "apps",
     projectLink: "https://motionzoneworld.com/",
     codeLink: "https://github.com/motionzoneproject/motionzoneproject",
   },
 
-  fakeyNails: {
-    image: "/image/mockupbilder/fakey-nails.png",
-    tech: "React, Next.js, Node.js, Sanity CMS, TypeScript, Tailwind CSS, Shadcn, Nodmailer",
-    category: "apps",
-    codeLink: "https://github.com/knixan/fakey-nails",
-    projectLink: "https://fakey-nails.vercel.app/",
-  },
-
   tassaIn: {
-    image: "/image/mockupbilder/tassa-in.png",
+    image: "/image/mockupbilder/tassain.png",
     tech: "React Vite, ASP.NET Core, C#, TypeScript, Tailwind CSS, Shadcn",
     category: "apps",
     codeLink: "https://github.com/knixan/tassa-in",
@@ -109,12 +96,6 @@ const PROJECT_DATA: Record<
     projectLink: "https://sweettimeuf.vercel.app/",
     codeLink: "https://github.com/knixan/sweettimeuf",
   },
-  dagensDos: {
-    image: "/image/mockupbilder/dagensdos.png",
-    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, Zod, BetterAuth",
-    category: "apps",
-    codeLink: "https://github.com/knixan/dagens-dos",
-  },
   kodochdesign: {
     image: "/image/mockupbilder/kodochdesign.png",
     tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS, Shadcn",
@@ -123,28 +104,6 @@ const PROJECT_DATA: Record<
     codeLink: "https://github.com/knixan/kodochdesign",
   },
 
-  vaderskuggan: {
-    image: "/image/mockupbilder/vaderskuggan.png",
-    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS",
-    category: "websites",
-    projectLink: "https://vaderskuggan.vercel.app/",
-    codeLink: "https://github.com/knixan/vaderskuggan",
-  },
-  studenthubben: {
-    image: "/image/mockupbilder/studenthubben.png",
-    tech: "React, Next.js, Node.js, TypeScript, Material UI",
-    category: "websites",
-    projectLink: "https://studenthubben-six.vercel.app/",
-    codeLink: "https://github.com/knixan/studenthubben",
-  },
-
-  ledningsteknik: {
-    image: "/image/mockupbilder/ledningsteknik.png",
-    tech: "React, Next.js, Node.js, TypeScript, Tailwind CSS",
-    category: "websites",
-    projectLink: "https://ledningsteknikab.vercel.app/",
-    codeLink: "https://github.com/knixan/ledningsteknikAB",
-  },
 };
 
 export default function Portfolio() {

@@ -66,7 +66,9 @@
         "title": "Sales Associate & Retail Advisor",
         "period": "2022 – 2025",
         "company": "Flügger färg / Bygghemma",
-        "bullets": ["Customer service, technical advice and specialist sales"]
+        "bullets": [
+          "Customer service, technical advice and specialist sales"
+        ]
       },
       "graphicDesigner": {
         "title": "Graphic Designer & Web Manager",
@@ -118,7 +120,11 @@
   },
   "portfolio": {
     "title": "My Portfolio",
-    "tagline": ["Web applications", "Websites", "UX/UI design"],
+    "tagline": [
+      "Web applications",
+      "Websites",
+      "UX/UI design"
+    ],
     "subtitle": "A selection of projects I have designed and built – from fullstack applications with databases and payments to websites and UI design in Figma.",
     "viewProject": "View project",
     "viewCode": "View code",
@@ -134,7 +140,6 @@
         "description": "Web shop for posters and prints with a product catalog, categories, cart, checkout and order management, plus an admin panel. Sanity CMS lets the client edit text and change images themselves.",
         "alt": "Jonny Eriksson Konst"
       },
-
       "knegarloggen": {
         "title": "Knegarloggen",
         "description": "Fullstack SaaS in a pnpm monorepo with three sibling apps: Knegarloggen for tradespeople, Giggerloggen for freelancers and consultants, and Hemfixloggen for cleaning and gardening. Plan jobs, materials and costs and send invoices straight to customers, with ROT and RUT tax deductions and shared packages for auth, Stripe and UI.",
@@ -145,21 +150,10 @@
         "description": "Booking system for animal care with its own API, time management, capacity control and admin panel.",
         "alt": "Tassa In"
       },
-
-      "fakeyNails": {
-        "title": "Fakey Nails",
-        "description": "Salon site with Sanity CMS – the client edits prices and services themselves. Embedded booking system.",
-        "alt": "Fakey Nails"
-      },
       "bMovies": {
         "title": "B-Movies",
         "description": "Web store for B-movies using the TMDb API to import movies to the database, with cart, checkout and admin panel.",
         "alt": "B-movies"
-      },
-      "dagensDos": {
-        "title": "Dagens Dos",
-        "description": "News site with subscription system via Stripe, AI-assisted article generation with Gemini, MDXEditor, dashboard with statistics and external API integrations for electricity prices and weather data from SMHI.",
-        "alt": "Dagens Dos"
       },
       "motionzone": {
         "title": "Motionzone in Växjö",
@@ -181,26 +175,10 @@
         "description": "Website for Skeninge VVS AB in Skänninge.",
         "alt": "Skeninge VVS AB"
       },
-      "vaderskuggan": {
-        "title": "Väderskuggan",
-        "description": "Weather application that gives slightly sarcastic comments based on the weather. With API from SMHI.",
-        "alt": "Weather Shadow"
-      },
-      "studenthubben": {
-        "title": "Student Hub",
-        "description": "Frontend page to demonstrate a student network",
-        "alt": "Student Hub"
-      },
       "sweettimeUf": {
         "title": "Sweettime-UF",
         "description": "Web store with product catalog, variant handling, checkout, order management and an admin panel with statistics and PDF invoices. Sanity CMS with an embedded Studio lets the client edit page content themselves.",
         "alt": "Sweettime-UF"
-      },
-
-      "ledningsteknik": {
-        "title": "Ledningsteknik AB",
-        "description": "Website for Ledningsteknik AB with Swedish and English support via i18n, and dark/light mode.",
-        "alt": "Ledningsteknik AB"
       }
     }
   },

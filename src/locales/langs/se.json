@@ -120,7 +120,11 @@
   },
   "portfolio": {
     "title": "Min Portfolio",
-    "tagline": ["Webbapplikationer", "Webbplatser", "UX/UI design"],
+    "tagline": [
+      "Webbapplikationer",
+      "Webbplatser",
+      "UX/UI design"
+    ],
     "subtitle": "Ett urval av projekt jag har designat och byggt – från fullstack-applikationer med databas och betalning till hemsidor och UI-design i Figma.",
     "viewProject": "Visa projekt",
     "viewCode": "Visa kod",
@@ -136,7 +140,6 @@
         "description": "Webbutik för posters och prints med produktkatalog, kategorier, kundvagn, kassa och orderhantering samt adminpanel. Sanity CMS gör att kunden själv kan redigera texter och byta bilder.",
         "alt": "Jonny Eriksson Konst"
       },
-
       "knegarloggen": {
         "title": "Knegarloggen",
         "description": "Fullstack SaaS i ett pnpm-monorepo med tre syskonappar: Knegarloggen för hantverkare, Giggerloggen för frilansare och konsulter samt Hemfixloggen för städ och trädgård. Planera jobb, material och kostnader och skicka fakturor direkt till kunderna, med ROT- och RUT-avdrag, delade paket för auth, Stripe och UI.",
@@ -147,21 +150,10 @@
         "description": "Bokningssystem för djurvård med eget API, tidshantering, kapacitetskontroll och adminpanel.",
         "alt": "Tassa In"
       },
-
-      "fakeyNails": {
-        "title": "Fakey Nails",
-        "description": "Salongsajt med Sanity CMS – kunden redigerar priser och tjänster själv. Inbäddat bokningssystem.",
-        "alt": "Fakey Nails"
-      },
       "bMovies": {
         "title": "B-Movies",
         "description": "Webbutik för B-movies med TMDb API för att hämta filmer till databasen, varukorg, checkout och adminpanel.",
         "alt": "B-movies"
-      },
-      "dagensDos": {
-        "title": "Dagens Dos",
-        "description": "Nyhetssajt med prenumerationssystem via Stripe, AI-assisterad artikelgenerering med Gemini, MDXEditor, dashboard med statistik och externa API-integrationer för elpriser och väderdata från SMHI.",
-        "alt": "Dagens Dos"
       },
       "motionzone": {
         "title": "Motionzone i Växjö",
@@ -183,26 +175,10 @@
         "description": "Hemsida för Skeninge VVS AB i Skänninge.",
         "alt": "Skeninge VVS AB"
       },
-      "vaderskuggan": {
-        "title": "Väderskuggan",
-        "description": "Väderapplikation som ger lite sarkastiska kommentarer beroende på vädret. Med API från SMHI.",
-        "alt": "Väderskuggan"
-      },
-      "studenthubben": {
-        "title": "Studenthubben",
-        "description": "Frontend-sida för att demonstrera ett studentnätverk",
-        "alt": "Studenthubben"
-      },
       "sweettimeUf": {
         "title": "Sweettime-UF",
         "description": "Webbshop med produktkatalog, varianthantering, checkout, orderhantering och adminpanel med statistik och PDF-fakturor. Sanity CMS med inbäddad Studio gör att kunden själv kan redigera sidornas innehåll.",
         "alt": "Sweettime-UF"
-      },
-
-      "ledningsteknik": {
-        "title": "Ledningsteknik AB",
-        "description": "Hemsida för Ledningsteknik AB med stöd för svenska och engelska via i18n samt mörkt och ljust läge.",
-        "alt": "Ledningsteknik AB"
       }
     }
   },
