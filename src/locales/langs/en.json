@@ -10,7 +10,7 @@
     "greeting": "Hello!",
     "jobTitle": "Josefine Eriksson, Fullstack Developer with a focus on frontend",
     "location": "Mjölby, Sweden",
-    "bio1": "Since 2007 I've designed and coded the web – from hundreds of blogs in HTML/CSS/JS to today's fullstack projects in React, Next.js and Node.js. I plan, develop and deploy complete applications, with a focus on accessible and thoughtful interfaces.",
+    "bio1": "Since 2007 I've designed and coded the web, from hundreds of blogs in HTML/CSS/JS to today's fullstack projects in React, Next.js and Node.js. I plan, develop and deploy complete applications, with a focus on accessible and thoughtful interfaces.",
     "bio2": "Curious about my work? My portfolio says more about me as a developer than a CV can.",
     "primaryStack": "Primary Stack",
     "stackDatabase": "Database/ORM",
@@ -32,10 +32,10 @@
     "jobs": {
       "erakcins": {
         "title": "Fullstack Developer & UX/UI Design",
-        "period": "September 2026 – Present",
+        "period": "September 2026 – Ongoing",
         "company": "Erakcins AB (snickarappen.se)",
         "bullets": [
-          "Joined an ongoing, AI-augmented project – a quoting and calculation system for the carpentry industry in Next.js 16/React 19, with Claude Code integrated in the workflow",
+          "Joined an ongoing, AI-augmented project: a quoting and calculation system for the carpentry industry in Next.js 16/React 19, with Claude Code integrated in the workflow",
           "Works across the full stack: frontend with SVG engine and 3D visualisation (Three.js), backend against Supabase in Docker",
           "Contributing to a rule-based engine for construction calculations, validated with Zod",
           "Involved in UX/UI design in Figma and Claude Design",
@@ -43,11 +43,11 @@
         ]
       },
       "codeAndDesign": {
-        "title": "Fullstack Developer",
-        "period": "November 2025 – August 2026",
+        "title": "Consultant, Fullstack Developer & Designer",
+        "period": "November 2025 – Ongoing",
         "company": "Kod & Design (kodochdesign.se)",
         "bullets": [
-          "A web agency focused on modern web development",
+          "Own consulting business in web development and design, focused on well-thought-out solutions",
           "Builds client solutions in React, Next.js, TypeScript and Tailwind CSS",
           "Responsible for the full chain: requirements, design, development and deployment"
         ]
@@ -101,7 +101,7 @@
         ]
       },
       "construction": {
-        "title": "Building & Crafts Program – Painting",
+        "title": "Building & Crafts Program (Painting)",
         "period": "2001 – 2004",
         "school": "Tullängsskolan · Örebro",
         "bullets": [
@@ -112,10 +112,10 @@
   },
   "aboutMe": {
     "title": "About me",
-    "p1": "I'm a fullstack developer with a frontend focus and a design background that goes back to 2007. What started as curiosity – designing blogs, building online stores, and selling my own products – has grown into a genuine passion for building modern web applications end to end.",
-    "p2": "My primary stack is Next.js, TypeScript, React, and Node.js with PostgreSQL and Prisma. I'm comfortable across the full stack, but I'm at my best where business logic meets thoughtful UI. My most recent personal project is Knegarloggen – a SaaS application for invoicing and job logging aimed at Swedish tradespeople, built with full authentication and a relational database – set to launch as a PWA and as an Android app on Google Play.",
-    "p3": "I also built Kläder efter väder – a PWA designed for children with intellectual disabilities and autism, helping them independently choose appropriate clothing based on the weather.",
-    "p4": "I learn fast, take ownership of what I build, and care about delivering things that actually work well – not just look good. I'm currently looking for a permanent position where I can contribute with both technical depth and design sensibility, and keep growing as part of a team.",
+    "p1": "I'm a fullstack developer with a frontend focus and a design background that goes back to 2007. What started as curiosity about designing blogs, building online stores and selling my own products has grown into a genuine passion for building modern web applications end to end.",
+    "p2": "My primary stack is Next.js, TypeScript, React, and Node.js with PostgreSQL and Prisma. I'm comfortable across the full stack, but I'm at my best where business logic meets thoughtful UI. My most recent personal project is Knegarloggen, a SaaS application for invoicing and job logging aimed at Swedish tradespeople, built with full authentication and a relational database. It is set to launch as a PWA and as an Android app on Google Play.",
+    "p3": "I also built Kläder efter väder, a PWA designed for children with intellectual disabilities and autism, helping them independently choose appropriate clothing based on the weather.",
+    "p4": "I learn fast, take ownership of what I build, and care about delivering things that actually work well, not just look good. I'm currently looking for a permanent position where I can contribute with both technical depth and design sensibility, and keep growing as part of a team.",
     "videoLabel": "Piano tune"
   },
   "portfolio": {
@@ -125,7 +125,7 @@
       "Websites",
       "UX/UI design"
     ],
-    "subtitle": "A selection of projects I have designed and built – from fullstack applications with databases and payments to websites and UI design in Figma.",
+    "subtitle": "A selection of projects I have designed and built, from fullstack applications with databases and payments to websites and UI design in Figma.",
     "viewProject": "View project",
     "viewCode": "View code",
     "tech": "Tech:",
@@ -162,12 +162,12 @@
       },
       "kladerEfterVader": {
         "title": "Clothes by Weather",
-        "description": "PWA app – a weather application that provides comments and shows clothing suggestions based on the weather. With API from OpenWeatherMap.",
+        "description": "PWA app. A weather application that provides comments and shows clothing suggestions based on the weather. With API from OpenWeatherMap.",
         "alt": "Clothes by weather"
       },
       "kodochdesign": {
         "title": "Kod & Design",
-        "description": "My own web agency where I take client projects in web development and graphic design. Building solutions in Next.js, TypeScript and Tailwind CSS.",
+        "description": "My own consulting business where I take on assignments in web development and graphic design, with a focus on well-thought-out solutions and polished, user-friendly design. Building client solutions in Next.js, TypeScript and Tailwind CSS.",
         "alt": "Kod och Design"
       },
       "skeningeVvs": {
@@ -194,13 +194,13 @@
       "title": "UI Design in Figma"
     },
     "design2": {
-      "title": "Skeninge VVS – UI Design in Figma"
+      "title": "Skeninge VVS: UI Design in Figma"
     },
     "design3": {
-      "title": "Tassa In – UI Design in Figma"
+      "title": "Tassa In: UI Design in Figma"
     },
     "design4": {
-      "title": "Folk House in Tranås – UI Design in Figma (In progress)"
+      "title": "Folk House in Tranås: UI Design in Figma (In progress)"
     }
   },
   "footer": {

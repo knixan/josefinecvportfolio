@@ -10,7 +10,7 @@
     "greeting": "Hej hej!",
     "jobTitle": "Josefine Eriksson, Fullstackutvecklare med fokus på frontend",
     "location": "Mjölby, Sverige",
-    "bio1": "Sedan 2007 har jag designat och kodat webb – från hundratals bloggar i HTML/CSS/JS till dagens fullstack-projekt i React, Next.js och Node.js. Jag planerar, utvecklar och deployar hela applikationer, med fokus på tillgängliga och genomtänkta gränssnitt.",
+    "bio1": "Sedan 2007 har jag designat och kodat webb, från hundratals bloggar i HTML/CSS/JS till dagens fullstack-projekt i React, Next.js och Node.js. Jag planerar, utvecklar och deployar hela applikationer, med fokus på tillgängliga och genomtänkta gränssnitt.",
     "bio2": "Nyfiken på mitt arbete? Min portfolio säger mer om mig som utvecklare än ett CV kan göra.",
     "primaryStack": "Primär Stack",
     "stackDatabase": "Databas/ORM",
@@ -32,10 +32,10 @@
     "jobs": {
       "erakcins": {
         "title": "Systemutvecklare Fullstack & UX/UI Design",
-        "period": "September 2026 – Tills vidare",
+        "period": "September 2026 – Pågående",
         "company": "Erakcins AB (snickarappen.se)",
         "bullets": [
-          "Har gått in i ett pågående, AI-augmenterat projekt – ett offert- och kalkylsystem för snickeribranschen i Next.js 16/React 19, med Claude Code integrerat i arbetsflödet",
+          "Har gått in i ett pågående, AI-augmenterat projekt: ett offert- och kalkylsystem för snickeribranschen i Next.js 16/React 19, med Claude Code integrerat i arbetsflödet",
           "Arbetar i hela stacken: frontend med SVG-motor och 3D-visualisering (Three.js), backend mot Supabase i Docker",
           "Bidrar till en regelbaserad motor för byggkalkyler, validerad med Zod",
           "Är med och tar fram UX/UI-design i Figma och Claude Design",
@@ -43,11 +43,11 @@
         ]
       },
       "codeAndDesign": {
-        "title": "Systemutvecklare Fullstack",
-        "period": "November 2025 – Augusti 2026",
+        "title": "Konsult, Fullstackutvecklare & Designer",
+        "period": "November 2025 – Pågående",
         "company": "Kod & Design (kodochdesign.se)",
         "bullets": [
-          "En webbyrå med inriktning på modern webbutveckling",
+          "Egen konsultverksamhet inom webbutveckling och design, med fokus på genomtänkta lösningar",
           "Bygger kundlösningar i React, Next.js, TypeScript och Tailwind CSS",
           "Ansvarar för hela kedjan: kravställning, design, utveckling och deployment"
         ]
@@ -101,7 +101,7 @@
         ]
       },
       "construction": {
-        "title": "Bygg & Hantverksprogrammet – Måleri",
+        "title": "Bygg & Hantverksprogrammet (Måleri)",
         "period": "2001 – 2004",
         "school": "Tullängsskolan · Örebro",
         "bullets": [
@@ -112,10 +112,10 @@
   },
   "aboutMe": {
     "title": "Om mig",
-    "p1": "Jag är en fullstackutvecklare med rötterna i frontend och ett öga för design som funnits med sedan 2007. Det som började som nyfikenhet – att designa bloggar, bygga webbutiker och sälja egna produkter – har vuxit till ett djupt och genuint intresse för att bygga moderna webbapplikationer från grunden.",
-    "p2": "Idag arbetar jag primärt i Next.js, TypeScript, React och Node.js med PostgreSQL och Prisma som databaslager. Jag rör mig bekvämt genom hela stacken, men det är i skärningspunkten mellan logik och gränssnitt jag trivs bäst – där affärslogiken möter ett genomtänkt UI. Mitt senaste egna projekt är Knegarloggen, en SaaS-applikation för fakturering och jobbloggning riktad mot svenska hantverkare, byggd med fullständig auth och relationsdatabas – och kommer att publiceras som PWA samt som Android-app via Google Play.",
-    "p3": "Jag har också byggt Kläder efter väder – en PWA riktad mot barn med IF och autism, som hjälper dem att självständigt välja rätt kläder baserat på vädret.",
-    "p4": "Jag är driven, lär mig snabbt och motiveras av att ta ett projekt från idé till färdig produkt. Jag söker nu en fast tjänst där jag kan bidra med både teknisk bredd och designkänsla – och fortsätta växa tillsammans med ett team.",
+    "p1": "Jag är en fullstackutvecklare med rötterna i frontend och ett öga för design som funnits med sedan 2007. Det som började som nyfikenhet med att designa bloggar, bygga webbutiker och sälja egna produkter har vuxit till ett djupt och genuint intresse för att bygga moderna webbapplikationer från grunden.",
+    "p2": "Idag arbetar jag primärt i Next.js, TypeScript, React och Node.js med PostgreSQL och Prisma som databaslager. Jag rör mig bekvämt genom hela stacken, men det är i skärningspunkten mellan logik och gränssnitt jag trivs bäst, där affärslogiken möter ett genomtänkt UI. Mitt senaste egna projekt är Knegarloggen, en SaaS-applikation för fakturering och jobbloggning riktad mot svenska hantverkare, byggd med fullständig auth och relationsdatabas. Den kommer att publiceras som PWA samt som Android-app via Google Play.",
+    "p3": "Jag har också byggt Kläder efter väder, en PWA riktad mot barn med IF och autism, som hjälper dem att självständigt välja rätt kläder baserat på vädret.",
+    "p4": "Jag är driven, lär mig snabbt och motiveras av att ta ett projekt från idé till färdig produkt. Jag söker nu en fast tjänst där jag kan bidra med både teknisk bredd och designkänsla och fortsätta växa tillsammans med ett team.",
     "videoLabel": "Piano trudelutt"
   },
   "portfolio": {
@@ -125,7 +125,7 @@
       "Webbplatser",
       "UX/UI design"
     ],
-    "subtitle": "Ett urval av projekt jag har designat och byggt – från fullstack-applikationer med databas och betalning till hemsidor och UI-design i Figma.",
+    "subtitle": "Ett urval av projekt jag har designat och byggt, från fullstack-applikationer med databas och betalning till hemsidor och UI-design i Figma.",
     "viewProject": "Visa projekt",
     "viewCode": "Visa kod",
     "tech": "Teknik:",
@@ -162,12 +162,12 @@
       },
       "kladerEfterVader": {
         "title": "Kläder efter väder",
-        "description": "PWA app – en väderapplikation som ger kommentarer och visar klädförslag beroende på vädret. Med API från OpenWeatherMap.",
+        "description": "PWA-app. En väderapplikation som ger kommentarer och visar klädförslag beroende på vädret. Med API från OpenWeatherMap.",
         "alt": "Väder efter kläder"
       },
       "kodochdesign": {
         "title": "Kod & Design",
-        "description": "Mitt egna hobby projekt - en webbyrå där jag tar kunduppdrag inom webbutveckling och grafisk design. Bygger kundlösningar i Next.js, TypeScript och Tailwind CSS.",
+        "description": "Min egen konsultverksamhet där jag tar uppdrag inom webbutveckling och grafisk design, med fokus på genomtänkta lösningar och snygg, användarvänlig design. Bygger kundlösningar i Next.js, TypeScript och Tailwind CSS.",
         "alt": "Kod och Design"
       },
       "skeningeVvs": {
@@ -194,13 +194,13 @@
       "title": "UI-design i Figma"
     },
     "design2": {
-      "title": "Skeninge VVS – UI-design i Figma"
+      "title": "Skeninge VVS: UI-design i Figma"
     },
     "design3": {
-      "title": "Tassa In – UI-design i Figma"
+      "title": "Tassa In: UI-design i Figma"
     },
     "design4": {
-      "title": "Folkets Hus i Tranås – UI Design in Figma (In progress)"
+      "title": "Folkets Hus i Tranås: UI Design in Figma (In progress)"
     }
   },
   "footer": {
