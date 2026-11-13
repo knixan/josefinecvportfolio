@@ -130,6 +130,11 @@
     "viewCode": "Visa kod",
     "tech": "Teknik:",
     "projects": {
+      "workeatout": {
+        "title": "Workeatout",
+        "description": "SaaS-app för kost och träning, byggd som PWA. Medlemmar väljer recept till sin meny för 1–7 dagar och får en sammanräknad inköpslista och kcal per dag. Admin hanterar recept, ingredienser och medlemmar, med inloggning, e-postverifiering och bilduppladdning.",
+        "alt": "Workeatout"
+      },
       "nathanget": {
         "title": "Näthänget (Pågående projekt)",
         "description": "Monorepo med pnpm och Turborepo, med webbapp i React Vite, mobilapp i React Native/Expo, backend i Hono samt Prisma och PostgreSQL.",
@@ -183,6 +188,7 @@
     }
   },
   "filter": {
+    "featured": "Utvalda",
     "all": "Alla",
     "apps": "Applikationer",
     "websites": "Webbplatser",

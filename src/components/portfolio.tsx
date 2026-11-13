@@ -5,9 +5,17 @@ import ProjectCard from "./ProjectCard";
 import FigmaSection from "./FigmaSection";
 import { useTranslate } from "@/locales/use-locales";
 
-type Category = "all" | "apps" | "websites" | "design";
+type Category = "featured" | "apps" | "websites" | "design";
+
+const FEATURED_KEYS: string[] = [
+  "knegarloggen",
+  "workeatout",
+  "skeningeVvs",
+  "jonnyerikssonKonst",
+];
 
 const PROJECT_KEYS: string[] = [
+  "workeatout",
   "nathanget",
   "jonnyerikssonKonst",
   "knegarloggen",
@@ -30,6 +38,13 @@ const PROJECT_DATA: Record<
     codeLink?: string;
   }
 > = {
+  workeatout: {
+    image: "/image/mockupbilder/workeatout.png",
+    tech: "React, Next.js, TypeScript, Tailwind CSS, Shadcn, PostgreSQL, Prisma, pnpm, Zod, BetterAuth, Resend, UploadThing, Vitest, PWA",
+    category: "apps",
+    projectLink: "https://workeatout-two.vercel.app",
+    codeLink: "https://github.com/knixan/workeatout",
+  },
   nathanget: {
     image: "/image/mockupbilder/näthänget.png",
     tech: "React Vite, React Native, Expo, Hono, TypeScript, PostgreSQL, Prisma, pnpm, Turborepo",
@@ -108,21 +123,24 @@ const PROJECT_DATA: Record<
 
 export default function Portfolio() {
   const { t } = useTranslate();
-  const [activeFilter, setActiveFilter] = useState<Category>("all");
+  const [activeFilter, setActiveFilter] = useState<Category>("featured");
   const tagline = t("portfolio.tagline", { returnObjects: true }) as string[];
 
   const filters: { key: Category; label: string }[] = [
-    { key: "all", label: t("filter.all") },
+    { key: "featured", label: t("filter.featured") },
     { key: "apps", label: t("filter.apps") },
     { key: "websites", label: t("filter.websites") },
     { key: "design", label: t("filter.design") },
   ];
 
-  const filteredKeys = PROJECT_KEYS.filter((key) => {
-    if (activeFilter === "all") return true;
-    if (activeFilter === "design") return false;
-    return PROJECT_DATA[key].category === activeFilter;
-  });
+  const filteredKeys =
+    activeFilter === "featured"
+      ? FEATURED_KEYS
+      : activeFilter === "design"
+        ? []
+        : PROJECT_KEYS.filter(
+            (key) => PROJECT_DATA[key].category === activeFilter,
+          );
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#140a22] text-white">
@@ -191,11 +209,7 @@ export default function Portfolio() {
         )}
 
         {/* Design-sektion */}
-        {(activeFilter === "design" || activeFilter === "all") && (
-          <div className={activeFilter === "all" ? "mt-20" : ""}>
-            <FigmaSection />
-          </div>
-        )}
+        {activeFilter === "design" && <FigmaSection />}
       </div>
     </div>
   );

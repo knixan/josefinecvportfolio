@@ -130,6 +130,11 @@
     "viewCode": "View code",
     "tech": "Tech:",
     "projects": {
+      "workeatout": {
+        "title": "Workeatout",
+        "description": "Diet and training SaaS app built as a PWA. Members pick recipes for a 1–7 day menu and get a combined shopping list and daily calorie summary. Admins manage recipes, ingredients and members, with authentication, email verification and image uploads.",
+        "alt": "Workeatout"
+      },
       "nathanget": {
         "title": "Näthänget (Work in progress)",
         "description": "Monorepo with pnpm and Turborepo, featuring a web app in React Vite, a mobile app in React Native/Expo, a Hono backend, plus Prisma and PostgreSQL.",
@@ -183,6 +188,7 @@
     }
   },
   "filter": {
+    "featured": "Featured",
     "all": "All",
     "apps": "Applications",
     "websites": "Websites",
