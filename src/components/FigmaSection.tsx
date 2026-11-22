@@ -10,6 +10,11 @@ const FIGMA_EMBEDS = [
   },
 
   {
+    src: "https://embed.figma.com/design/1PoUOOslnlnbY3KMLIlLwX/Untitled?node-id=0-1&embed-host=share",
+    titleKey: "figma.design5.title",
+  },
+
+  {
     src: "https://embed.figma.com/design/JE8FdREtjy44nce6vVGego/Untitled?node-id=0-1&embed-host=share",
     titleKey: "figma.design3.title",
   },
