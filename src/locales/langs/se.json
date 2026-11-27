@@ -26,6 +26,38 @@
     "role": "Fullstackutvecklare med fokus på frontend",
     "skills": "Kompetens"
   },
+  "approach": {
+    "mindsetTitle": "Så tänker jag när jag jobbar",
+    "mindsetIntro": "Mina egna projekt börjar nästan alltid med ett problem jag själv har stött på. Jag utgår från designen och letar efter lösningar som gör vardagen enklare för någon. Sedan vill jag få ut dem live.",
+    "projects": [
+      {
+        "title": "kladereftervader.se",
+        "text": "Den här idén hade jag i flera år innan jag kunde bygga den. Yngre barn och personer med till exempel IF eller autism kan ha svårt att klä sig efter vädret. Appen ska hjälpa dem och deras föräldrar att välja rätt kläder, så att ingen går ut i tunn jacka när det är −5."
+      },
+      {
+        "title": "workeatout.se",
+        "text": "Jag vet hur, hur mycket och när jag ska äta, men att skriva inköpslistan var tråkigt. Nu får jag en färdig lista med rätt mängder att handla hem."
+      },
+      {
+        "title": "skeningevvs.se",
+        "text": "Kunden ville ha en hemsida som ett visitkort, men hade inga bilder och lite information. Jag satte ihop ett förslag som de fick rätta och skapade illustrerade bilder: jobbilen med hunden i passagerarsätet, som alla i Skänninge känner igen. Resultatet blev en personlig sida för de lokala kunderna."
+      },
+      {
+        "title": "Knegarloggen",
+        "text": "Det här är en pågående SaaS som växte ur ett loggverktyg jag byggde för Skeninge VVS. Den loggar tid, räknar ut inköpspriser från Ahlsell med påslag, drar av ROT och lägger på andra kostnader. Därifrån blir det en offert, sedan ett jobb och till sist en faktura."
+      }
+    ],
+    "workflowTitle": "Mitt arbetsflöde",
+    "workflow": [
+      "Jag funderar på problemet och lösningen.",
+      "Jag sätter upp arkitekturen och väljer de paket som passar projektet bäst.",
+      "Jag sätter upp en kanban, agent.md och skills.md.",
+      "Jag bygger med fokus på design, användarvänlighet och bra funktioner.",
+      "Jag jobbar AI-drivet i VS Code eller Orca, ibland i flera git worktrees samtidigt.",
+      "Jag testar och granskar projektet: säkerhet, tillgänglighet, prestanda och SEO.",
+      "Jag sätter projektet live."
+    ]
+  },
   "cv": {
     "workExperience": "Arbetslivserfarenhet",
     "education": "Utbildning",

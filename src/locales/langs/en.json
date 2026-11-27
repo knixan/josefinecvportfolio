@@ -26,6 +26,38 @@
     "role": "Fullstack Developer with a focus on frontend",
     "skills": "Skills"
   },
+  "approach": {
+    "mindsetTitle": "How I think when I work",
+    "mindsetIntro": "My own projects almost always start with a problem I've run into myself. I start from the design and look for solutions that make everyday life easier for someone. Then I want to get them live.",
+    "projects": [
+      {
+        "title": "kladereftervader.se",
+        "text": "I had this idea for several years before I was able to build it. Young children and people with, for example, intellectual disabilities or autism can find it hard to dress for the weather. The app helps them and their parents choose the right clothes, so nobody heads out in a thin jacket when it's −5 °C."
+      },
+      {
+        "title": "workeatout.se",
+        "text": "I know how, how much and when to eat, but writing the shopping list was tedious. Now I get a ready-made list with the right amounts to buy."
+      },
+      {
+        "title": "skeningevvs.se",
+        "text": "The client wanted a website that works like a business card, but had no photos and little information. I put together a proposal for them to correct and created illustrations: the work van with the dog in the passenger seat, which everyone in Skänninge recognises. The result was a personal site for their local customers."
+      },
+      {
+        "title": "Knegarloggen",
+        "text": "An ongoing SaaS that grew out of a logging tool I built for Skeninge VVS. It logs time, calculates purchase prices from Ahlsell with markup, deducts ROT and adds other costs. From there it becomes a quote, then a job and finally an invoice."
+      }
+    ],
+    "workflowTitle": "My workflow",
+    "workflow": [
+      "I think through the problem and the solution.",
+      "I set up the architecture and choose the packages that best fit the project.",
+      "I set up a kanban board, agent.md and skills.md.",
+      "I build with a focus on design, usability and solid features.",
+      "I work AI-driven in VS Code or Orca, sometimes in several git worktrees at once.",
+      "I test and review the project: security, accessibility, performance and SEO.",
+      "I take the project live."
+    ]
+  },
   "cv": {
     "workExperience": "Work Experience",
     "education": "Education",

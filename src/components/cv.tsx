@@ -6,12 +6,71 @@ import {
   FaGraduationCap,
   FaCode,
   FaChevronRight,
+  FaLightbulb,
+  FaProjectDiagram,
 } from "react-icons/fa";
+import type { ReactNode } from "react";
 import { useTranslate } from "@/locales/use-locales";
+
+function Collapsible({
+  id,
+  icon,
+  title,
+  open,
+  onToggle,
+  children,
+}: {
+  id: string;
+  icon: ReactNode;
+  title: string;
+  open: boolean;
+  onToggle: (id: string) => void;
+  children: ReactNode;
+}) {
+  return (
+    <div className="card overflow-hidden rounded-xl">
+      <button
+        type="button"
+        onClick={() => onToggle(id)}
+        aria-expanded={open}
+        aria-controls={`${id}-panel`}
+        className="flex w-full items-center justify-between gap-4 px-6 py-4 text-left hover:bg-white/[0.03] transition-colors"
+      >
+        <span className="flex items-center gap-3 text-lg font-medium text-pink-400">
+          {icon}
+          {title}
+        </span>
+        <FaChevronRight
+          className={`shrink-0 text-xs text-slate-300 transition-transform duration-300 ${
+            open ? "rotate-90 text-pink-400" : ""
+          }`}
+        />
+      </button>
+      <div
+        id={`${id}-panel`}
+        className={`grid transition-all duration-300 ${
+          open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="border-t border-white/5 px-6 py-5">{children}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function CV() {
   const { t } = useTranslate();
   const [openJob, setOpenJob] = useState<string | null>(null);
+  const [openApproach, setOpenApproach] = useState<string | null>(null);
+  const toggleApproach = (id: string) =>
+    setOpenApproach((current) => (current === id ? null : id));
+
+  const approachProjects = t("approach.projects", {
+    returnObjects: true,
+  }) as { title: string; text: string }[];
+  const workflow = t("approach.workflow", { returnObjects: true }) as string[];
 
   const jobs = [
     "erakcins",
@@ -66,6 +125,58 @@ export default function CV() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Så tänker jag & Arbetsflöde */}
+        <div className="mt-4 space-y-3">
+          <Collapsible
+            id="mindset"
+            icon={<FaLightbulb />}
+            title={t("approach.mindsetTitle")}
+            open={openApproach === "mindset"}
+            onToggle={toggleApproach}
+          >
+            <p className="text-sm leading-relaxed text-slate-300">
+              {t("approach.mindsetIntro")}
+            </p>
+            <div className="mt-5 space-y-4">
+              {approachProjects.map((project) => (
+                <div
+                  key={project.title}
+                  className="border-l-2 border-pink-500/70 pl-4"
+                >
+                  <h4 className="text-sm font-medium text-white">
+                    {project.title}
+                  </h4>
+                  <p className="mt-1 text-sm leading-relaxed text-slate-400">
+                    {project.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Collapsible>
+
+          <Collapsible
+            id="workflow"
+            icon={<FaProjectDiagram />}
+            title={t("approach.workflowTitle")}
+            open={openApproach === "workflow"}
+            onToggle={toggleApproach}
+          >
+            <ol className="space-y-3">
+              {workflow.map((step, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-3 text-sm leading-relaxed text-slate-300"
+                >
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-pink-500/15 text-xs font-medium text-pink-400">
+                    {i + 1}
+                  </span>
+                  <span className="pt-0.5">{step}</span>
+                </li>
+              ))}
+            </ol>
+          </Collapsible>
         </div>
       </section>
 
